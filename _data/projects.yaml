@@ -1,0 +1,63 @@
+# A survey of algorithmic recourse: contrastive explanations and consequential recommendations
+
+
+# Algorithmic Recourse: from Counterfactual Explanations to Interventions
+
+
+# Algorithmic recourse under imperfect causal knowledge: a probabilistic approach
+
+
+# MACE: Model-Agnostic Counterfactual Explanations for Consequential Decisions
+
+
+# On the Fairness of Causal Algorithmic Recourse
+
+
+# On the Adversarial Robustness of Causal Algorithmic Recourse
+
+
+# On the Relationship Between Explanation and Prediction: A Causal View
+
+
+projects:
+  - title: "A Survey of Algorithmic Recourse"
+    subtitle: "Contrastive Explanations and Consequential Recommendations"
+    thumbnail: "assets/projects/survey_algorithmic_recourse/thumbnail.jpg" # Replace with the actual image path
+    url: "https://scholar.google.com/replace_with_actual_link" # Replace with the actual Google Scholar link
+    selected: y
+
+  - title: "Algorithmic Recourse"
+    subtitle: "From Counterfactual Explanations to Interventions"
+    thumbnail: "assets/projects/algorithmic_recourse/thumbnail.jpg" # Replace with the actual image path
+    url: "https://scholar.google.com/replace_with_actual_link" # Replace with the actual Google Scholar link
+    selected: y
+
+  - title: "Algorithmic Recourse under Imperfect Causal Knowledge"
+    subtitle: "A Probabilistic Approach"
+    thumbnail: "assets/projects/imperfect_causal_knowledge/thumbnail.jpg" # Replace with the actual image path
+    url: "https://scholar.google.com/replace_with_actual_link" # Replace with the actual Google Scholar link
+    selected: y
+
+  - title: "MACE"
+    subtitle: "Model-Agnostic Counterfactual Explanations for Consequential Decisions"
+    thumbnail: "assets/projects/mace_counterfactual_explanations/thumbnail.jpg" # Replace with the actual image path
+    url: "https://scholar.google.com/replace_with_actual_link" # Replace with the actual Google Scholar link
+    selected: y
+
+  - title: "On the Fairness of Causal Algorithmic Recourse"
+    subtitle: "Exploring Fairness in Algorithmic Decisions"
+    thumbnail: "assets/projects/fairness_causal_algorithmic_recourse/thumbnail.jpg" # Replace with the actual image path
+    url: "https://scholar.google.com/replace_with_actual_link" # Replace with the actual Google Scholar link
+    selected: y
+
+  - title: "On the Adversarial Robustness of Causal Algorithmic Recourse"
+    subtitle: "Ensuring Robustness in Adversarial Settings"
+    thumbnail: "assets/projects/adversarial_robustness/thumbnail.jpg" # Replace with the actual image path
+    url: "https://scholar.google.com/replace_with_actual_link" # Replace with the actual Google Scholar link
+    selected: y
+
+  - title: "On the Relationship Between Explanation and Prediction"
+    subtitle: "A Causal View"
+    thumbnail: "assets/projects/explanation_vs_prediction/thumbnail.jpg" # Replace with the actual image path
+    url: "https://scholar.google.com/replace_with_actual_link" # Replace with the actual Google Scholar link
+    selected: y

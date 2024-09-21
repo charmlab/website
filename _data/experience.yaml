@@ -1,0 +1,61 @@
+experiences:
+
+- place: "UWaterloo & Vector Institute"
+  time: "2023 - Present"
+  title: "Assistant Professor of Machine Learning"
+  subtitle: "Electrical and Computer Engineering Department"
+  category: "work"
+
+- place: "Google DeepMind"
+  time: "May 2022 - Oct 2022"
+  title: "Research Scientist Intern"
+  subtitle: "Mentors: Lars Buesing, David Amos, Jessica Hamrick"
+  category: "work"
+
+- place: "Google Brain"
+  time: "Dec 2021 - Apr 2022"
+  title: "Research Scientist Intern"
+  subtitle: "Mentors: Been Kim, Simon Kornblith"
+  category: "work"
+
+- place: "Max Planck Institute & ETH Zurich"
+  time: "2018 - 2023"
+  title: "Ph.D. Student"
+  subtitle: "Advisors: Prof. Bernhard Schölkopf, Prof. Isabel Valera"
+  category: "school"
+
+- place: "University of Waterloo"
+  time: "2016 - 2018"
+  title: "M.Math in Computer Science"
+  subtitle: "Advisors: Prof. Alexander Wong, Prof. Ali Ghodsi"
+  category: "school"
+
+- place: "Meta (Facebook) Inc."
+  time: "Aug 2015 - Sep 2016"
+  title: "Software Engineer"
+  subtitle: "Mentors: Kaustubh Karkare, Antoine Bordes, Jason Weston"
+  category: "work"
+
+- place: "Meta (Facebook) Inc."
+  time: "Feb 2014 - Apr 2014"
+  title: "Software Engineer Intern"
+  subtitle: "" # Mentor: Not specified"  # You can specify the mentor here if applicable
+  category: "work"
+
+- place: "BlackBerry Inc."
+  time: "May 2013 - Dec 2013"
+  title: "Software Engineer Intern"
+  subtitle: "" # Mentor: Not specified"  # You can specify the mentor here if applicable
+  category: "work"
+
+- place: "Stanford University"
+  time: "May 2012 - Aug 2012"
+  title: "Undergraduate Research Assistant"
+  subtitle: "Advisor: Amin Arbabian"
+  category: "work"
+
+- place: "University of Toronto"
+  time: "2010 - 2015"
+  title: "B.A.Sc. in Engineering Science – Electrical and Computer Stream"
+  subtitle: "Advisors: Prof. Chris Eliasmith, Prof. Richard Zemel"
+  category: "school"

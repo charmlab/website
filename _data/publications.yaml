@@ -1,0 +1,78 @@
+papers:
+  - title: "A Survey of Algorithmic Recourse: Contrastive Explanations and Consequential Recommendations"
+    authors: "Karimi, Barthe, Schölkopf, Valera"
+    venue: "ACM Computing Surveys 2022."
+    paper_pdf: "https://scholar.google.com/replace_with_actual_link" # Replace with the actual Google Scholar link
+    selected: y
+
+  - title: "Algorithmic Recourse: From Counterfactual Explanations to Interventions"
+    authors: "Karimi, Schölkopf, Valera"
+    venue: "ACM FAccT 2021."
+    paper_pdf: "https://scholar.google.com/replace_with_actual_link" # Replace with the actual Google Scholar link
+    selected: y
+
+  - title: "Algorithmic Recourse Under Imperfect Causal Knowledge: a Probabilistic Approach"
+    authors: "Karimi<sup>‡</sup>, von Kügelgen<sup>‡</sup>, Schölkopf, Valera"
+    venue: "NeurIPS 2020."
+    paper_pdf: "https://scholar.google.com/replace_with_actual_link" # Replace with the actual Google Scholar link
+    selected: y
+
+  - title: "MACE: Model-Agnostic Counterfactual Explanations for Consequential Decisions"
+    authors: "Karimi, Barthe, Balle, Valera"
+    venue: "AISTATS 2019."
+    paper_pdf: "https://scholar.google.com/replace_with_actual_link" # Replace with the actual Google Scholar link
+    selected: y
+
+  - title: "On the Fairness of Causal Algorithmic Recourse"
+    authors: "von Kügelgen<sup>‡</sup>, Karimi<sup>‡</sup>, Bhatt, Valera, Weller, Schölkopf"
+    venue: "AAAI 2022."
+    paper_pdf: "https://scholar.google.com/replace_with_actual_link" # Replace with the actual Google Scholar link
+    selected: n
+
+  - title: "On the Adversarial Robustness of Causal Algorithmic Recourse"
+    authors: "Dominguez-Olmedo, Karimi, Schölkopf"
+    venue: "ICML 2022."
+    paper_pdf: "https://scholar.google.com/replace_with_actual_link" # Replace with the actual Google Scholar link
+    selected: n
+
+  - title: "On the Relationship Between Explanation and Prediction: A Causal View"
+    authors: "Karimi, Muandet, Kornblith, Schölkopf, Kim"
+    venue: "ICML 2023."
+    paper_pdf: "https://scholar.google.com/replace_with_actual_link" # Replace with the actual Google Scholar link
+    selected: y
+
+  - title: "Key-Value Memory Networks for Directly Reading Documents"
+    authors: "Miller, Fisch, Dodge, Karimi, Bordes, Weston"
+    venue: "EMNLP 2016."
+    paper_pdf: "https://scholar.google.com/replace_with_actual_link" # Replace with the actual Google Scholar link
+    selected: n
+
+  - title: "Scaling Guarantees for Nearest Counterfactual Explanations"
+    authors: "Mohammadi, Karimi, Barthe, Valera"
+    venue: "ACM AIES 2021."
+    paper_pdf: "https://scholar.google.com/replace_with_actual_link" # Replace with the actual Google Scholar link
+    selected: n
+
+  - title: "JADE: Joint Autoencoders for Dis-Entanglement"
+    authors: "Karimi*, Banijamali*, Ghodsi, Wong"
+    venue: "NeurIPS Workshop 2017."
+    paper_pdf: "https://scholar.google.com/replace_with_actual_link" # Replace with the actual Google Scholar link
+    selected: n
+
+  - title: "Distance Correlation Autoencoder"
+    authors: "Wang, Karimi, Ghodsi"
+    venue: "IJCNN 2018."
+    paper_pdf: "https://scholar.google.com/replace_with_actual_link" # Replace with the actual Google Scholar link
+    selected: n
+
+  - title: "Automated Detection and Cell Density Assessment of Keratocytes in the Human Corneal Stroma"
+    authors: "Karimi, Wong, Bizheva"
+    venue: "Optics Express 2011."
+    paper_pdf: "https://scholar.google.com/replace_with_actual_link" # Replace with the actual Google Scholar link
+    selected: n
+
+  - title: "Comparative Analysis of Gait Speed Estimation Using Various Technologies"
+    authors: "Authors to be filled"
+    venue: "To be filled"
+    paper_pdf: "https://scholar.google.com/replace_with_actual_link" # Replace with the actual Google Scholar link
+    selected: n
