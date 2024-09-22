@@ -1,8 +1,8 @@
 experiences:
 
 - place: "UWaterloo & Vector Institute"
-  time: "2023 - Present"
-  title: "Assistant Professor of Machine Learning"
+  time: "Sep 2023 - Present"
+  title: "Assistant Professor"
   subtitle: "Electrical and Computer Engineering Department"
   category: "school"
 
@@ -18,14 +18,14 @@ experiences:
   subtitle: "Mentors: Dr. Been Kim, Dr. Simon Kornblith"
   category: "work"
 
-- place: "Max Planck Institute & ETH Zurich"
-  time: "2018 - 2023"
+- place: "Max Planck Institute & ETH Zürich"
+  time: "Oct 2018 - Aug 2023"
   title: "Ph.D. Student"
   subtitle: "Advisors: Prof. Bernhard Schölkopf, Prof. Isabel Valera"
   category: "school"
 
 - place: "University of Waterloo"
-  time: "2016 - 2018"
+  time: "Sep 2016 - Aug 2018"
   title: "M.Math in Computer Science"
   subtitle: "Advisors: Prof. Alexander Wong, Prof. Ali Ghodsi"
   category: "school"
@@ -55,7 +55,7 @@ experiences:
   category: "school"
 
 - place: "University of Toronto"
-  time: "2010 - 2015"
+  time: "Sep 2010 - May 2015"
   title: "B.A.Sc. in Engineering Science – Electrical and Computer Stream"
   subtitle: "Advisors: Prof. Chris Eliasmith, Prof. Richard Zemel"
   category: "school"
