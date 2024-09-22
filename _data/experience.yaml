@@ -4,18 +4,18 @@ experiences:
   time: "2023 - Present"
   title: "Assistant Professor of Machine Learning"
   subtitle: "Electrical and Computer Engineering Department"
-  category: "work"
+  category: "school"
 
 - place: "Google DeepMind"
   time: "May 2022 - Oct 2022"
   title: "Research Scientist Intern"
-  subtitle: "Mentors: Lars Buesing, David Amos, Jessica Hamrick"
+  subtitle: "Mentors: Dr. Lars Buesing, Dr. Jessica Hamrick, David Amos"
   category: "work"
 
 - place: "Google Brain"
   time: "Dec 2021 - Apr 2022"
   title: "Research Scientist Intern"
-  subtitle: "Mentors: Been Kim, Simon Kornblith"
+  subtitle: "Mentors: Dr. Been Kim, Dr. Simon Kornblith"
   category: "work"
 
 - place: "Max Planck Institute & ETH Zurich"
@@ -33,26 +33,26 @@ experiences:
 - place: "Meta (Facebook) Inc."
   time: "Aug 2015 - Sep 2016"
   title: "Software Engineer"
-  subtitle: "Mentors: Kaustubh Karkare, Antoine Bordes, Jason Weston"
+  subtitle: "Mentors: Dr. Antoine Bordes, Dr. Jason Weston, Kaustubh Karkare"
   category: "work"
 
 - place: "Meta (Facebook) Inc."
   time: "Feb 2014 - Apr 2014"
   title: "Software Engineer Intern"
-  subtitle: "" # Mentor: Not specified"  # You can specify the mentor here if applicable
+  subtitle: "Mentor: Chris Triolo"
   category: "work"
 
 - place: "BlackBerry Inc."
   time: "May 2013 - Dec 2013"
   title: "Software Engineer Intern"
-  subtitle: "" # Mentor: Not specified"  # You can specify the mentor here if applicable
+  subtitle: "Mentor: Chris Joe"
   category: "work"
 
 - place: "Stanford University"
   time: "May 2012 - Aug 2012"
   title: "Undergraduate Research Assistant"
-  subtitle: "Advisor: Amin Arbabian"
-  category: "work"
+  subtitle: "Advisor: Prof. Amin Arbabian"
+  category: "school"
 
 - place: "University of Toronto"
   time: "2010 - 2015"

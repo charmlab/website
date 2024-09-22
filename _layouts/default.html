@@ -6,13 +6,13 @@
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <meta charset="utf-8">
   <title>{{ site.data.main_info.name }} | {{ page.title }}</title>
-  <meta name="description" content="Martin Saveski">
-  <meta name="author" content="Martin Saveski">
-  <meta property="og:title" content="Martin Saveski" />
+  <meta name="description" content="Amir-Hossein Karimi">
+  <meta name="author" content="Amir-Hossein Karimi">
+  <meta property="og:title" content="Amir-Hossein Karimi" />
   <meta property="og:type" content="website" />
-  <meta property="og:url" content="http://www.martinsaveski.com" />
-  <meta property="og:site_name" content="Martin Saveski" />
-  <link rel="canonical" href="http://www.martinsaveski.com" />
+  <meta property="og:url" content="http://www.amirhkarimi.com" />
+  <meta property="og:site_name" content="Amir-Hossein Karimi" />
+  <link rel="canonical" href="http://www.amirhkarimi.com" />
 
   <!-- Mobile Specific Metas
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -73,23 +73,26 @@
         </div>
         <div class="nine columns main-description">
             <h1>{{ site.data.main_info.name }}</h1>
-            <p>{{ site.data.main_info.title }}</p>
-            <p>{{ site.data.main_info.email }}</p>
+            <p class="text-gray">{{ site.data.main_info.title }}</p>
+            <p class="text-gray">{{ site.data.main_info.affil1 }}</p>
+            <p class="text-gray">{{ site.data.main_info.affil2 }}</p>
+            <p class="text-gray">{{ site.data.main_info.affil3 }}</p>
+            <p class="text-gray">{{ site.data.main_info.email }}</p>
             <p>
-              <span onclick="window.open('{{ site.data.main_info.twitter }}')" style="cursor: pointer">
-                <i class="fa fa-twitter" aria-hidden="true"></i>
+              <span onclick="window.open('{{ site.data.main_info.google_scholar }}')" style="cursor: pointer">
+                <i class="ai ai-google-scholar ai-lg" aria-hidden="true"></i>
               </span>
-
-              <span onclick="window.open('{{ site.data.main_info.linkedin }}')" style="cursor: pointer">
-                <i class="fa fa-linkedin-square" aria-hidden="true"></i>
-              </span>
-
               <span onclick="window.open('{{ site.data.main_info.github }}')" style="cursor: pointer">
                 <i class="fa fa-github" aria-hidden="true"></i>
               </span>
-
-              <span onclick="window.open('{{ site.data.main_info.google_scholar }}')" style="cursor: pointer">
-                <i class="ai ai-google-scholar ai-lg" aria-hidden="true"></i>
+              <span onclick="window.open('{{ site.data.main_info.linkedin }}')" style="cursor: pointer">
+                <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+              </span>
+              <span onclick="window.open('{{ site.data.main_info.twitter }}')" style="cursor: pointer">
+                <i class="fa fa-twitter" aria-hidden="true"></i>
+              </span>
+              <span onclick="window.open('{{ site.data.main_info.youtube }}')" style="cursor: pointer">
+                <i class="fa fa-youtube-play" aria-hidden="true"></i>
               </span>
             </p>
         </div>
@@ -106,6 +109,7 @@
           <li class="navbar-item"><a class="navbar-link" href={{ "/index.html#research" | prepend: site.baseurl }}>research</a></li>
           <li class="navbar-item"><a class="navbar-link" href={{ "/index.html#teaching" | prepend: site.baseurl }}>teaching</a></li>
           <li class="navbar-item"><a class="navbar-link" href={{ "/index.html#service" | prepend: site.baseurl }}>service</a></li>
+          <li class="navbar-item"><a class="navbar-link" href={{ "/index.html#resume" | prepend: site.baseurl }}>vita</a></li>
 
           <!-- <li class="navbar-item"><a class="navbar-link" href={{ "/index.html#bio" | prepend: site.baseurl }}>Bio</a></li>
           <li class="navbar-item"><a class="navbar-link" href={{ "/index.html#news" | prepend: site.baseurl }}>News</a></li>
@@ -124,25 +128,28 @@
 
     <div class="footer">
       <div class="row">
-        <div class="three columns">
+        <div class="three columns" style="font-size: 12px;">
           {{ site.data.main_info.name }}, PhD
         </div>
-        <div class="six columns">
+        <div class="six columns" style="font-size: 12px;">
           <!-- {{ site.data.main_info.email }} -->
           Based on the template by <a href="https://faculty.washington.edu/msaveski/" target="_blank">Martin Saveski</a>.
         </div>
         <div class="three columns">
-          <span onclick="window.open('{{ site.data.main_info.twitter }}')" style="cursor: pointer">
-            <i class="fa fa-twitter" aria-hidden="true"></i>
-          </span>
-          <span onclick="window.open('{{ site.data.main_info.linkedin }}')" style="cursor: pointer">
-            <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+          <span onclick="window.open('{{ site.data.main_info.google_scholar }}')" style="cursor: pointer">
+            <i class="ai ai-google-scholar" aria-hidden="true"></i>
           </span>
           <span onclick="window.open('{{ site.data.main_info.github }}')" style="cursor: pointer">
             <i class="fa fa-github" aria-hidden="true"></i>
           </span>
-          <span onclick="window.open('{{ site.data.main_info.google_scholar }}')" style="cursor: pointer">
-            <i class="ai ai-google-scholar ai-lg" aria-hidden="true"></i>
+          <span onclick="window.open('{{ site.data.main_info.linkedin }}')" style="cursor: pointer">
+            <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+          </span>
+          <span onclick="window.open('{{ site.data.main_info.twitter }}')" style="cursor: pointer">
+            <i class="fa fa-twitter" aria-hidden="true"></i>
+          </span>
+          <span onclick="window.open('{{ site.data.main_info.youtube }}')" style="cursor: pointer">
+            <i class="fa fa-youtube-play" aria-hidden="true"></i>
           </span>
         </div>
       </div>
