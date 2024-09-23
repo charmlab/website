@@ -216,100 +216,64 @@ title: Home
     <!-- General Content -->
     <div class="teaching-category">
       <h5><u>General Content</u></h5>
+      {% for content in site.data.teaching.general %}
       <div class="teaching-card">
         <div class="card-image">
-          <img src="/assets/logos/tutorial.svg" alt="Prince of AI">
+          <img src="{{ content.image }}" alt="{{ content.alt_text }}">
           <div class="card-overlay">
-            Prince of AI
+            {{ content.title }}
           </div>
         </div>
         <div class="card-link">
-          <a href="https://www.instagram.com/princeofai/" target="_blank">Learn for Free</a> | 
-          <a href="https://princeofai.com/" target="_blank">Courses</a>
+          {% for link in content.links %}
+          <a href="{{ link.url }}" target="_blank">{{ link.label }}</a>{% unless forloop.last %} | {% endunless %}
+          {% endfor %}
         </div>
       </div>
-      <div class="teaching-card">
-        <div class="card-image">
-          <img src="/assets/logos/medium.svg" alt="Medium Blog">
-          <div class="card-overlay">
-            <!-- Academic Success -->
-            Success Studio
-          </div>
-        </div>
-        <div class="card-link">
-          <a href="https://amirhkarimi.medium.com/" target="_blank">Read on Medium</a>
-        </div>
-      </div>
+      {% endfor %}
     </div>
 
     <!-- University Courses -->
     <div class="teaching-category">
       <h5><u>University Courses</u></h5>
+      {% for content in site.data.teaching.university %}
       <div class="teaching-card">
         <div class="card-image">
-          <img src="/assets/logos/introtoml.svg" alt="Intro to Machine Learning">
+          <img src="{{ content.image }}" alt="{{ content.alt_text }}">
           <div class="card-overlay">
-            Intro to Machine Learning
+            {{ content.title }}
           </div>
         </div>
         <div class="card-link">
-          <a href="https://drive.google.com/drive/folders/1Ick--R-w3n7d_bGLWatkwJrw_P2fUhK-?usp=sharing" target="_blank">Get the Slides</a>
+          {% for link in content.links %}
+          <a href="{{ link.url }}" target="_blank">{{ link.label }}</a>{% unless forloop.last %} | {% endunless %}
+          {% endfor %}
         </div>
       </div>
-      <div class="teaching-card">
-        <div class="card-image">
-          <img src="/assets/logos/causality.svg" alt="CausEthical ML">
-          <div class="card-overlay">
-            CausEthical Machine Learning
-          </div>
-        </div>
-        <div class="card-link">
-          <a href="https://sites.google.com/view/uds-causethical-ml-seminar/home" target="_blank">Seminar</a> | 
-          <a href="https://sites.google.com/view/ellis-causethical-ml-workshop/about" target="_blank">Workshop</a>
-          
-        </div>
-      </div>
-      <div class="teaching-card">
-        <div class="card-image">
-          <img src="/assets/logos/causality.svg" alt="Dimension Reduction & PCA">
-          <div class="card-overlay">
-            Dimension Reduction & PCA
-          </div>
-        </div>
-        <div class="card-link">
-          <a href="https://www.youtube.com/watch?v=P7sxhm6AYjo&ab_channel=Amir-HosseinKarimi" target="_blank">Watch on YouTube</a>
-          
-        </div>
-      </div>
+      {% endfor %}
     </div>
 
     <!-- Specialized Tutorials -->
     <div class="teaching-category">
       <h5><u>Specialized Tutorials</u></h5>
+      {% for content in site.data.teaching.specialized %}
       <div class="teaching-card">
         <div class="card-image">
-          <img src="/assets/logos/teaching.svg" alt="Toronto ML Summit Tutorial">
+          <img src="{{ content.image }}" alt="{{ content.alt_text }}">
           <div class="card-overlay">
-            Algorithmic Recourse <!-- (Toronto ML Summit) -->
+            {{ content.title }}
           </div>
         </div>
         <div class="card-link">
-          <a href="https://www.youtube.com/watch?v=amgBv-E3-sQ&list=PLH-rpi_agJT1SxLbG_VIxwMBWWsLmrTBk" target="_blank">Watch on YouTube</a>
+          {% for link in content.links %}
+          <a href="{{ link.url }}" target="_blank">{{ link.label }}</a>{% unless forloop.last %} | {% endunless %}
+          {% endfor %}
         </div>
       </div>
-      <div class="teaching-card">
-        <div class="card-image">
-          <img src="/assets/logos/data.svg" alt="KDD Tutorial">
-          <div class="card-overlay">
-            Causal Explainable AI <!-- (Knowledge Discovery & Data) -->
-          </div>
-        </div>
-        <div class="card-link">
-          <a href="https://sites.google.com/asu.edu/kdd-2023-tutorial/home" target="_blank">Get the slides</a>
-        </div>
-      </div>
+      {% endfor %}
     </div>
   </div>
+  
 </div>
 
 
