@@ -170,50 +170,34 @@ title: Home
 
   <!-- Lab Members Section -->
   <div class="members-columns">
+    {% for member in site.data.group.members %}
     <div class="members-card">
-      <img class="profile-pic" src="/assets/profile-pics/female.jpg" alt="Mina Kebriaee">
-      <p class="name">Mina Kebriaee</p>
-      <p class="title">PhD Student <br> (w/ <a href="https://uwaterloo.ca/electrical-computer-engineering/profile/ltahvild", target="_blank">Prof. Tahvildari</a>) </p>
+      <img class="profile-pic" src="{{ member.image }}" alt="{{ member.name }}">
+      <p class="name">{{ member.name }}</p>
+      <p class="title">
+        {{ member.title }} 
+        {% if member.advisor %}
+          <br> (w/ <a href="{{ member.advisor_link }}" target="_blank">{{ member.advisor }}</a>)
+        {% endif %}
+      </p>
     </div>
-    <div class="members-card">
-      <img class="profile-pic" src="/assets/profile-pics/female.jpg" alt="Zahra Khotanlou">
-      <p class="name">Zahra Khotanlou</p>
-      <p class="title">PhD Student</p>
-    </div>
-    <div class="members-card">
-      <img class="profile-pic" src="/assets/profile-pics/female.jpg" alt="Maryam Ghorbansabagh">
-      <p class="name">Maryam Ghorbansabagh</p>
-      <p class="title">Master's Student <br> (w/ <a href="https://uwaterloo.ca/psychology/profiles/igor-grossmann", target="_blank">Prof. Grossmann</a>)</p>
-    </div>
-    <div class="members-card">
-      <img class="profile-pic" src="/assets/profile-pics/male.jpg" alt="Zachary Wu">
-      <p class="name">Zachary Wu</p>
-      <p class="title">Research Assistant <br> (w/ <a href="https://uwaterloo.ca/electrical-computer-engineering/profile/ltahvild", target="_blank">Prof. Tahvildari</a>)</p>
-    </div>
-    <div class="members-card">
-      <img class="profile-pic" src="/assets/profile-pics/female.jpg" alt="Zahra Sorkhei">
-      <p class="name">Zahra Sorkhei</p>
-      <p class="title">PhD Student</p>
-    </div>
-    <div class="members-card">
-      <img class="profile-pic" src="/assets/profile-pics/female.jpg" alt="Hosna Oyarhoseini">
-      <p class="name">Hosna Oyarhoseini</p>
-      <p class="title">Master's Student <br> (w/ <a href="https://cs.uwaterloo.ca/about/people/jimmylin", target="_blank">Prof. Lin</a>)</p>
-    </div>
+    {% endfor %}
   </div>
 
   <h5>Lab Alumni</h5>
   <div class="members-columns">
+    {% for alumni in site.data.group.alumni %}
     <div class="members-card">
-      <img class="profile-pic" src="/assets/profile-pics/male.jpg" alt="Abubakar Bello">
-      <p class="name">Abubakar Bello</p>
-      <p class="title">Research Assistant <br> (now: Microsoft Inc.) </p>
+      <img class="profile-pic" src="{{ alumni.image }}" alt="{{ alumni.name }}">
+      <p class="name">{{ alumni.name }}</p>
+      <p class="title">
+        {{ alumni.title }} 
+        {% if alumni.now %}
+          <br> (now: {{ alumni.now }})
+        {% endif %}
+      </p>
     </div>
-    <div class="members-card">
-      <img class="profile-pic" src="/assets/profile-pics/male.jpg" alt="Mohammadreza Alavi">
-      <p class="name">Mohammadreza Alavi</p>
-      <p class="title">Research Assistant</p>
-    </div>
+    {% endfor %}
   </div>
 
 </div>

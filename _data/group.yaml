@@ -1,0 +1,36 @@
+members:
+  - name: Mina Kebriaee
+    title: "PhD Student"
+    advisor: "Prof. Tahvildari"
+    advisor_link: "https://uwaterloo.ca/electrical-computer-engineering/profile/ltahvild"
+    image: "/assets/profile-pics/female.jpg"
+  - name: Zahra Khotanlou
+    title: "PhD Student"
+    image: "/assets/profile-pics/female.jpg"
+  - name: Maryam Ghorbansabagh
+    title: "Master's Student"
+    advisor: "Prof. Grossmann"
+    advisor_link: "https://uwaterloo.ca/psychology/profiles/igor-grossmann"
+    image: "/assets/profile-pics/female.jpg"
+  - name: Zachary Wu
+    title: "Research Assistant"
+    advisor: "Prof. Tahvildari"
+    advisor_link: "https://uwaterloo.ca/electrical-computer-engineering/profile/ltahvild"
+    image: "/assets/profile-pics/male.jpg"
+  - name: Zahra Sorkhei
+    title: "PhD Student"
+    image: "/assets/profile-pics/female.jpg"
+  - name: Hosna Oyarhoseini
+    title: "Master's Student"
+    advisor: "Prof. Lin"
+    advisor_link: "https://cs.uwaterloo.ca/about/people/jimmylin"
+    image: "/assets/profile-pics/female.jpg"
+
+alumni:
+  - name: Abubakar Bello
+    title: "Research Assistant"
+    now: "Microsoft Inc."
+    image: "/assets/profile-pics/male.jpg"
+  - name: Mohammadreza Alavi
+    title: "Research Assistant"
+    image: "/assets/profile-pics/male.jpg"
