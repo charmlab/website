@@ -1,8 +1,14 @@
-source:      .
+# Basic configurations for Jekyll
+source: .
 destination: ./_site
-includes:    ./_includes
-baseurl: ""
+includes: ./_includes
+baseurl: "/website"  # This should match your GitHub Pages URL
+url: "https://charmlab.github.io"  # Your base GitHub Pages URL
 
 collections:
   projects:
     output: true
+
+# Other typical Jekyll settings
+markdown: kramdown  # Default markdown engine
+theme: minima  # You can specify any theme you use (e.g., minima, or custom theme)
