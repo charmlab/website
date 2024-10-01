@@ -87,10 +87,3 @@ display: flex;
     grid-template-columns: repeat(2, 1fr); /* 2 columns */
   }
 }
-
-/* Extra small screens (up to 480px) */
-@media (max-width: 480px) {
-  .members-columns {
-    grid-template-columns: repeat(1, 1fr); /* 1 column */
-  }
-}
