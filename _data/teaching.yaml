@@ -1,6 +1,6 @@
 general:
   - title: "Prince of AI"
-    image: "/assets/logos/tutorial.svg"
+    image: "/assets/logos/growth.svg"
     alt_text: "Prince of AI"
     links:
       - label: "Learn for Free"
@@ -13,6 +13,13 @@ general:
     links:
       - label: "Read on Medium"
         url: "https://amirhkarimi.medium.com/"
+
+  - title: "AI for Autism"
+    image: "/assets/logos/tutorial.svg"
+    alt_text: "BBC Podcast"
+    links:
+      - label: "Listen on BBC Podcasts"
+        url: "https://example.com/"
 
 university:
   - title: "Intro to Machine Learning"
@@ -30,7 +37,7 @@ university:
       - label: "Workshop"
         url: "https://sites.google.com/view/ellis-causethical-ml-workshop/about"
   - title: "Dimension Reduction & PCA"
-    image: "/assets/logos/causality.svg"
+    image: "/assets/logos/online.svg"
     alt_text: "Dimension Reduction & PCA"
     links:
       - label: "Watch on YouTube"

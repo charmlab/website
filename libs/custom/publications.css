@@ -1,0 +1,36 @@
+.paper-container {
+  display: flex;
+/*  align-items: flex-start;*/
+  margin-bottom: 15px;
+}
+
+.paper-buttons {
+  display: flex;
+  flex-direction: column;
+  padding: 0px;
+  margin-right: 15px; /* Add space between buttons and paper details */
+}
+
+.paper-buttons a {
+/*  padding: 5px 10px;*/
+  background-color: var(--color-industry);
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-bottom: 5px; /* Space between buttons */
+  transition: background-color .3s ease;
+}
+
+.paper-buttons a:hover {
+  background-color: #2a9bc7;
+}
+
+.paper-details {
+  padding-left: 20px;
+  border-left: 1.5px solid gray; /* The vertical line */
+}
+
+.paper-details b {
+  font-weight: bold;
+/*  margin-bottom: 5px;*/
+}

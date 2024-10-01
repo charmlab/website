@@ -14,12 +14,9 @@ title: Home
     This involves research and applied work in <b>causal inference, explainable AI,</b> and <b>program synthesis</b>. -->
   </p>
   <p>
-    Dr. Karimi's scholarly contributions have been showcased at esteemed AI and machine learning venues including <b>NeurIPS, ICML, AAAI, AISTATS, ACM-FAccT,</b> and <b>ACM-AIES</b>. He has authored influential publications such as a comprehensive survey paper in the prestigious <b>ACM Computing Surveys</b>, holds a patent, and is a contributing author of a book chapter.
+    Dr. Karimi's scholarly contributions have been showcased almost exclusively at top-tier AI and ML venues including <b>NeurIPS, ICML, AAAI, AISTATS, ACM FAccT,</b> and <b>ACM AIES</b>. He has authored influential publications such as a comprehensive survey paper in the prestigious <b>ACM Computing Surveys</b>, holds a patent, and is a contributing author of a book chapter.
 
-
-    Prior to joining UWaterloo, he accumulated significant industry experience at leading tech companies such as <a href="https://www.blackberry.com/" target="_blank">BlackBerry</a>, <a href="https://about.meta.com/" target="_blank">Meta (Facebook)</a>, <a href="https://ai.google/research/teams/brain/" target="_blank">Google Brain</a>, and <a href="https://www.deepmind.com/" target="_blank">DeepMind</a>, and provided consulting services for various startups and incubators including for <a href="https://www.nextcanada.com/next-ai/" target="_blank">NEXT AI</a>.
-
-    His academic and professional achievements have earned him multiple accolades, such as the <b>Spirit of Engineering Science Award</b> (University of Toronto, 2015), the <b>Alumni Gold Medal Award</b> (University of Waterloo, 2018), the <b>NSERC Canada Graduate Scholarship</b> (2018), the <b>Google PhD Fellowship</b> (2021), the <b>ETH Zurich Medal</b> (2024), and the <b>Igor Ivkovic Teaching Excellence Award</b> (2024).
+    Dr. Karimi’s work on algorithmic recourse has notably elevated its prominence in responsible AI research, with its presence growing from almost none to hundreds on Google Scholar in just five years; algorithmic recourse is now a mandatory criterion in key sectors, including <a href="https://www.tbs-sct.canada.ca/pol/doc-eng.aspx?id=32592" target="_blank">Canada’s Treasury Board Directive on Automated Decision-Making</a>. Besides highlighted presentations at the aforementioned venues and serving on their respective conference program committees, numerous academic and industry research labs have invited Dr. Karimi to present talks, lectures, and tutorials. His invited talks span institutions like University College London, ETH Zurich, Cyber Valley Health, Harvard University, MIT, Montreal Institute for Learning Algorithms (MILA), Institute of Mathematical Statistics, NEC Europe Labs, DeepMind, and Google Brain. Notably, Dr. Karimi gave a tutorial on Causal Explainable AI at KDD 2023 and one on Algorithmic Recourse at the Toronto ML Summit 2024. Committed to knowledge mobilization and reproducibility, his <a href="https://github.com/charmlab" target="_blank">open-source code</a> has earned over 100 GitHub stars.
   </p>
   <p>
     Dr. Karimi is a firm believer in the strength of diverse perspectives and is dedicated to building inclusive spaces in academia and beyond.
@@ -30,97 +27,14 @@ title: Home
 
     This initiative aims to reduce barriers to education and offer opportunities to those who traditionally lack access. With a wealth of content equivalent to an introductory ML course, their platform facilitates active learning through technical posts, engaging video reels, and interactive webinars.
   </p>
-</div>
+  <p>
+    Prior to joining UWaterloo, Dr. Karimi accumulated significant industry experience at leading tech companies such as <a href="https://www.blackberry.com/" target="_blank">BlackBerry</a>, <a href="https://about.meta.com/" target="_blank">Meta (Facebook)</a>, <a href="https://ai.google/research/teams/brain/" target="_blank">Google Brain</a>, and <a href="https://www.deepmind.com/" target="_blank">DeepMind</a>, and provided consulting services for various startups and incubators including for <a href="https://www.nextcanada.com/next-ai/" target="_blank">NEXT AI</a>.
 
-
-<!-- ========== PUBLICATIONS ========== -->
-<!-- <div class="docs-section" id="publications">
-  <h4>Publications</h4>
-
-  <p>Most recent publications are available on <a href="https://scholar.google.com/citations?user=umI56k0AAAAJ&hl=en" target="_blank">Google Scholar</a>.<br/>
-  <sup>‡</sup> indicates equal contribution.
+    His contributions have earned him multiple accolades, such as the <b>UofToronto Spirit of Engineering Science Award</b> (2015), the <b>UWaterloo Alumni Gold Medal Award</b> (2018), the <b>NSERC Canada Graduate Scholarship - Doctorate</b> (2018), the <b>Google PhD Fellowship</b> (2021), the <b>ETH Zurich Medal</b> (2024), the <b>NSERC Discovery Grants</b> (2024), and the <b>Igor Ivkovic Teaching Excellence Award</b> (2024).
   </p>
 
-  <ul class="tab-nav">
-    <li><div class="button active" data-ref="#papers-selected">Selected</div></li>
-    <li><div class="button" data-ref="#papers-all">All</div></li>
-  </ul>
+</div>
 
-  <div class="tab-content">
-    <div class="tab-pane active" id="papers-selected">
-      {% assign selected_papers = site.data.publications.papers | where: "selected", "y" %}
-      {% for paper in selected_papers %}
-        <div class="paper">
-          <p class="title"><b>{{ paper.title }}</b></p>
-          <p>{{ paper.authors }}</p>
-          <p><i>{{ paper.venue }}</i></p>
-           <div class="paper-buttons">
-            {% if paper.paper_pdf %}
-              <a class="button" href="{{ paper.paper_pdf | prepend: site.baseurl }}" target="_blank">Paper</a>
-            {% endif %}
-
-            {% if paper.slides %}
-              <a class="button" href="{{ paper.slides | prepend: site.baseurl }}" target="_blank">Slides</a>
-            {% endif %}
-
-            {% if paper.poster %}
-              <a class="button" href="{{ paper.poster | prepend: site.baseurl }}" target="_blank">Poster</a>
-            {% endif %}
-
-            {% if paper.video %}
-              <a class="button" href="{{ paper.video }}" target="_blank">Video</a>
-            {% endif %}
-
-            {% if paper.code %}
-              <a class="button" href="{{ paper.code }}" target="_blank">Code</a>
-            {% endif %}
-
-            {% if paper.data %}
-              <a class="button" href="{{ paper.data }}" target="_blank">Data</a>
-            {% endif %}
-
-          </div>
-        </div>
-      {% endfor %}
-    </div>
-
-    <div class="tab-pane" id="papers-all">
-      {% for paper in site.data.publications.papers %}
-        <div class="paper">
-          <p class="title"><b>{{ paper.title }}</b></p>
-          <p>{{ paper.authors }}</p>
-          <p><i>{{ paper.venue }}</i></p>
-           <div class="paper-buttons">
-            {% if paper.paper_pdf %}
-              <a class="button" href="{{ paper.paper_pdf | prepend: site.baseurl }}" target="_blank">Paper</a>
-            {% endif %}
-
-            {% if paper.slides %}
-              <a class="button" href="{{ paper.slides | prepend: site.baseurl }}" target="_blank">Slides</a>
-            {% endif %}
-
-            {% if paper.poster %}
-              <a class="button" href="{{ paper.poster | prepend: site.baseurl }}" target="_blank">Poster</a>
-            {% endif %}
-
-            {% if paper.video %}
-              <a class="button" href="{{ paper.video }}" target="_blank">Video</a>
-            {% endif %}
-
-            {% if paper.code %}
-              <a class="button" href="{{ paper.code }}" target="_blank">Code</a>
-            {% endif %}
-
-            {% if paper.data %}
-              <a class="button" href="{{ paper.data }}" target="_blank">Data</a>
-            {% endif %}
-
-          </div>
-        </div>
-      {% endfor %}
-    </div>
-  </div>
-</div> -->
 
 <!-- ========== GROUP ========== -->
 <div class="docs-section" id="group">
@@ -204,9 +118,66 @@ title: Home
 
 
 
-<!-- TODO: make the whole card clickable, normalize images somehow, shrink overlay size and font -->
+<!-- ========== PUBLICATIONS ========== -->
+<div class="docs-section publications-section" id="publications">
+  <h4>Publications</h4>
+  <p>Most recent publications are available on <a href="https://scholar.google.com/citations?user=umI56k0AAAAJ&hl=en" target="_blank">Google Scholar</a>.<br/>
+    <sup>‡</sup> indicates equal contribution.
+  </p>
+
+<!-- TODO: add journals, add transition to hover, add oral/spotlight, add images to card, and tl;dr, add PDF links, add code to others -->
+
+  <ul class="tab-nav">
+    {% for category in site.data.publications.categories %}
+      <li><div class="button {% if forloop.first %}active{% endif %}" data-ref="#{{ category.id }}">{{ category.name }}</div></li>
+    {% endfor %}
+  </ul>
+
+  <div class="tab-content">
+    <!-- Generate content for each category -->
+    {% for category in site.data.publications.categories %}
+      <div class="tab-pane {% if forloop.first %}active{% endif %}" id="{{ category.id }}">
+        <!-- Filter papers by category -->
+        {% assign filtered_papers = site.data.publications.papers | where_exp: "paper", "paper.categories contains category.name" %}
+        {% for paper in filtered_papers %}
+          <div class="paper-container">
+            <div class="paper-buttons">
+              {% if paper.paper_pdf %}
+                <a class="button" href="{{ paper.paper_pdf | prepend: site.baseurl }}" target="_blank">Paper</a>
+              {% endif %}
+              {% if paper.slides %}
+                <a class="button" href="{{ paper.slides | prepend: site.baseurl }}" target="_blank">Slide</a>
+              {% endif %}
+              {% if paper.code %}
+                <a class="button" href="{{ paper.code | prepend: site.baseurl }}" target="_blank">Code</a>
+              {% endif %}
+              {% if paper.video %}
+                <a class="button" href="{{ paper.video }}" target="_blank">Video</a>
+              {% endif %}
+            </div>
+
+            <div class="paper-details">
+              <b>{{ paper.title }}</b><br>
+              {{ paper.authors }}<br>
+              <i>{{ paper.venue }}</i>
+              {% if paper.acceptance_rate %} (acceptance rate: {{ paper.acceptance_rate }}){% endif %}
+              {% if paper.impact_factor %} (impact factor: {{ paper.impact_factor }}){% endif %}
+              <!-- <br>
+              tl;dr: {{ paper.tldr }} -->
+            </div>
+          </div>
+        {% endfor %}
+      </div>
+    {% endfor %}
+  </div>
+</div>
+
+
+
+
+
 <!-- ========== TEACHING ========== -->
-<div id="teaching" class="docs-section">
+<div class="docs-section" id="teaching">
   <h4>Teaching</h4>
   <div class="intro-text">
     Dr. Karimi enjoys teaching diverse audiences, covering broad topics in AI <b>for general audiences</b>, courses on ML <b>for undergrad/grad students</b>, and specialized courses <b>for practitioners</b>. In his first teaching term at the University of Waterloo, he was honored with the <b>2024 Igor Ivkovic Teaching Excellence Award</b>. Alongside the freely available content linked below, please <a href="mailto:amirhkarimi@gmail.com" target="_blank">reach out</a> to book Dr. Karimi for teaching engagements at your organization or event.
@@ -273,7 +244,7 @@ title: Home
       {% endfor %}
     </div>
   </div>
-  
+
 </div>
 
 
@@ -308,7 +279,7 @@ title: Home
   </ul>
 </div>
 
-<div class="docs-section" id="etc">
+<div class="docs-section" id="misc">
   <h4>Press, Funding, & Consultations</h4>
   <p>
     Dr. Karimi is grateful for the generous funding support from the <b>University of Waterloo</b>, <b>NSERC</b>, <b>Google</b>, and <b>Waterloo.AI</b>, enabling his team to push the boundaries of human-AI research.
