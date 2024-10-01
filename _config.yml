@@ -11,4 +11,3 @@ collections:
 
 # Other typical Jekyll settings
 markdown: kramdown  # Default markdown engine
-theme: minima  # You can specify any theme you use (e.g., minima, or custom theme)

@@ -8,10 +8,6 @@ title: Home
     Dr. Amir-Hossein Karimi is an Assistant Professor in the <a href="https://uwaterloo.ca/electrical-computer-engineering" target="_blank">Department of Electrical and Computer Engineering</a> with cross-appointment at the <a href="https://cs.uwaterloo.ca/" target="_blank">Cheriton School of Computer Science of the University of Waterloo</a> at the <a href="https://uwaterloo.ca/" target="_blank">University of Waterloo</a>, and a <a href="https://vectorinstitute.ai/" target="_blank">Vector Institute</a> Faculty Affiliate.
 
     He leads the <b>Collaborative Human-AI Reasoning Machines (CHARM) Lab</b>, dedicated to pioneering advances in AI to facilitate trustworthy human-AI collaborations.
-
-    <!-- The CHARM Lab's research agenda includes developing AI systems that can ensure AI safety and ethics, rectify adverse outcomes, and synergize human and machine capabilities, particularly in domains like healthcare and education.
-
-    This involves research and applied work in <b>causal inference, explainable AI,</b> and <b>program synthesis</b>. -->
   </p>
   <p>
     Dr. Karimi's scholarly contributions have been showcased almost exclusively at top-tier AI and ML venues including <b>NeurIPS, ICML, AAAI, AISTATS, ACM FAccT,</b> and <b>ACM AIES</b>. He has authored influential publications such as a comprehensive survey paper in the prestigious <b>ACM Computing Surveys</b>, holds a patent, and is a contributing author of a book chapter.
@@ -45,17 +41,12 @@ title: Home
     As AI becomes more embedded in everyday life, e.g., 🏥 healthcare, 🎓 education, 💼 finance, and 🚗 transportation, our dependency on these systems grows, and so does the risk of potential consequential errors.
 
     Our mission is to develop AI systems that can <b>detect</b> 🕵️‍♂️ potential issues, <b>correct</b> 🛠️ mistakes, and ultimately <b>perfect</b> 🤝 human-AI partnership where humans and machines work together seamlessly to achieve better outcomes. 🌍✨
-
-    <!-- build systems that allow users to understand, challenge, and improve AI decisions, fostering a partnership where humans and machines work together seamlessly to achieve better outcomes. 🌍✨ -->
   </p>
 
   <p>
     The CHARM Lab focuses on <u>causal inference</u>, <u>explainable AI</u>, and <u>neuro-symbolic</u> approaches in order to build systems that allow users to <b>understand</b>, <b>challenge</b>, and <b>improve</b> AI decisions.
 
-    <!-- The CHARM Lab's work focuses  to develop AI systems that can <b>detect</b> 🕵️‍♂️ potential issues, <b>correct</b> 🛠️ mistakes, and ultimately <b>perfect</b> 🤝 human-AI interactions. -->
-
     We occasionally also borrow insights from, and collaborate with leading experts in, such fields as <u>social sciences</u>, <u>cognitive science</u>, <u>human-computer interaction</u>, <u>multi-agent reinforcement learning</u>, <u>game theory</u>, and <u>behavioral economics</u>.
-
     
   </p>
 
@@ -73,20 +64,18 @@ title: Home
 
   <h5>Current Members</h5>
 
-  <!-- PI Section -->
   <div class="members-columns">
     <div class="members-card">
-      <img class="profile-pic" src="/assets/profile-pics/shiraz.jpg" alt="Amir-Hossein Karimi">
+      <img class="profile-pic" src={{ "/assets/profile-pics/shiraz.jpg" | prepend: site.baseurl }} alt="Amir-Hossein Karimi">
       <p class="name">Amir-Hossein Karimi</p>
       <p class="title">Principal Investigator (PI)</p>
     </div>
   </div>
 
-  <!-- Lab Members Section -->
   <div class="members-columns">
     {% for member in site.data.group.members %}
     <div class="members-card">
-      <img class="profile-pic" src="{{ member.image }}" alt="{{ member.name }}">
+      <img class="profile-pic" src="{{ member.image | prepend: site.baseurl }}" alt="{{ member.name }}">
       <p class="name">{{ member.name }}</p>
       <p class="title">
         {{ member.title }} 
@@ -102,7 +91,7 @@ title: Home
   <div class="members-columns">
     {% for alumni in site.data.group.alumni %}
     <div class="members-card">
-      <img class="profile-pic" src="{{ alumni.image }}" alt="{{ alumni.name }}">
+      <img class="profile-pic" src="{{ alumni.image | prepend: site.baseurl }}" alt="{{ alumni.name }}">
       <p class="name">{{ alumni.name }}</p>
       <p class="title">
         {{ alumni.title }} 
@@ -125,7 +114,7 @@ title: Home
     <sup>‡</sup> indicates equal contribution.
   </p>
 
-<!-- TODO: add journals, add transition to hover, add oral/spotlight, add images to card, and tl;dr, add PDF links, add code to others -->
+  <!-- TODO: add journals, add transition to hover, add oral/spotlight, add images to card, and tl;dr, add PDF links, add code to others -->
 
   <ul class="tab-nav">
     {% for category in site.data.publications.categories %}
@@ -143,7 +132,7 @@ title: Home
           <div class="paper-container">
             <div class="paper-buttons">
               {% if paper.paper_pdf %}
-                <a class="button" href="{{ paper.paper_pdf | prepend: site.baseurl }}" target="_blank">Paper</a>
+                <a class="button" href="{{ paper.paper_pdf}}" target="_blank">Paper</a>
               {% endif %}
               {% if paper.slides %}
                 <a class="button" href="{{ paper.slides | prepend: site.baseurl }}" target="_blank">Slide</a>
@@ -190,7 +179,7 @@ title: Home
       {% for content in site.data.teaching.general %}
       <div class="teaching-card">
         <div class="card-image">
-          <img src="{{ content.image }}" alt="{{ content.alt_text }}">
+          <img src="{{ content.image | prepend: site.baseurl }}" alt="{{ content.alt_text }}">
           <div class="card-overlay">
             {{ content.title }}
           </div>
@@ -210,7 +199,7 @@ title: Home
       {% for content in site.data.teaching.university %}
       <div class="teaching-card">
         <div class="card-image">
-          <img src="{{ content.image }}" alt="{{ content.alt_text }}">
+          <img src="{{ content.image | prepend: site.baseurl }}" alt="{{ content.alt_text }}">
           <div class="card-overlay">
             {{ content.title }}
           </div>
@@ -230,7 +219,7 @@ title: Home
       {% for content in site.data.teaching.specialized %}
       <div class="teaching-card">
         <div class="card-image">
-          <img src="{{ content.image }}" alt="{{ content.alt_text }}">
+          <img src="{{ content.image | prepend: site.baseurl }}" alt="{{ content.alt_text }}">
           <div class="card-overlay">
             {{ content.title }}
           </div>
