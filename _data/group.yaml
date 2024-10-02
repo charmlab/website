@@ -1,29 +1,29 @@
 members:
   - name: Mina Kebriaee
     title: "PhD Student"
-    advisor: "Prof. Tahvildari"
-    advisor_link: "https://uwaterloo.ca/electrical-computer-engineering/profile/ltahvild"
+    coadvisor: "Prof. Tahvildari"
+    coadvisor_link: "https://uwaterloo.ca/electrical-computer-engineering/profile/ltahvild"
     image: "/assets/profile-pics/female.jpg"
   - name: Zahra Khotanlou
     title: "PhD Student"
     image: "/assets/profile-pics/female.jpg"
   - name: Maryam Ghorbansabagh
     title: "Master's Student"
-    advisor: "Prof. Grossmann"
-    advisor_link: "https://uwaterloo.ca/psychology/profiles/igor-grossmann"
+    coadvisor: "Prof. Grossmann"
+    coadvisor_link: "https://uwaterloo.ca/psychology/profiles/igor-grossmann"
     image: "/assets/profile-pics/female.jpg"
   - name: Zachary Wu
     title: "Research Assistant"
-    advisor: "Prof. Tahvildari"
-    advisor_link: "https://uwaterloo.ca/electrical-computer-engineering/profile/ltahvild"
+    coadvisor: "Prof. Tahvildari"
+    coadvisor_link: "https://uwaterloo.ca/electrical-computer-engineering/profile/ltahvild"
     image: "/assets/profile-pics/male.jpg"
   # - name: Zahra Sorkhei
   #   title: "PhD Student"
   #   image: "/assets/profile-pics/female.jpg"
   # - name: Hosna Oyarhoseini
   #   title: "Master's Student"
-  #   advisor: "Prof. Lin"
-  #   advisor_link: "https://cs.uwaterloo.ca/about/people/jimmylin"
+  #   coadvisor: "Prof. Lin"
+  #   coadvisor_link: "https://cs.uwaterloo.ca/about/people/jimmylin"
   #   image: "/assets/profile-pics/female.jpg"
 
 alumni:
@@ -40,24 +40,36 @@ mentee:
   - name: Ahmad Ehyaei
     title: "Mentee"
     next: "Intl. Max Planck Research Schools"
+    coadvisor: "Prof. Farnadi"
+    coadvisor_link: "https://gfarnadi.github.io/"
     image: "/assets/profile-pics/male.jpg"
   - name: Miriam Rateike
     title: "Mentee"
     next: "Google PhD Fellow 2023"
+    coadvisor: "Prof. Valera"
+    coadvisor_link: "https://ivaleram.github.io/"
     image: "/assets/profile-pics/female.jpg"
   - name: Maryam Yalsavar
     title: "Mentee"
     next: "Huawei"
+    coadvisor: "Prof. Ghodsi"
+    coadvisor_link: "https://uwaterloo.ca/statistics-and-actuarial-science/profiles/ali-ghodsi"
     image: "/assets/profile-pics/female.jpg"
   - name: Ricardo Dominguez-Olmedo
     title: "Mentee"
     next: "Intl. Max Planck Research Schools"
+    coadvisor: "Prof. Schölkopf"
+    coadvisor_link: "https://is.mpg.de/~bs"
     image: "/assets/profile-pics/male.jpg"
   - name: Kiarash Mohammadi
     title: "Mentee"
     next: "MILA AI Institute"
+    coadvisor: "Prof. Valera"
+    coadvisor_link: "https://ivaleram.github.io/"
     image: "/assets/profile-pics/male.jpg"
   - name: Alexandra Walter
     title: "Mentee"
     next: "Helmholtz Data Sci. Sch. of Health"
+    coadvisor: "Prof. Valera"
+    coadvisor_link: "https://ivaleram.github.io/"
     image: "/assets/profile-pics/female.jpg"

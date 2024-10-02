@@ -79,8 +79,8 @@ title: Home
       <p class="name">{{ member.name }}</p>
       <p class="title">
         {{ member.title }} 
-        {% if member.advisor %}
-          <br> (w/ <a href="{{ member.advisor_link }}" target="_blank">{{ member.advisor }}</a>)
+        {% if member.coadvisor %}
+          <br> (w/ <a href="{{ member.coadvisor_link }}" target="_blank">{{ member.coadvisor }}</a>)
         {% endif %}
       </p>
     </div>
@@ -111,6 +111,9 @@ title: Home
       <p class="name">{{ mentee.name }}</p>
       <p class="title">
         {{ mentee.title }} 
+        {% if mentee.coadvisor %}
+          (w/ <a href="{{ mentee.coadvisor_link }}" target="_blank">{{ mentee.coadvisor }}</a>)
+        {% endif %}
         {% if mentee.next %}
           <br> (next: {{ mentee.next }})
         {% endif %}
