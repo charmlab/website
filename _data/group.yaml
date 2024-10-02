@@ -29,8 +29,35 @@ members:
 alumni:
   - name: Abubakar Bello
     title: "Research Assistant"
-    now: "Microsoft Inc."
+    next: "Microsoft Inc."
     image: "/assets/profile-pics/male.jpg"
   - name: Mohammadreza Alavi
     title: "Research Assistant"
     image: "/assets/profile-pics/male.jpg"
+
+
+mentee:
+  - name: Ahmad Ehyaei
+    title: "Mentee"
+    next: "Intl. Max Planck Research Schools"
+    image: "/assets/profile-pics/male.jpg"
+  - name: Miriam Rateike
+    title: "Mentee"
+    next: "Google PhD Fellow 2023"
+    image: "/assets/profile-pics/female.jpg"
+  - name: Maryam Yalsavar
+    title: "Mentee"
+    next: "Huawei"
+    image: "/assets/profile-pics/female.jpg"
+  - name: Ricardo Dominguez-Olmedo
+    title: "Mentee"
+    next: "Intl. Max Planck Research Schools"
+    image: "/assets/profile-pics/male.jpg"
+  - name: Kiarash Mohammadi
+    title: "Mentee"
+    next: "MILA AI Institute"
+    image: "/assets/profile-pics/male.jpg"
+  - name: Alexandra Walter
+    title: "Mentee"
+    next: "Helmholtz Data Sci. Sch. of Health"
+    image: "/assets/profile-pics/female.jpg"

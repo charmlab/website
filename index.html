@@ -54,7 +54,7 @@ title: Home
     <div class="twelve columns">
       <h5>Prospective Students</h5>
       <p>
-        The lab is always on the lookout for <u>exceptional</u> and <u>highly motivated</u> students/visitors across all levels (Bachelor's, Master's, PhD, Post-doctoral). 
+        The lab is always on the lookout for <b>exceptional</b> and <b>highly motivated</b> students/visitors across all levels (bachelor's, master's, doctoral, postdoctoral). 
 
         If you are passionate about building the future of trustworthy human-AI symbiosis, and have a strong background in <u>machine learning</u>, <u>computer science</u>, or <u>related fields</u> please fill out 
         <a href="https://forms.gle/yqLBPJb6Gok4J1jv8" target="_blank">this form</a>.
@@ -95,8 +95,24 @@ title: Home
       <p class="name">{{ alumni.name }}</p>
       <p class="title">
         {{ alumni.title }} 
-        {% if alumni.now %}
-          <br> (now: {{ alumni.now }})
+        {% if alumni.next %}
+          <br> (next: {{ alumni.next }})
+        {% endif %}
+      </p>
+    </div>
+    {% endfor %}
+  </div>
+
+  <h5>Past Mentees</h5>
+  <div class="members-columns">
+    {% for mentee in site.data.group.mentee %}
+    <div class="members-card">
+      <img class="profile-pic" src="{{ mentee.image | prepend: site.baseurl }}" alt="{{ mentee.name }}">
+      <p class="name">{{ mentee.name }}</p>
+      <p class="title">
+        {{ mentee.title }} 
+        {% if mentee.next %}
+          <br> (next: {{ mentee.next }})
         {% endif %}
       </p>
     </div>
