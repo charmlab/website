@@ -50,6 +50,14 @@ papers:
     acceptance_rate: "27.9%"
     tldr: lorem impsum
 
+  - title: "A Survey of Algorithmic Recourse: Contrastive Explanations and Consequential Recommendations"
+    authors: "<u><b>Karimi</b></u>, Barthe, Schölkopf, Valera"
+    venue: "ACM CSUR 2022"
+    categories: ["Selected", "Causal Inference", "Algorithmic Recourse"]
+    paper_pdf: "https://dl.acm.org/doi/full/10.1145/3527848"
+    impact_factor: "23.8"
+    tldr: lorem impsum
+
   - title: "Robustness Implies Fairness in Causal Algorithmic Recourse"
     authors: "Ehyaei, <u><b>Karimi</b></u>, Schölkopf, Maghsudi"
     venue: "ACM FAccT 2023"
@@ -128,6 +136,13 @@ papers:
     acceptance_rate: "40.0%"
     tldr: lorem impsum
 
+  - title: "SRP: Efficient class-aware embedding learning for large-scale data via supervised random projections"
+    authors: "<u><b>Karimi</b></u>, Wong, Ghodsi"
+    venue: "arxiv"
+    categories: ["Random Projections"]
+    paper_pdf: "https://arxiv.org/pdf/1811.03166"
+    tldr: lorem impsum
+
   - title: "Ensembles of Random Projections for Nonlinear Dimensionality Reduction"
     authors: "<u><b>Karimi</b></u>, Shafiee, Ghodsi, Wong"
     venue: "CVIS 2017"
@@ -147,7 +162,7 @@ papers:
   - title: "Discovery Radiomics via a Mixture Sequencers for Multi-Parameter MRI"
     authors: "<u><b>Karimi</b></u>, Chung, Shafiee, Khalvati, Haider, Ghodsi, Wong"
     venue: "ICIAR 2017"
-    categories: ["Random Projections", "AI for Social Good"]
+    categories: ["AI for Social Good"]
     paper_pdf: "https://link.springer.com/chapter/10.1007/978-3-319-59876-5_6"
     acceptance_rate: "40.0%"
     tldr: lorem impsum
@@ -166,4 +181,12 @@ papers:
     categories: ["Other"]
     paper_pdf: "https://ieeexplore.ieee.org/document/7532446"
     acceptance_rate: "40.0%"
+    tldr: lorem impsum
+
+  - title: "Automated detection and cell density assessment of keratocytes in the human corneal stroma from ultrahigh resolution optical coherence tomograms"
+    authors: "<u><b>Karimi</b></u>, Wong, Bizheva"
+    venue: "Biomedical Optics Express"
+    categories: ["AI for Social Good"]
+    paper_pdf: "https://opg.optica.org/boe/fulltext.cfm?uri=boe-2-10-2905"
+    impact_factor: "2.9"
     tldr: lorem impsum
