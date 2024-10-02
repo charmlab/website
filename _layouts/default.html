@@ -163,7 +163,18 @@
   </div>
 
   <!-- Google Analytics -->
-  {% include google_analytics.html %}
+  {% if site.data.main_info.google_analytics_tracking_id %}
+  <script async src="https://www.googletagmanager.com/gtag/js?id={{ site.data.main_info.google_analytics_tracking_id }}"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', '{{ site.data.main_info.google_analytics_tracking_id }}');
+  </script>
+  <!-- End Google Analytics -->
+  {% endif %}
+
 
   <!-- do not remove -->
   <span id="62cd7b7da1aff3196fdc26b60e396df9"></span>
