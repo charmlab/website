@@ -19,7 +19,7 @@ general:
     alt_text: "BBC Podcast"
     links:
       - label: "Listen on BBC Podcasts"
-        url: "https://example.com/"
+        url: "https://www.bbc.co.uk/sounds/play/m0023dsw"
 
 university:
   - title: "Intro to Machine Learning"
