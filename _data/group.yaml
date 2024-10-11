@@ -6,11 +6,13 @@ members:
     image: "/assets/profile-pics/female.jpg"
   - name: Zahra Khotanlou
     title: "PhD Student"
+    # image: "/assets/profile-pics/zahrakh2.png"
     image: "/assets/profile-pics/female.jpg"
   - name: Maryam Ghorbansabagh
     title: "Master's Student"
     coadvisor: "Prof. Grossmann"
     coadvisor_link: "https://uwaterloo.ca/psychology/profiles/igor-grossmann"
+    # image: "/assets/profile-pics/maryamgh.jpg"
     image: "/assets/profile-pics/female.jpg"
   - name: Zachary Wu
     title: "Research Assistant"
@@ -49,12 +51,12 @@ mentee:
     coadvisor: "Prof. Valera"
     coadvisor_link: "https://ivaleram.github.io/"
     image: "/assets/profile-pics/female.jpg"
-  - name: Maryam Yalsavar
-    title: "Mentee"
-    next: "Huawei"
-    coadvisor: "Prof. Ghodsi"
-    coadvisor_link: "https://uwaterloo.ca/statistics-and-actuarial-science/profiles/ali-ghodsi"
-    image: "/assets/profile-pics/female.jpg"
+  # - name: Maryam Yalsavar
+  #   title: "Mentee"
+  #   next: "Huawei"
+  #   coadvisor: "Prof. Ghodsi"
+  #   coadvisor_link: "https://uwaterloo.ca/statistics-and-actuarial-science/profiles/ali-ghodsi"
+  #   image: "/assets/profile-pics/female.jpg"
   - name: Ricardo Dominguez-Olmedo
     title: "Mentee"
     next: "Intl. Max Planck Research Schools"
@@ -69,7 +71,7 @@ mentee:
     image: "/assets/profile-pics/male.jpg"
   - name: Alexandra Walter
     title: "Mentee"
-    next: "Helmholtz Data Sci. Sch. of Health"
+    next: "Helmholtz Data Science School of Health"
     coadvisor: "Prof. Valera"
     coadvisor_link: "https://ivaleram.github.io/"
     image: "/assets/profile-pics/female.jpg"
