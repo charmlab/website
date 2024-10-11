@@ -1,12 +1,12 @@
 categories:
   - name: "Selected"
     id: "papers-selected"
-  - name: "Explainable AI"
-    id: "papers-explainable-ai"
-  - name: "Causal Inference"
-    id: "causal-inference"
   - name: "Algorithmic Recourse"
     id: "papers-recourse"
+  - name: "Causal Inference"
+    id: "causal-inference"
+  - name: "Explainable AI"
+    id: "papers-explainable-ai"
   # - name: "Human-AI Studies"
   #   id: "papers-human-ai"
   - name: "Random Projections"
@@ -23,7 +23,7 @@ papers:
     categories: ["Explainable AI"]
     paper_pdf: "https://proceedings.mlr.press/v235/machiraju24a.html"
     acceptance_rate: "27.5%"
-    tldr: lorem impsum
+    tldr: 
 
   - title: "Causal Adversarial Perturbations for Individual Fairness and Robustness in Heterogeneous Data Spaces"
     authors: "Ehyaei, Mohammadi, <u><b>Karimi</b></u>, Samadi, Farnadi"
@@ -31,7 +31,7 @@ papers:
     categories: ["Causal Inference"]
     paper_pdf: "https://ojs.aaai.org/index.php/AAAI/article/view/29070"
     acceptance_rate: "23.7%"
-    tldr: lorem impsum
+    tldr: 
 
   - title: "On the Relationship Between Explanation and Prediction: A Causal View"
     authors: "<u><b>Karimi</b></u>, Muandet, Kornblith, Schölkopf, Kim"
@@ -40,7 +40,7 @@ papers:
     paper_pdf: "https://proceedings.mlr.press/v202/karimi23a.html"
     slides: "/assets/slides/causalxai.pdf"
     acceptance_rate: "27.9%"
-    tldr: lorem impsum
+    tldr: do explanations actually explain the predictions? yes, among other things....
 
   - title: "On Data Manifolds Entailed by Structural Causal Models"
     authors: "Dominguez-Olmedo, <u><b>Karimi</b></u>, Arvanitidis, Schölkopf"
@@ -48,15 +48,7 @@ papers:
     categories: ["Causal Inference"]
     paper_pdf: "https://proceedings.mlr.press/v202/dominguez-olmedo23a.html"
     acceptance_rate: "27.9%"
-    tldr: lorem impsum
-
-  - title: "A Survey of Algorithmic Recourse: Contrastive Explanations and Consequential Recommendations"
-    authors: "<u><b>Karimi</b></u>, Barthe, Schölkopf, Valera"
-    venue: "ACM CSUR 2022"
-    categories: ["Selected", "Causal Inference", "Algorithmic Recourse"]
-    paper_pdf: "https://dl.acm.org/doi/full/10.1145/3527848"
-    impact_factor: "23.8"
-    tldr: lorem impsum
+    tldr: 
 
   - title: "Robustness Implies Fairness in Causal Algorithmic Recourse"
     authors: "Ehyaei, <u><b>Karimi</b></u>, Schölkopf, Maghsudi"
@@ -64,7 +56,7 @@ papers:
     categories: ["Causal Inference", "Algorithmic Recourse"]
     paper_pdf: "https://dl.acm.org/doi/abs/10.1145/3593013.3594057"
     acceptance_rate: "24.6%"
-    tldr: lorem impsum
+    tldr: as the title says...
 
   - title: "On the Robustness of Causal Algorithmic Recourse"
     authors: "Dominguez-Olmedo, <u><b>Karimi</b></u>, Schölkopf"
@@ -72,7 +64,7 @@ papers:
     categories: ["Causal Inference", "Algorithmic Recourse"]
     paper_pdf: "https://proceedings.mlr.press/v162/dominguez-olmedo22a.html"
     acceptance_rate: "21.9%"
-    tldr: lorem impsum
+    tldr: robustness of recourse is separate from robustness of prediction
 
   - title: "On the Fairness of Causal Algorithmic Recourse"
     authors: "von Kügelgen, <u><b>Karimi</b></u>, Bhatt, Valera, Weller, Schölkopf"
@@ -80,15 +72,15 @@ papers:
     categories: ["Causal Inference", "Algorithmic Recourse"]
     paper_pdf: "https://ojs.aaai.org/index.php/AAAI/article/view/21192"
     acceptance_rate: "15.0%"
-    tldr: lorem impsum
+    tldr: fairness of recourse is separate from fairness of prediction
 
-  - title: "Scaling Guarantees for Nearest Counterfactual Explanations"
-    authors: "Mohammadi, <u><b>Karimi</b></u>, Barthe, Valera"
-    venue: "ACM AIES 2021"
-    categories: ["Explainable AI"]
-    paper_pdf: "https://dl.acm.org/doi/10.1145/3461702.3462514"
-    acceptance_rate: "38.0%"
-    tldr: lorem impsum
+  - title: "A Survey of Algorithmic Recourse: Contrastive Explanations & Consequential Recommendations"
+    authors: "<u><b>Karimi</b></u>, Barthe, Schölkopf, Valera"
+    venue: "ACM CSUR 2022"
+    categories: ["Selected", "Causal Inference", "Algorithmic Recourse"]
+    paper_pdf: "https://dl.acm.org/doi/full/10.1145/3527848"
+    impact_factor: "23.8"
+    tldr: definitions, formulations, solutions, and prospects for recourse research
 
   - title: "Algorithmic Recourse under Imperfect Causal Knowledge: a Probabilistic Approach"
     authors: "<u><b>Karimi</b></u><sup>‡</sup>, von Kügelgen<sup>‡</sup>, Schölkopf, Valera"
@@ -98,7 +90,7 @@ papers:
     code: "https://github.com/charmlab/recourse"
     video: "https://www.youtube.com/watch?v=NBsS_KC23bE&ab_channel=Amir-HosseinKarimi"
     acceptance_rate: "20.1%"
-    tldr: lorem impsum
+    tldr: causal assumptions are rarely available; instead generate recourse probabilistically
 
   - title: "Algorithmic Recourse: from Counterfactual Explanations to Interventions"
     authors: "<u><b>Karimi</b></u>, Schölkopf, Valera"
@@ -108,17 +100,25 @@ papers:
     code: "https://github.com/charmlab/recourse"
     video: "https://www.youtube.com/watch?v=3ngjeesGePU&ab_channel=Amir-HosseinKarimi"
     acceptance_rate: "25.0%"
-    tldr: lorem impsum
+    tldr: real-world causal assumptions are needed for counterfactual explanations & recourse
+
+  - title: "Scaling Guarantees for Nearest Counterfactual Explanations"
+    authors: "Mohammadi, <u><b>Karimi</b></u>, Barthe, Valera"
+    venue: "ACM AIES 2021"
+    categories: ["Explainable AI", "Algorithmic Recourse"]
+    paper_pdf: "https://dl.acm.org/doi/10.1145/3461702.3462514"
+    acceptance_rate: "38.0%"
+    tldr: generate optimal counterfactual explanations using mixed-integer linear programs
 
   - title: "Model-Agnostic Counterfactual Explanations for Consequential Decisions"
     authors: "<u><b>Karimi</b></u>, Barthe, Valera"
     venue: "AISTATS 2019"
-    categories: ["Selected", "Explainable AI"]
+    categories: ["Selected", "Explainable AI", "Algorithmic Recourse"]
     paper_pdf: "https://proceedings.mlr.press/v108/karimi20a.html"
     code: "https://github.com/charmlab/mace"
     video: "https://www.youtube.com/watch?v=g7OeXoW4OeU&ab_channel=Amir-HosseinKarimi"
     acceptance_rate: "32.4%"
-    tldr: lorem impsum
+    tldr: generate optimal counterfactual explanations using satisfiability solvers
 
   - title: "Distance Correlation Autoencoder"
     authors: "Wang, <u><b>Karimi</b></u>, Ghodsi"
@@ -126,7 +126,7 @@ papers:
     categories: ["Other"]
     paper_pdf: "https://ieeexplore.ieee.org/document/8489291"
     acceptance_rate: "22.7%"
-    tldr: lorem impsum
+    tldr: 
 
   - title: "FEELS: a Full-Spectrum Enhanced Emotion Learning System for Assisting People with Autism Spectrum Disorder"
     authors: "<u><b>Karimi</b></u>, Boroomand, Pfisterer, Wong"
@@ -134,14 +134,14 @@ papers:
     categories: ["AI for Social Good"]
     paper_pdf: "https://openjournals.uwaterloo.ca/index.php/vsl/article/view/335"
     acceptance_rate: "40.0%"
-    tldr: lorem impsum
+    tldr: 
 
   - title: "SRP: Efficient class-aware embedding learning for large-scale data via supervised random projections"
     authors: "<u><b>Karimi</b></u>, Wong, Ghodsi"
-    venue: "arxiv"
+    venue: "arXiv"
     categories: ["Random Projections"]
     paper_pdf: "https://arxiv.org/pdf/1811.03166"
-    tldr: lorem impsum
+    tldr: 
 
   - title: "Ensembles of Random Projections for Nonlinear Dimensionality Reduction"
     authors: "<u><b>Karimi</b></u>, Shafiee, Ghodsi, Wong"
@@ -149,7 +149,7 @@ papers:
     categories: ["Random Projections"]
     paper_pdf: "https://openjournals.uwaterloo.ca/index.php/vsl/article/view/172"
     acceptance_rate: "40.0%"
-    tldr: lorem impsum
+    tldr: 
 
   - title: "Synthesizing Deep Neural Network Architectures using Biological Synaptic Strength Distributions"
     authors: "<u><b>Karimi</b></u>, Shafiee, Ghodsi, Wong"
@@ -157,7 +157,7 @@ papers:
     categories: ["Random Projections"]
     paper_pdf: "https://arxiv.org/abs/1707.00081"
     acceptance_rate: "40.0%"
-    tldr: lorem impsum
+    tldr: 
 
   - title: "Discovery Radiomics via a Mixture Sequencers for Multi-Parameter MRI"
     authors: "<u><b>Karimi</b></u>, Chung, Shafiee, Khalvati, Haider, Ghodsi, Wong"
@@ -165,15 +165,15 @@ papers:
     categories: ["AI for Social Good"]
     paper_pdf: "https://link.springer.com/chapter/10.1007/978-3-319-59876-5_6"
     acceptance_rate: "40.0%"
-    tldr: lorem impsum
+    tldr: 
 
   - title: "Key-Value Memory Networks for Directly Reading Documents"
     authors: "Miller, Fisch, Dodge, <u><b>Karimi</b></u>, Bordes, Weston"
     venue: "EMNLP 2016"
-    categories: ["Other"]
+    categories: ["Selected", "Other"]
     paper_pdf: "https://aclanthology.org/D16-1147/"
     acceptance_rate: "24.3%"
-    tldr: lorem impsum
+    tldr: use key-value pairs to efficiently retrieve and store information for improved document comprehension
 
   - title: "Spatio-temporal Saliency Detection using Abstracted Fully-Connected Graphical Models"
     authors: "<u><b>Karimi</b></u>, Shafiee, Scharfenberger, BenDaya, Haider, Talukdar, Clausi, Wong"
@@ -181,7 +181,7 @@ papers:
     categories: ["Other"]
     paper_pdf: "https://ieeexplore.ieee.org/document/7532446"
     acceptance_rate: "40.0%"
-    tldr: lorem impsum
+    tldr: 
 
   - title: "Automated detection and cell density assessment of keratocytes in the human corneal stroma from ultrahigh resolution optical coherence tomograms"
     authors: "<u><b>Karimi</b></u>, Wong, Bizheva"
@@ -189,4 +189,4 @@ papers:
     categories: ["AI for Social Good"]
     paper_pdf: "https://opg.optica.org/boe/fulltext.cfm?uri=boe-2-10-2905"
     impact_factor: "2.9"
-    tldr: lorem impsum
+    tldr: 
