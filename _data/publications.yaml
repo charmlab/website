@@ -7,8 +7,8 @@ categories:
     id: "causal-inference"
   - name: "Explainable AI"
     id: "papers-explainable-ai"
-  # - name: "Human-AI Studies"
-  #   id: "papers-human-ai"
+  - name: "Human-AI Studies"
+    id: "papers-human-ai"
   - name: "Random Projections"
     id: "papers-random-projections"
   - name: "AI for Social Good"
@@ -17,6 +17,22 @@ categories:
     id: "papers-other"
 
 papers:
+  - title: "Imagining and building wise machines: The centrality of AI metacognition"
+    authors: "Johnson, <u><b>Karimi</b></u>, Bengio, Chater, Gerstenberg, Larson, Levine, Mitchell, Rahwan, Schölkopf, Grossmann"
+    venue:
+    categories: ["Selected", "Explainable AI", "Human-AI Studies"]
+    paper_pdf: "https://arxiv.org/abs/2411.02478"
+    acceptance_rate: 
+    tldr: AI systems should integrate metacognitive strategies to enhance robustness, explainability, cooperation, and safety in complex real-world scenarios
+
+  # - title: "Explainable AI is Causal Discovery in Disguise"
+  #   authors: "<u><b>Karimi</b></u>"
+  #   venue:
+  #   categories: ["Selected", "Explainable AI", "Causal Inference"]
+  #   paper_pdf: ""
+  #   acceptance_rate: 
+  #   tldr: explainable ai is causal discovery in disguise
+
   - title: "Prospector Heads: Generalized Feature Attribution for Large Models & Data"
     authors: "Machiraju, Derry, Desai, Guha, <u><b>Karimi</b></u>, Zou, Altman, Ré, Mallick"
     venue: "ICML 2024"

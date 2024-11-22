@@ -30,10 +30,15 @@ title: Home
 
     Dr. Karimi has been invited to present talks, lectures, and tutorials at institutions such as MIT, Harvard, ETH Zurich, MILA, University College London, Cyber Valley Health, Institute of Mathematical Statistics, NEC Europe Labs, DeepMind, and Google Brain. He gave notable tutorials on Causal Explainable AI at KDD 2023 and Algorithmic Recourse at the Toronto ML Summit 2024.
 
-    Committed to fostering diverse perspectives and inclusivity, Dr. Karimi co-founded "<a href="https://instagram.com/princeofai/" target="_blank">Prince of AI</a>," an initiative providing free AI education to over 30,000 learners, which offers similar content to an introductory AI/ML course through posts, video reels, and webinars, breaking down educational barriers.
+    Committed to fostering inclusivity and breaking down educational barriers, Dr. Karimi co-founded "<a href="https://instagram.com/princeofai/" target="_blank">Prince of AI</a>," an initiative providing free AI education to over 30,000 learners. This platform offers similar content to an introductory AI/ML course through free posts, video reels, and webinars.
   </p>
   <p>
-    Prior to joining UWaterloo, Dr. Karimi accumulated significant industry experience at leading tech companies such as <a href="https://www.blackberry.com/" target="_blank">BlackBerry</a>, <a href="https://about.meta.com/" target="_blank">Meta (Facebook)</a>, <a href="https://ai.google/research/teams/brain/" target="_blank">Google Brain</a>, and <a href="https://www.deepmind.com/" target="_blank">DeepMind</a>, and provided consulting services for various startups and incubators including for <a href="https://www.nextcanada.com/next-ai/" target="_blank">NEXT AI</a>.
+    Prior to joining UWaterloo, Dr. Karimi accumulated significant industry experience at leading tech companies such as
+    <a href="https://www.blackberry.com/" target="_blank">BlackBerry</a> (2013),
+    <a href="https://about.meta.com/" target="_blank">Meta (Facebook)</a> (2014-6),
+    <a href="https://ai.google/research/teams/brain/" target="_blank">Google Brain</a> (2021),
+    and <a href="https://www.deepmind.com/" target="_blank">DeepMind</a> (2022),
+    and provided consulting services for various startups and incubators including for <a href="https://www.nextcanada.com/next-ai/" target="_blank">NEXT AI</a>.
 
     His contributions have earned him multiple accolades, such as the <b>UofToronto Spirit of Engineering Science Award</b> (2015), the <b>UWaterloo Alumni Gold Medal Award</b> (2018), the <b>NSERC Canada Graduate Scholarship - Doctorate</b> (2018), the <b>Google PhD Fellowship</b> (2021), the <b>ETH Zurich Medal</b> (2024), the <b>NSERC Discovery Grants</b> (2024), and the <b>Igor Ivkovic Teaching Excellence Award</b> (2024).
   </p>
@@ -75,7 +80,9 @@ title: Home
 
   <div class="members-columns">
     <div class="members-card">
-      <img class="profile-pic" src={{ "/assets/profile-pics/shiraz.png" | prepend: site.baseurl }} alt="Amir-Hossein Karimi">
+      <!-- <img class="profile-pic" src={{ "/assets/profile-pics/shiraz.png" | prepend: site.baseurl }} alt="Amir-Hossein Karimi"> -->
+      <!-- <img class="profile-pic" src={{ "/assets/profile-pics/tmls.jpeg" | prepend: site.baseurl }} alt="Amir-Hossein Karimi"> -->
+      <img class="profile-pic" src={{ "/assets/profile-pics/toronto.png" | prepend: site.baseurl }} alt="Amir-Hossein Karimi">
       <p class="name">Amir-Hossein Karimi</p>
       <p class="title">Principal Investigator (PI)</p>
     </div>
@@ -175,8 +182,8 @@ title: Home
 
             <div class="paper-details">
               📝 <b>{{ paper.title }}</b><br>
-              ✍️ {{ paper.authors }}<br>
-              🏛️ <i>{{ paper.venue }}</i>
+              ✍️ {{ paper.authors }}
+              {% if paper.venue %} <br>🏛️ <i>{{ paper.venue }}</i>{% endif %}
               {% if paper.acceptance_rate %} <span style="color:red;">(acceptance rate: {{ paper.acceptance_rate }})</span>{% endif %}
               {% if paper.impact_factor %} <span style="color:red;">(impact factor: {{ paper.impact_factor }})</span>{% endif %}
               {% if paper.tldr %} <br>✨ <b>TL;DR:</b> {{ paper.tldr }} {% endif %}
