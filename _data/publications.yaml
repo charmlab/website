@@ -101,7 +101,7 @@ papers:
   - title: "Algorithmic Recourse under Imperfect Causal Knowledge: a Probabilistic Approach"
     authors: "<u><b>Karimi</b></u><sup>‡</sup>, von Kügelgen<sup>‡</sup>, Schölkopf, Valera"
     venue: "NeurIPS 2020"
-    categories: ["Selected", "Causal Inference", "Algorithmic Recourse"]
+    categories: ["Causal Inference", "Algorithmic Recourse"]
     paper_pdf: "https://proceedings.neurips.cc/paper/2020/file/02a3c7fb3f489288ae6942498498db20-Paper.pdf"
     code: "https://github.com/charmlab/recourse"
     video: "https://www.youtube.com/watch?v=NBsS_KC23bE&ab_channel=Amir-HosseinKarimi"
@@ -111,7 +111,7 @@ papers:
   - title: "Algorithmic Recourse: from Counterfactual Explanations to Interventions"
     authors: "<u><b>Karimi</b></u>, Schölkopf, Valera"
     venue: "ACM FAccT 2021"
-    categories: ["Selected", "Causal Inference", "Algorithmic Recourse"]
+    categories: ["Causal Inference", "Algorithmic Recourse"]
     paper_pdf: "https://dl.acm.org/doi/10.1145/3442188.3445899"
     code: "https://github.com/charmlab/recourse"
     video: "https://www.youtube.com/watch?v=3ngjeesGePU&ab_channel=Amir-HosseinKarimi"
@@ -129,7 +129,7 @@ papers:
   - title: "Model-Agnostic Counterfactual Explanations for Consequential Decisions"
     authors: "<u><b>Karimi</b></u>, Barthe, Valera"
     venue: "AISTATS 2019"
-    categories: ["Selected", "Explainable AI", "Algorithmic Recourse"]
+    categories: ["Explainable AI", "Algorithmic Recourse"]
     paper_pdf: "https://proceedings.mlr.press/v108/karimi20a.html"
     code: "https://github.com/charmlab/mace"
     video: "https://www.youtube.com/watch?v=g7OeXoW4OeU&ab_channel=Amir-HosseinKarimi"
