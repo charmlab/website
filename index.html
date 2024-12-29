@@ -212,6 +212,9 @@ title: Home
       <h5><u>General Content</u></h5>
       {% for content in site.data.teaching.general %}
       <div class="teaching-card">
+        {% if content.banner %}
+        <div class="banner">{{content.banner}}</div>
+        {% endif %}
         <div class="card-image">
           <img src="{{ content.image | prepend: site.baseurl }}" alt="{{ content.alt_text }}">
           <div class="card-overlay">
@@ -232,6 +235,9 @@ title: Home
       <h5><u>University Courses</u></h5>
       {% for content in site.data.teaching.university %}
       <div class="teaching-card">
+        {% if content.banner %}
+        <div class="banner">{{content.banner}}</div>
+        {% endif %}
         <div class="card-image">
           <img src="{{ content.image | prepend: site.baseurl }}" alt="{{ content.alt_text }}">
           <div class="card-overlay">
@@ -252,6 +258,9 @@ title: Home
       <h5><u>Specialized Tutorials</u></h5>
       {% for content in site.data.teaching.specialized %}
       <div class="teaching-card">
+        {% if content.banner %}
+        <div class="banner">{{content.banner}}</div>
+        {% endif %}
         <div class="card-image">
           <img src="{{ content.image | prepend: site.baseurl }}" alt="{{ content.alt_text }}">
           <div class="card-overlay">

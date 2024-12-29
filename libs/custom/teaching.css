@@ -20,17 +20,29 @@
 .teaching-card {
   position: relative;
   margin-bottom: 20px;
-  overflow: hidden;
   border-radius: 15px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
   transition: transform 0.3s ease;
-/*  cursor: pointer;*/
-/*  background: #f5f5f5;*/
+  overflow: visible; /* Allows the banner to extend beyond the card */
 }
 
 .teaching-card:hover {
   transform: scale(1.06);
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.banner {
+  position: absolute; /* Position relative to the teaching card */
+  top: 5px; /* Moves the banner slightly above the card */
+  left: -15px; /* Moves the banner slightly to the left of the card */
+  background-color: #4CAF50; /* A pleasant green color */
+  color: white; /* Text color */
+  font-size: 1.25rem; /* Adjust font size */
+  font-weight: bold; /* Bold text */
+  padding: 5px 20px; /* Padding around the text */
+  transform: rotate(-40deg); /* Rotates the banner */
+  z-index: 1; /* Ensures the banner is on top */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Adds a shadow for better visibility */
 }
 
 .card-image img {
