@@ -26,9 +26,9 @@ general:
     # banner: Free!
 
 university:
-  - title: "Intro to Machine Learning"
+  - title: "Machine Learning Essentials"
     image: "/assets/logos/introtoml.svg"
-    alt_text: "Intro to Machine Learning"
+    alt_text: "Machine Learning Essentials"
     links:
       - label: "👉🏼 Master ML Today 👈🏼"
         url: "https://courses.amirhkarimi.com/"
