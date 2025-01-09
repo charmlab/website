@@ -7,7 +7,7 @@ general:
         url: "https://www.instagram.com/princeofai/"
       - label: "Courses"
         url: "https://princeofai.com/"
-    banner: Free!
+    # banner: Free!
 
   - title: "Success Studio"
     image: "/assets/logos/medium.svg"
@@ -15,7 +15,7 @@ general:
     links:
       - label: "Read on Medium"
         url: "https://amirhkarimi.medium.com/"
-    banner: Free!
+    # banner: Free!
 
   - title: "AI for Autism"
     image: "/assets/logos/tutorial.svg"
@@ -23,7 +23,7 @@ general:
     links:
       - label: "Listen on BBC Podcasts"
         url: "https://www.bbc.co.uk/sounds/play/m0023dsw"
-    banner: Free!
+    # banner: Free!
 
 university:
   - title: "Intro to Machine Learning"
@@ -32,7 +32,8 @@ university:
     links:
       - label: "👉🏼 Master ML Today 👈🏼"
         url: "https://courses.amirhkarimi.com/"
-    # banner: Buy now!
+    # banner: New!
+    banner: Enroll today!
 
   - title: "CausEthical Machine Learning"
     image: "/assets/logos/causality.svg"
@@ -42,7 +43,7 @@ university:
         url: "https://sites.google.com/view/uds-causethical-ml-seminar/home"
       - label: "Workshop"
         url: "https://sites.google.com/view/ellis-causethical-ml-workshop/about"
-    banner: Free!
+    # banner: Free!
 
   - title: "Dimension Reduction & PCA"
     image: "/assets/logos/online.svg"
@@ -50,7 +51,7 @@ university:
     links:
       - label: "Watch on YouTube"
         url: "https://www.youtube.com/watch?v=P7sxhm6AYjo&ab_channel=Amir-HosseinKarimi"
-    banner: Free!
+    # banner: Free!
 
 specialized:
   - title: "Algorithmic Recourse"
@@ -59,7 +60,7 @@ specialized:
     links:
       - label: "Watch on YouTube"
         url: "https://www.youtube.com/watch?v=amgBv-E3-sQ&list=PLH-rpi_agJT1SxLbG_VIxwMBWWsLmrTBk"
-    banner: Free!
+    # banner: Free!
 
   - title: "Causal Explainable AI"
     image: "/assets/logos/data.svg"
@@ -67,4 +68,4 @@ specialized:
     links:
       - label: "Get the slides"
         url: "https://sites.google.com/asu.edu/kdd-2023-tutorial/home"
-    banner: Free!
+    # banner: Free!
