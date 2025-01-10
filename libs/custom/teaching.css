@@ -93,9 +93,26 @@
   text-decoration: underline;
 }
 
+
+
 /* Mobile Responsiveness */
+/* Medium screens (up to 1024px) */
+@media (max-width: 1280px) {
+  .teaching-columns {
+    grid-template-columns: repeat(3, 1fr); /* 3 columns */
+  }
+}
+
+/* Medium screens (up to 1024px) */
+@media (max-width: 1024px) {
+  .teaching-columns {
+    grid-template-columns: repeat(3, 1fr); /* 3 columns */
+  }
+}
+
+/* Small screens (up to 768px) */
 @media (max-width: 768px) {
   .teaching-columns {
-    grid-template-columns: repeat(1, 1fr); /* Stack columns on small screens */
+    grid-template-columns: repeat(2, 1fr); /* 2 columns */
   }
 }

@@ -1,12 +1,20 @@
-general:
-  - title: "Prince of AI"
+public:
+  # - title: "Prince of AI"
+  #   image: "/assets/logos/growth.svg"
+  #   alt_text: "Prince of AI"
+  #   links:
+  #     - label: "Learn for Free"
+  #       url: "https://www.instagram.com/princeofai/"
+  #     - label: "Courses"
+  #       url: "https://princeofai.com/"
+  #   # banner: Free!
+
+  - title: "From AI to Life Lessons"
     image: "/assets/logos/growth.svg"
-    alt_text: "Prince of AI"
+    alt_text: "From AI to Life Lessons"
     links:
-      - label: "Learn for Free"
-        url: "https://www.instagram.com/princeofai/"
-      - label: "Courses"
-        url: "https://princeofai.com/"
+      - label: "Watch on YouTube"
+        url: "https://youtu.be/j61gU7QDztE"
     # banner: Free!
 
   - title: "Success Studio"
@@ -25,7 +33,7 @@ general:
         url: "https://www.bbc.co.uk/sounds/play/m0023dsw"
     # banner: Free!
 
-university:
+students:
   - title: "Machine Learning Essentials"
     image: "/assets/logos/introtoml.svg"
     alt_text: "Machine Learning Essentials"
@@ -53,7 +61,16 @@ university:
         url: "https://www.youtube.com/watch?v=P7sxhm6AYjo&ab_channel=Amir-HosseinKarimi"
     # banner: Free!
 
-specialized:
+professionals:
+  - title: "Machine Learning Essentials"
+    image: "/assets/logos/introtoml.svg"
+    alt_text: "Machine Learning Essentials"
+    links:
+      - label: "👉🏼 Master ML Today 👈🏼"
+        url: "https://courses.amirhkarimi.com/"
+    # banner: New!
+    banner: Enroll today!
+
   - title: "Algorithmic Recourse"
     image: "/assets/logos/teaching.svg"
     alt_text: "Toronto ML Summit Tutorial"
