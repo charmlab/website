@@ -149,8 +149,9 @@ title: Home
         {% for paper in filtered_papers %}
           <div class="paper-card">
             {% if paper.banner %}
-            <div class="banner">{{paper.banner}}</div>
+              <div class="banner">{{paper.banner}}</div>
             {% endif %}
+            
             <div class="paper-buttons">
               {% if paper.paper_pdf %}
                 <a class="button" href="{{ paper.paper_pdf}}" target="_blank">Paper</a>
@@ -201,11 +202,11 @@ title: Home
   <div class="teaching-columns">
     <!-- For everyone... -->
     <div class="teaching-category">
-      <h5><u>For everyone...</u></h5>
+      <div class="teaching-column-title"><u> For everyone...</u></div>
       {% for content in site.data.teaching.public %}
       <div class="teaching-card">
         {% if content.banner %}
-        <div class="banner">{{content.banner}}</div>
+          <div class="banner">{{content.banner}}</div>
         {% endif %}
         <div class="card-image">
           <img src="{{ content.image | prepend: site.baseurl }}" alt="{{ content.alt_text }}">
@@ -224,11 +225,11 @@ title: Home
 
     <!-- For students... -->
     <div class="teaching-category">
-      <h5><u>For students...</u></h5>
+      <div class="teaching-column-title"><u> For students...</u></div>
       {% for content in site.data.teaching.students %}
       <div class="teaching-card">
         {% if content.banner %}
-        <div class="banner">{{content.banner}}</div>
+          <div class="banner">{{content.banner}}</div>
         {% endif %}
         <div class="card-image">
           <img src="{{ content.image | prepend: site.baseurl }}" alt="{{ content.alt_text }}">
@@ -247,11 +248,11 @@ title: Home
 
     <!-- For professionals... -->
     <div class="teaching-category">
-      <h5><u>For professionals...</u></h5>
+      <div class="teaching-column-title"><u> For professionals...</u></div>
       {% for content in site.data.teaching.professionals %}
       <div class="teaching-card">
         {% if content.banner %}
-        <div class="banner">{{content.banner}}</div>
+          <div class="banner">{{content.banner}}</div>
         {% endif %}
         <div class="card-image">
           <img src="{{ content.image | prepend: site.baseurl }}" alt="{{ content.alt_text }}">

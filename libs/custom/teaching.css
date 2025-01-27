@@ -7,8 +7,13 @@
 .teaching-columns {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  margin-top: 10px;
+/*  margin-top: 10px;*/
   gap: 30px;
+}
+
+.teaching-column-title {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
 }
 
 .teaching-category {
@@ -31,18 +36,18 @@
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
-.banner {
+.teaching-card .banner {
   position: absolute; /* Position relative to the teaching card */
   top: 10px; /* Moves the banner slightly above the card */
-  left: -40px; /* Moves the banner slightly to the left of the card */
+  left: -20px; /* Moves the banner slightly to the left of the card */
   /* background-color: #4CAF50;*/ /* A pleasant green color */
   background-color: #E63946; /* A vibrant and inviting red color */
   color: white; /* Text color */
   font-size: 1.5rem; /* Adjust font size */
   font-weight: bold; /* Bold text */
-  padding: 5px 20px; /* Padding around the text */
+  padding: 5px 10px; /* Padding around the text */
   transform: rotate(-33deg); /* Rotates the banner */
-  z-index: 1; /* Ensures the banner is on top */
+  z-index: 10; /* Ensures the banner is on top */
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
   border-radius: 8px;
   background: linear-gradient(45deg, #E63946, #FF6F61);
@@ -80,6 +85,7 @@
 .card-link {
   padding: 10px;
   position: relative; /* This keeps the card content visible under the overlay */
+  font-size: 1.4rem;
 }
 
 .card-link a {
@@ -92,26 +98,57 @@
   text-decoration: underline;
 }
 
-
-
 /* Mobile Responsiveness */
-/* Medium screens (up to 1024px) */
 @media (max-width: 1280px) {
   .teaching-columns {
-    grid-template-columns: repeat(3, 1fr); /* 3 columns */
+    gap: 20px;
+  }
+  .teaching-column-title {
+    font-size: 2.0rem;
+  }
+  .teaching-card .banner {
+    font-size: 1.5rem;
+  }
+  .card-overlay {
+    font-size: 1.2rem;
+  }
+  .card-link {
+    font-size: 1.2rem;
   }
 }
 
-/* Medium screens (up to 1024px) */
-@media (max-width: 1024px) {
-  .teaching-columns {
-    grid-template-columns: repeat(3, 1fr); /* 3 columns */
-  }
-}
-
-/* Small screens (up to 768px) */
 @media (max-width: 768px) {
   .teaching-columns {
-    grid-template-columns: repeat(2, 1fr); /* 2 columns */
+    gap: 10px;
+  }
+  .teaching-column-title {
+    font-size: 1.5rem;
+  }
+  .teaching-card .banner {
+    font-size: 1.0rem;
+  }
+  .card-overlay {
+    font-size: 1.0rem;
+  }
+  .card-link {
+    font-size: 1.0rem;
+  }
+}
+
+@media (max-width: 414) {
+  .teaching-columns {
+    gap: 0px;
+  }
+  .teaching-column-title {
+    font-size: 1.0rem;
+  }
+  .teaching-card .banner {
+    font-size: .8rem;
+  }
+  .card-overlay {
+    font-size: .8rem;
+  }
+  .card-link {
+    font-size: .8rem;
   }
 }

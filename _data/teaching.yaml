@@ -43,7 +43,7 @@ students:
     # banner: New!
     banner: Enroll today!
 
-  - title: "CausEthical Machine Learning"
+  - title: "CausEthical ML"
     image: "/assets/logos/causality.svg"
     alt_text: "CausEthical ML"
     links:
@@ -53,9 +53,9 @@ students:
         url: "https://sites.google.com/view/ellis-causethical-ml-workshop/about"
     # banner: Free!
 
-  - title: "Dimension Reduction & PCA"
+  - title: "Dimensionality Reduction"
     image: "/assets/logos/online.svg"
-    alt_text: "Dimension Reduction & PCA"
+    alt_text: "Dimensionality Reduction"
     links:
       - label: "Watch on YouTube"
         url: "https://www.youtube.com/watch?v=P7sxhm6AYjo&ab_channel=Amir-HosseinKarimi"

@@ -19,7 +19,7 @@
 .banner {
   position: absolute; /* Position relative to the teaching card */
   top: 5px; /* Moves the banner slightly above the card */
-  left: -20px; /* Moves the banner slightly to the left of the card */
+  left: -15px; /* Moves the banner slightly to the left of the card */
   /* background-color: #4CAF50;*/ /* A pleasant green color */
   background-color: #E63946; /* A vibrant and inviting red color */
   color: white; /* Text color */
@@ -37,7 +37,7 @@
 .paper-buttons {
   display: flex;
   flex-direction: column;
-  padding: 0px;
+  padding: 0px 5px;
   margin-right: 10px; /* Add space between buttons and paper details */
 }
 
@@ -65,3 +65,17 @@
 /*  margin-bottom: 5px;*/
 }
 
+
+
+@media (max-width: 768px) {
+
+  .paper-card {
+    padding: 10px;
+  }
+
+  .paper-buttons a {
+    padding: 0px 5px; /* Adjust button padding */
+    font-size: 0.9rem; /* Adjust font size */
+  }
+
+}
