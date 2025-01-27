@@ -1,4 +1,9 @@
 members:
+  - name: Hamdi Altaheri 
+    title: "Postdoctoral Fellow"
+    coadvisor: "Prof. Karray"
+    coadvisor_link: "https://uwaterloo.ca/scholar/karray"
+    image: "/assets/profile-pics/male.jpg"
   - name: Mina Kebriaee
     title: "PhD Student"
     coadvisor: "Prof. Tahvildari"

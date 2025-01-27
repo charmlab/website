@@ -35,7 +35,7 @@
   position: absolute; /* Position relative to the teaching card */
   top: 10px; /* Moves the banner slightly above the card */
   left: -40px; /* Moves the banner slightly to the left of the card */
-/*  background-color: #4CAF50;*/ /* A pleasant green color */
+  /* background-color: #4CAF50;*/ /* A pleasant green color */
   background-color: #E63946; /* A vibrant and inviting red color */
   color: white; /* Text color */
   font-size: 1.5rem; /* Adjust font size */
@@ -46,8 +46,7 @@
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
   border-radius: 8px;
   background: linear-gradient(45deg, #E63946, #FF6F61);
-
-/*  text-shadow: 0 0 10px rgba(255, 255, 255, 0.8);*/
+  /* text-shadow: 0 0 10px rgba(255, 255, 255, 0.8);*/
   animation: pulse 2s infinite;
   @keyframes pulse {
       0% { transform: scale(1); }

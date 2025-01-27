@@ -147,7 +147,10 @@ title: Home
         <!-- Filter papers by category -->
         {% assign filtered_papers = site.data.publications.papers | where_exp: "paper", "paper.categories contains category.name" %}
         {% for paper in filtered_papers %}
-          <div class="paper-container">
+          <div class="paper-card">
+            {% if paper.banner %}
+            <div class="banner">{{paper.banner}}</div>
+            {% endif %}
             <div class="paper-buttons">
               {% if paper.paper_pdf %}
                 <a class="button" href="{{ paper.paper_pdf}}" target="_blank">Paper</a>

@@ -1,9 +1,37 @@
-.paper-container {
+.paper-card {
   display: flex;
   align-items: center;
   margin-bottom: 15px;
-  /*padding: 10px;
-  background-color: #F1F1F1;*/
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease;
+  padding: 10px;
+  position: relative;
+  overflow: visible;
+/*  background-color: #F1F1F1;*/
+}
+
+.paper-card:hover {
+  transform: scale(1.06);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.banner {
+  position: absolute; /* Position relative to the teaching card */
+  top: 5px; /* Moves the banner slightly above the card */
+  left: -20px; /* Moves the banner slightly to the left of the card */
+  /* background-color: #4CAF50;*/ /* A pleasant green color */
+  background-color: #E63946; /* A vibrant and inviting red color */
+  color: white; /* Text color */
+  font-size: 1.5rem; /* Adjust font size */
+  font-weight: bold; /* Bold text */
+  padding: 5px 20px; /* Padding around the text */
+  transform: rotate(-33deg); /* Rotates the banner */
+  z-index: 1; /* Ensures the banner is on top */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
+  border-radius: 8px;
+  background: linear-gradient(45deg, #E63946, #FF6F61);
+  /* text-shadow: 0 0 10px rgba(255, 255, 255, 0.8);*/
 }
 
 .paper-buttons {
@@ -36,3 +64,4 @@
   font-weight: bold;
 /*  margin-bottom: 5px;*/
 }
+

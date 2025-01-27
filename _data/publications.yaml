@@ -24,6 +24,7 @@ papers:
     paper_pdf: "https://arxiv.org/abs/2411.02478"
     acceptance_rate: 
     tldr: AI systems should integrate metacognitive strategies to enhance robustness, explainability, cooperation, and safety in complex real-world scenarios
+    banner: new!
 
   # - title: "Explainable AI is Causal Discovery in Disguise"
   #   authors: "<u><b>Karimi</b></u>"
