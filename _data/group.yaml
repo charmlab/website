@@ -4,54 +4,81 @@ members:
     coadvisor: "Prof. Karray"
     coadvisor_link: "https://uwaterloo.ca/scholar/karray"
     image: "/assets/profile-pics/male.jpg"
+  
+  - name: Zahra Khotanlou
+    title: "PhD Student"
+    # image: "/assets/profile-pics/zahrakh2.png"
+    image: "/assets/profile-pics/female.jpg"
+  
   - name: Mina Kebriaee
     title: "PhD Student"
     coadvisor: "Prof. Tahvildari"
     coadvisor_link: "https://uwaterloo.ca/electrical-computer-engineering/profile/ltahvild"
     image: "/assets/profile-pics/female.jpg"
-  - name: Zahra Khotanlou
-    title: "PhD Student"
-    # image: "/assets/profile-pics/zahrakh2.png"
-    image: "/assets/profile-pics/female.jpg"
+  
   - name: Maryam Ghorbansabagh
     title: "Master's Student"
     coadvisor: "Prof. Grossmann"
     coadvisor_link: "https://uwaterloo.ca/psychology/profiles/igor-grossmann"
     # image: "/assets/profile-pics/maryamgh.jpg"
     image: "/assets/profile-pics/female.jpg"
+  
+  - name: Hosna Oyarhoseini
+    title: "Master's Student"
+    coadvisor: "Prof. Lin"
+    coadvisor_link: "https://cs.uwaterloo.ca/about/people/jimmylin"
+    image: "/assets/profile-pics/female.jpg"
+
+  # - name: Nafiseh Bafghi
+  #   title: "Master's Student"
+  #   coadvisor: "Prof. Grossmann"
+  #   coadvisor_link: "https://uwaterloo.ca/psychology/profiles/igor-grossmann"
+  #   image: "/assets/profile-pics/female.jpg"
+
+  # - name: ???? ????
+  #   title: "Master's Student"
+  #   coadvisor: "Prof. Khandani"
+  #   coadvisor_link: "https://uwaterloo.ca/electrical-computer-engineering/profile/khandani"
+  #   image: "/assets/profile-pics/male.jpg"
+  
+  # - name: Samee Arif
+  #   title: "Master's Student"
+  #   coadvisor: "Prof. Ghodsi"
+  #   coadvisor_link: "https://uwaterloo.ca/statistics-and-actuarial-science/profiles/ali-ghodsi"
+  #   image: "/assets/profile-pics/male.jpg"
+
+alumni:
+  - name: Hamza Mostafa
+    title: "Undergraduate Student"
+    next: "OpenAI Inc."
+    image: "/assets/profile-pics/male.jpg"
+    
   - name: Zachary Wu
-    title: "Research Assistant"
+    title: "Master's Student"
     coadvisor: "Prof. Tahvildari"
     coadvisor_link: "https://uwaterloo.ca/electrical-computer-engineering/profile/ltahvild"
     image: "/assets/profile-pics/male.jpg"
-  # - name: Zahra Sorkhei
-  #   title: "PhD Student"
-  #   image: "/assets/profile-pics/female.jpg"
-  # - name: Hosna Oyarhoseini
-  #   title: "Master's Student"
-  #   coadvisor: "Prof. Lin"
-  #   coadvisor_link: "https://cs.uwaterloo.ca/about/people/jimmylin"
-  #   image: "/assets/profile-pics/female.jpg"
 
-alumni:
   - name: Abubakar Bello
-    title: "Research Assistant"
+    title: "Undergraduate Student"
     next: "Microsoft Inc."
     image: "/assets/profile-pics/male.jpg"
+  
   - name: Mohammadreza Alavi
-    title: "Research Assistant"
+    title: "Undergraduate Student"
     image: "/assets/profile-pics/male.jpg"
+  
 
 
 mentee:
   - name: Ahmad Ehyaei
-    title: "Mentee"
+    title: "PhD Student"
     next: "Intl. Max Planck Research Schools"
     coadvisor: "Prof. Farnadi"
     coadvisor_link: "https://gfarnadi.github.io/"
     image: "/assets/profile-pics/male.jpg"
   - name: Miriam Rateike
-    title: "Mentee"
+    title: "PhD Student"
     next: "Google PhD Fellow 2023"
     coadvisor: "Prof. Valera"
     coadvisor_link: "https://ivaleram.github.io/"
@@ -63,19 +90,19 @@ mentee:
   #   coadvisor_link: "https://uwaterloo.ca/statistics-and-actuarial-science/profiles/ali-ghodsi"
   #   image: "/assets/profile-pics/female.jpg"
   - name: Ricardo Dominguez-Olmedo
-    title: "Mentee"
+    title: "Master's Student"
     next: "Intl. Max Planck Research Schools"
     coadvisor: "Prof. Schölkopf"
     coadvisor_link: "https://is.mpg.de/~bs"
     image: "/assets/profile-pics/male.jpg"
   - name: Kiarash Mohammadi
-    title: "Mentee"
+    title: "Master's Student"
     next: "MILA AI Institute"
     coadvisor: "Prof. Valera"
     coadvisor_link: "https://ivaleram.github.io/"
     image: "/assets/profile-pics/male.jpg"
   - name: Alexandra Walter
-    title: "Mentee"
+    title: "Master's Student"
     next: "Helmholtz Data Science School of Health"
     coadvisor: "Prof. Valera"
     coadvisor_link: "https://ivaleram.github.io/"
