@@ -7,7 +7,7 @@ categories:
     id: "causal-inference"
   - name: "Explainable AI"
     id: "papers-explainable-ai"
-  - name: "Metacognitive AI"
+  - name: "Human-AI"
     id: "papers-human-ai"
   - name: "Random Projections"
     id: "papers-random-projections"
@@ -17,22 +17,43 @@ categories:
     id: "papers-other"
 
 papers:
+
+  - title: "Explainable AI is Causality in Disguise"
+    authors: "<u><b>Karimi</b></u>"
+    # venue: NeurIPS Position Papers
+    categories: ["Selected", "Explainable AI", "Causal Inference"]
+    paper_pdf: ""
+    acceptance_rate: 
+    tldr: Solving XAI requires us to make explicit our causal assumptions of the world
+    banner: new!
+
+  - title: "From Individual to Multi-Agent Algorithmic Recourse: Minimizing the Welfare Gap via Capacitated Bipartite Matching"
+    authors: "Khotanlou, Larson, <u><b>Karimi</b></u>"
+    venue:
+    categories: ["Selected", "Algorithmic Recourse"]
+    paper_pdf: "https://arxiv.org/abs/2508.11070"
+    acceptance_rate: 
+    tldr: Providing recourse to any one individual affects what recourse can be provided to other individuals
+    banner: new!
+
   - title: "Imagining and building wise machines: The centrality of AI metacognition"
     authors: "Johnson, <u><b>Karimi</b></u>, Bengio, Chater, Gerstenberg, Larson, Levine, Mitchell, Rahwan, Schölkopf, Grossmann"
-    venue:
-    categories: ["Selected", "Explainable AI", "Metacognitive AI"]
+    venue: Trends in Cognitive Sciences
+    categories: ["Selected", "Explainable AI", "Human-AI"]
     paper_pdf: "https://arxiv.org/abs/2411.02478"
     acceptance_rate: 
     tldr: AI systems should integrate metacognitive strategies to enhance robustness, explainability, cooperation, and safety in complex real-world scenarios
     banner: new!
 
-  # - title: "Explainable AI is Causal Discovery in Disguise"
-  #   authors: "<u><b>Karimi</b></u>"
-  #   venue:
-  #   categories: ["Selected", "Explainable AI", "Causal Inference"]
-  #   paper_pdf: ""
-  #   acceptance_rate: 
-  #   tldr: explainable ai is causal discovery in disguise
+  - title: "Temporal Convolutional Transformer for EEG Based Motor Imagery Decoding"
+    authors: "Altaheri, Karray, <u><b>Karimi</b></u>"
+    venue: Nature Scientific Reports
+    categories: ["Selected", "AI for Social Good"]
+    paper_pdf: "https://arxiv.org/abs/2508.11070"
+    acceptance_rate: 
+    tldr: TCFormer leverages CNNs, transformers, and temporal convolutions to decode EEG motor imagery, significantly outperforming existing BCI approaches
+    banner: new!
+
 
   - title: "Prospector Heads: Generalized Feature Attribution for Large Models & Data"
     authors: "Machiraju, Derry, Desai, Guha, <u><b>Karimi</b></u>, Zou, Altman, Ré, Mallick"
