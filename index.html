@@ -26,17 +26,22 @@ title: Home
 <div class="docs-section" id="group">
   <h4>✨CHARM Lab✨</h4>
   <p>
-    The mandate of the <b>Collaborative Human-AI Reasoning Machines (✨CHARM✨) Lab</b> is to enhance the integration of AI systems into human decision-making, ensuring they are not only <b>powerful</b> but also <b>safe</b>, <b>reliable</b>, and <b>aligned</b> with human values.
 
     As AI becomes more embedded in everyday life, e.g., healthcare, education, finance, and transportation, our dependency on these systems grows, and so does the risk of potential consequential errors.
 
-    Our mission is to develop AI systems that can <b>detect</b> 🕵️‍♂️ potential issues, <b>correct</b> 🛠️ mistakes, and ultimately <b>perfect</b> 🤝 human-AI partnership where humans and machines work together to achieve better outcomes. 🌍✨
-  </p>
 
-  <p>
-    The CHARM Lab focuses on <u>explainable AI</u>, <u>causal inference</u>, and <u>neuro-symbolic</u> approaches in order to build systems that allow users to <b>understand</b>, <b>challenge</b>, and <b>improve</b> AI decisions.
+    The mandate of the <b>Collaborative Human-AI Reasoning Machines (✨CHARM✨) Lab</b> is to enhance the integration of AI systems into human decision-making, to build systems that allow users to <b>understand</b> 🔍, <b>challenge</b> ⚖️, and <b>improve</b> 🚀 AI decisions.
+    <!-- ensuring they are not only <b>powerful</b> but also <b>safe</b>, <b>reliable</b>, and <b>aligned</b> with human values. -->
 
-    We occasionally also borrow insights from, and collaborate with leading experts in, such fields as <u>social sciences</u>, <u>cognitive science</u>, <u>human-computer interaction</u>, <u>multi-agent reinforcement learning</u>, <u>game theory</u>, and <u>behavioral economics</u>.
+    <!-- As AI becomes more embedded in everyday life, e.g., healthcare, education, finance, and transportation, our dependency on these systems grows, and so does the risk of potential consequential errors. -->
+
+    <!-- Our mission is to develop AI systems that can <b>detect</b> 🕵️‍♂️ potential issues, <b>correct</b> 🛠️ mistakes, and ultimately <b>perfect</b> 🤝 human-AI partnership where humans and machines work together to achieve better outcomes. 🌍✨ -->
+  <!-- </p> -->
+
+  <!-- <p> -->
+    <!-- The CHARM Lab focuses on <u>explainable AI</u>, <u>causal inference</u>, and <u>neuro-symbolic</u> approaches in order to build systems that allow users to <b>understand</b>, <b>challenge</b>, and <b>improve</b> AI decisions. -->
+
+    The CHARM Lab brings expertise in <u>explainable AI</u>, <u>causal inference</u>, and <u>neuro-symbolic</u> approaches, and collaborates with leading experts in such fields as <u>social psychology</u>, <u>cognitive science</u>, <u>human-computer interaction</u>, <u>multi-agent reinforcement learning</u>, <u>game theory</u>, and <u>behavioral economics</u>.
     
   </p>
 
@@ -87,6 +92,9 @@ title: Home
       <p class="name">{{ alumni.name }}</p>
       <p class="title">
         {{ alumni.title }} 
+        {% if alumni.coadvisor %}
+          <br> (w/ <a href="{{ alumni.coadvisor_link }}" target="_blank">{{ alumni.coadvisor }}</a>)
+        {% endif %}
         {% if alumni.next %}
           <br> (next: {{ alumni.next }})
         {% endif %}
@@ -104,7 +112,7 @@ title: Home
       <p class="title">
         {{ mentee.title }} 
         {% if mentee.coadvisor %}
-          (w/ <a href="{{ mentee.coadvisor_link }}" target="_blank">{{ mentee.coadvisor }}</a>)
+          <br> (w/ <a href="{{ mentee.coadvisor_link }}" target="_blank">{{ mentee.coadvisor }}</a>)
         {% endif %}
         {% if mentee.next %}
           <br> (next: {{ mentee.next }})
@@ -190,13 +198,15 @@ title: Home
 <div class="docs-section" id="teaching">
   <h4>Teaching</h4>
   <div class="intro-text">
-    Dr. Karimi enjoys teaching diverse audiences, covering broad topics in AI <b>for general audiences</b>, courses on ML <b>for undergrad/grad students</b>, and specialized courses <b>for practitioners</b>. In his first teaching term at the University of Waterloo, he was honored with the <b>2024 Igor Ivkovic Teaching Excellence Award</b>.
+    Dr. Karimi enjoys teaching diverse audiences, covering broad topics in AI <u>for general audiences</u>, courses on ML <u>for undergrad/grad students</u>, and specialized courses <u>for practitioners</u>. In his first teaching term at the University of Waterloo, he was honored with the <b>2024 Igor Ivkovic Teaching Excellence Award</b>.
 
-    Dr. Karimi has been invited to present talks, lectures, and tutorials at institutions such as MIT, Harvard, ETH Zurich, MILA, University College London, Cyber Valley Health, Institute of Mathematical Statistics, NEC Europe Labs, DeepMind, and Google Brain. He gave notable tutorials on Causal Explainable AI at KDD 2023 and Algorithmic Recourse at the Toronto ML Summit 2024.
+    Dr. Karimi has been invited to present talks, lectures, and tutorials at institutions such as MIT, Harvard, ETH Zurich, MILA, University College London, Cyber Valley Health, Institute of Mathematical Statistics, NEC Europe Labs, DeepMind, and Google Brain. He gave notable tutorials at KDD 2023 (on Causal Explainable AI) and at the Toronto ML Summit 2024 (on Algorithmic Recourse).
 
     <!-- Committed to fostering inclusivity and breaking down educational barriers, Dr. Karimi co-founded "<a href="https://instagram.com/princeofai/" target="_blank">Prince of AI</a>," an initiative providing free AI education to over 30,000 learners. This platform offers similar content to an introductory AI/ML course through free posts, video reels, and webinars. -->
 
-    Please <a href="mailto:amirhkarimi@gmail.com" target="_blank">reach out</a> to book Dr. Karimi for teaching engagements at your organization or event.
+    <!-- <br/> -->
+
+    To book Dr. Karimi for teaching engagements at your organization or event, <a href="mailto:amirhkarimi@gmail.com" target="_blank">reach out here</a>.
   </div>
 
   <div class="teaching-columns">

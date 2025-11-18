@@ -1,33 +1,90 @@
 members:
-  - name: Hamdi Altaheri 
+  - name: Mohammad Hadi Sepanj
     title: "Postdoctoral Fellow"
-    coadvisor: "Prof. Karray"
-    coadvisor_link: "https://uwaterloo.ca/scholar/karray"
     image: "/assets/profile-pics/male.jpg"
-  
+
   - name: Zahra Khotanlou
-    title: "PhD Student"
+    title: "Master's Student"
     # image: "/assets/profile-pics/zahrakh2.png"
     image: "/assets/profile-pics/female.jpg"
-  
-  - name: Mina Kebriaee
-    title: "PhD Student"
+
+  # - name: Hashir Ahmed
+  #   title: "Master's Student"
+  #   image: "/assets/profile-pics/male.jpg"
+
+  # - name: Chenghao Tan
+  #   title: "Master's Student"
+  #   image: "/assets/profile-pics/male.jpg"
+
+  - name: Farzan Mirshekari
+    title: "Undergraduate Student"
     coadvisor: "Prof. Tahvildari"
     coadvisor_link: "https://uwaterloo.ca/electrical-computer-engineering/profile/ltahvild"
-    image: "/assets/profile-pics/female.jpg"
-  
+    image: "/assets/profile-pics/male.jpg"
+
+
+
+  - name: Eugene Yu
+    title: "Postdoctoral Fellow"
+    coadvisor: "Prof. Grossmann"
+    coadvisor_link: "https://uwaterloo.ca/psychology/profiles/igor-grossmann"
+    image: "/assets/profile-pics/male.jpg"
+
   - name: Maryam Ghorbansabagh
     title: "Master's Student"
     coadvisor: "Prof. Grossmann"
     coadvisor_link: "https://uwaterloo.ca/psychology/profiles/igor-grossmann"
     # image: "/assets/profile-pics/maryamgh.jpg"
     image: "/assets/profile-pics/female.jpg"
-  
+
+  - name: Ahmed Abdelaal
+    title: "PhD Student"
+    image: "/assets/profile-pics/male.jpg"
+
+  - name: Dongzhuyuan Lu
+    title: "Master's Student"
+    image: "/assets/profile-pics/male.jpg"
+
+  - name: Tom Wielemaker
+    title: "Undergraduate Student"
+    image: "/assets/profile-pics/male.jpg"
+
+
+
+
   - name: Hosna Oyarhoseini
     title: "Master's Student"
     coadvisor: "Prof. Lin"
     coadvisor_link: "https://cs.uwaterloo.ca/about/people/jimmylin"
     image: "/assets/profile-pics/female.jpg"
+
+  - name: Mina Kebriaee
+    title: "PhD Student"
+    coadvisor: "Prof. Tahvildari"
+    coadvisor_link: "https://uwaterloo.ca/electrical-computer-engineering/profile/ltahvild"
+    image: "/assets/profile-pics/female.jpg"
+
+  # - name: Mina Mirzadehsarcheshmeh
+  #   title: "PhD Student"
+  #   coadvisor: "Prof. Khandani"
+  #   coadvisor_link: "https://uwaterloo.ca/electrical-computer-engineering/profile/khandani"
+  #   image: "/assets/profile-pics/female.jpg"
+
+  # - name: Kimia Ghodsifar
+  #   title: "PhD Student"
+  #   coadvisor: "Prof. Khandani"
+  #   coadvisor_link: "https://uwaterloo.ca/electrical-computer-engineering/profile/khandani"
+  #   image: "/assets/profile-pics/female.jpg"
+
+  # - name: Juliette Sinnott
+  #   title: "PhD Student"
+  #   coadvisor: "Prof. Kohandel"
+  #   coadvisor_link: "https://uwaterloo.ca/applied-mathematics/profiles/mohammad-kohandel"
+  #   image: "/assets/profile-pics/female.jpg"
+
+
+  # Reezan, Rishith, Aryan, Akil, Samyar, Charlotte
+  # Hadi Sepanj, Juliette, Mina, Kimia
 
   # - name: Nafiseh Bafghi
   #   title: "Master's Student"
@@ -48,15 +105,32 @@ members:
   #   image: "/assets/profile-pics/male.jpg"
 
 alumni:
-  - name: Hamza Mostafa
-    title: "Undergraduate Student"
-    next: "OpenAI Inc."
+  - name: Hamdi Altaheri 
+    title: "Postdoctoral Fellow"
+    coadvisor: "Prof. Karray"
+    coadvisor_link: "https://uwaterloo.ca/scholar/karray"
+    next: King Saud University
     image: "/assets/profile-pics/male.jpg"
-    
+
+  # - name: Mina Kebriaee
+  #   title: "Master's Student"
+  #   coadvisor: "Prof. Tahvildari"
+  #   coadvisor_link: "https://uwaterloo.ca/electrical-computer-engineering/profile/ltahvild"
+  #   image: "/assets/profile-pics/female.jpg"
+
   - name: Zachary Wu
     title: "Master's Student"
     coadvisor: "Prof. Tahvildari"
     coadvisor_link: "https://uwaterloo.ca/electrical-computer-engineering/profile/ltahvild"
+    image: "/assets/profile-pics/male.jpg"
+
+  # - name: Jieming Yu
+  #   title: "Master's Student"
+  #   image: "/assets/profile-pics/male.jpg"
+
+  - name: Hamza Mostafa
+    title: "Undergraduate Student"
+    next: "OpenAI Inc."
     image: "/assets/profile-pics/male.jpg"
 
   - name: Abubakar Bello
@@ -67,7 +141,6 @@ alumni:
   - name: Mohammadreza Alavi
     title: "Undergraduate Student"
     image: "/assets/profile-pics/male.jpg"
-  
 
 
 mentee:
@@ -91,7 +164,8 @@ mentee:
   #   image: "/assets/profile-pics/female.jpg"
   - name: Ricardo Dominguez-Olmedo
     title: "Master's Student"
-    next: "Intl. Max Planck Research Schools"
+    # next: "Intl. Max Planck Research Schools"
+    next: "Google PhD Fellow 2026"
     coadvisor: "Prof. Schölkopf"
     coadvisor_link: "https://is.mpg.de/~bs"
     image: "/assets/profile-pics/male.jpg"

@@ -1,12 +1,12 @@
 categories:
   - name: "Selected"
     id: "papers-selected"
+  - name: "Explainable AI"
+    id: "papers-explainable-ai"
   - name: "Algorithmic Recourse"
     id: "papers-recourse"
   - name: "Causal Inference"
     id: "causal-inference"
-  - name: "Explainable AI"
-    id: "papers-explainable-ai"
   - name: "Human-AI"
     id: "papers-human-ai"
   - name: "Random Projections"
@@ -20,7 +20,7 @@ papers:
 
   - title: "Explainable AI is Causality in Disguise"
     authors: "<u><b>Karimi</b></u>"
-    # venue: NeurIPS Position Papers
+    venue: EurIPS Theory of XAI Workshop
     categories: ["Selected", "Explainable AI", "Causal Inference"]
     paper_pdf: ""
     acceptance_rate: 
