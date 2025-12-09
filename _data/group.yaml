@@ -8,13 +8,13 @@ members:
     # image: "/assets/profile-pics/zahrakh2.png"
     image: "/assets/profile-pics/female.jpg"
 
-  # - name: Hashir Ahmed
-  #   title: "Master's Student"
-  #   image: "/assets/profile-pics/male.jpg"
+  - name: Hashir Ahmed
+    title: "Master's Student"
+    image: "/assets/profile-pics/male.jpg"
 
-  # - name: Chenghao Tan
-  #   title: "Master's Student"
-  #   image: "/assets/profile-pics/male.jpg"
+  - name: Chenghao Tan
+    title: "Master's Student"
+    image: "/assets/profile-pics/male.jpg"
 
   - name: Farzan Mirshekari
     title: "Undergraduate Student"
@@ -39,10 +39,6 @@ members:
 
   - name: Ahmed Abdelaal
     title: "PhD Student"
-    image: "/assets/profile-pics/male.jpg"
-
-  - name: Dongzhuyuan Lu
-    title: "Master's Student"
     image: "/assets/profile-pics/male.jpg"
 
   - name: Tom Wielemaker
@@ -124,6 +120,14 @@ alumni:
     coadvisor_link: "https://uwaterloo.ca/electrical-computer-engineering/profile/ltahvild"
     image: "/assets/profile-pics/male.jpg"
 
+  - name: Dongzhuyuan Lu
+    title: "Master's Student"
+    image: "/assets/profile-pics/male.jpg"
+
+  - name: Jieming Yu
+    title: "Master's Student"
+    image: "/assets/profile-pics/male.jpg"
+
   # - name: Jieming Yu
   #   title: "Master's Student"
   #   image: "/assets/profile-pics/male.jpg"
@@ -141,6 +145,8 @@ alumni:
   - name: Mohammadreza Alavi
     title: "Undergraduate Student"
     image: "/assets/profile-pics/male.jpg"
+    
+
 
 
 mentee:
