@@ -29,7 +29,7 @@ papers:
 
   - title: "From Individual to Multi-Agent Algorithmic Recourse: Minimizing the Welfare Gap via Capacitated Bipartite Matching"
     authors: "Khotanlou, Larson, <u><b>Karimi</b></u>"
-    venue:
+    venue: NeurIPS Workshop on Algorithmic Collective Action
     categories: ["Selected", "Algorithmic Recourse"]
     paper_pdf: "https://arxiv.org/abs/2508.11070"
     acceptance_rate: 
