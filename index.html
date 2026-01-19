@@ -67,6 +67,18 @@ title: Home
       <p class="name">Amir-Hossein Karimi</p>
       <p class="title">Principal Investigator (PI)</p>
     </div>
+    {% for member in site.data.group.seniors %}
+    <div class="members-card">
+      <img class="profile-pic" src="{{ member.image | prepend: site.baseurl }}" alt="{{ member.name }}">
+      <p class="name">{{ member.name }}</p>
+      <p class="title">
+        {{ member.title }} 
+        {% if member.coadvisor %}
+          <br> (w/ <a href="{{ member.coadvisor_link }}" target="_blank">{{ member.coadvisor }}</a>)
+        {% endif %}
+      </p>
+    </div>
+    {% endfor %}
   </div>
 
   <div class="members-columns">
