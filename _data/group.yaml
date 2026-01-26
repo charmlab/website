@@ -60,11 +60,11 @@ members:
     coadvisor_link: "https://cs.uwaterloo.ca/about/people/jimmylin"
     image: "/assets/profile-pics/female.jpg"
 
-  - name: Mina Kebriaee
-    title: "PhD Student"
-    coadvisor: "Prof. Tahvildari"
-    coadvisor_link: "https://uwaterloo.ca/electrical-computer-engineering/profile/ltahvild"
-    image: "/assets/profile-pics/female.jpg"
+  - name: Hamza Mostafa
+    title: "Undergraduate Student"
+    next: "OpenAI Inc."
+    image: "/assets/profile-pics/male.jpg"
+
 
   # - name: Mina Mirzadehsarcheshmeh
   #   title: "PhD Student"
@@ -128,11 +128,11 @@ alumni:
     next: King Saud University
     image: "/assets/profile-pics/male.jpg"
 
-  # - name: Mina Kebriaee
-  #   title: "Master's Student"
-  #   coadvisor: "Prof. Tahvildari"
-  #   coadvisor_link: "https://uwaterloo.ca/electrical-computer-engineering/profile/ltahvild"
-  #   image: "/assets/profile-pics/female.jpg"
+  - name: Mina Kebriaee
+    title: "Master's Student"
+    coadvisor: "Prof. Tahvildari"
+    coadvisor_link: "https://uwaterloo.ca/electrical-computer-engineering/profile/ltahvild"
+    image: "/assets/profile-pics/female.jpg"
 
   - name: Zachary Wu
     title: "Master's Student"
@@ -151,11 +151,6 @@ alumni:
   # - name: Jieming Yu
   #   title: "Master's Student"
   #   image: "/assets/profile-pics/male.jpg"
-
-  - name: Hamza Mostafa
-    title: "Undergraduate Student"
-    next: "OpenAI Inc."
-    image: "/assets/profile-pics/male.jpg"
 
   - name: Abubakar Bello
     title: "Undergraduate Student"
