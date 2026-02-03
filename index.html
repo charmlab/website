@@ -193,7 +193,7 @@ title: Home
               {% if paper.venue %} <br>🏛️ <i>{{ paper.venue }}</i>{% endif %}
               {% if paper.acceptance_rate %} <span style="color:red;">(acceptance rate: {{ paper.acceptance_rate }})</span>{% endif %}
               {% if paper.impact_factor %} <span style="color:red;">(impact factor: {{ paper.impact_factor }})</span>{% endif %}
-              {% if paper.tldr %} <br>✨ <b>TL;DR:</b> {{ paper.tldr }} {% endif %}
+              {% if paper.tldr %} <br>✨ <b class="tldr-label">TL;DR:</b> {{ paper.tldr }} {% endif %}
             </div>
           </div>
         {% endfor %}

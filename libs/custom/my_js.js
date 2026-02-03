@@ -25,6 +25,7 @@ $(document).ready(function() {
     $('a[href^="#"]').on('click', smoothScroll)
     buildSnippets();
     initMemberReveal();
+    initPublicationsTabs();
   }
 
   function smoothScroll(e) {
@@ -87,6 +88,84 @@ $(document).ready(function() {
       var newContent = escapeHtml($(this).html())
       $(this).html(newContent)
     })
+  }
+
+  function initPublicationsTabs() {
+    var $tabNavs = $('.tab-nav');
+    if ($tabNavs.length === 0) {
+      return;
+    }
+
+    $tabNavs.each(function() {
+      var $nav = $(this);
+      var $buttons = $nav.find('.button');
+      if ($buttons.length === 0) {
+        return;
+      }
+
+      var isRevealed = false;
+
+      function animatePane($btn) {
+        var ref = $btn.data('ref');
+        if (!ref) {
+          return;
+        }
+        var $pane = $(ref);
+        if ($pane.length === 0) {
+          return;
+        }
+        var $container = $pane.closest('.tab-content');
+        $container.find('.tab-pane').removeClass('is-visible');
+        setTimeout(function() {
+          $pane.addClass('is-visible');
+        }, 10);
+      }
+
+      function syncActive() {
+        var $active = $nav.find('.button.active').first();
+        if ($active.length === 0) {
+          $active = $buttons.first();
+        }
+        animatePane($active);
+      }
+
+      $buttons.on('click', function() {
+        var $btn = $(this);
+        setTimeout(function() {
+          animatePane($btn);
+        }, 0);
+      });
+
+      $window.on('resize', function() {
+        return;
+      });
+
+      var $section = $nav.closest('.publications-section');
+      if ($section.length === 0) {
+        setTimeout(syncActive, 0);
+        return;
+      }
+
+      if (!('IntersectionObserver' in window)) {
+        setTimeout(syncActive, 0);
+        return;
+      }
+
+      var sectionObserver = new IntersectionObserver(function(entries) {
+        entries.forEach(function(entry) {
+          if (entry.isIntersecting && !isRevealed) {
+            isRevealed = true;
+            syncActive();
+          }
+        });
+      }, {
+        root: null,
+        rootMargin: '0px 0px -12% 0px',
+        threshold: 0.15
+      });
+
+      sectionObserver.observe($section.get(0));
+    });
   }
 
   function initMemberReveal() {
