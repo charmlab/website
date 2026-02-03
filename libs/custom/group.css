@@ -24,8 +24,40 @@
 
 }
 
+.members-animate .members-card {
+  opacity: 0;
+  transform: translateY(12px) scale(0.98);
+  will-change: transform, opacity;
+}
+
+.members-animate.is-visible .members-card {
+  animation: member-reveal 700ms cubic-bezier(0.2, 0.7, 0.2, 1) forwards;
+}
+
+.members-animate.is-visible .members-card:nth-child(1)  { animation-delay: 40ms; }
+.members-animate.is-visible .members-card:nth-child(2)  { animation-delay: 100ms; }
+.members-animate.is-visible .members-card:nth-child(3)  { animation-delay: 160ms; }
+.members-animate.is-visible .members-card:nth-child(4)  { animation-delay: 220ms; }
+.members-animate.is-visible .members-card:nth-child(5)  { animation-delay: 280ms; }
+.members-animate.is-visible .members-card:nth-child(6)  { animation-delay: 340ms; }
+.members-animate.is-visible .members-card:nth-child(7)  { animation-delay: 400ms; }
+.members-animate.is-visible .members-card:nth-child(8)  { animation-delay: 460ms; }
+.members-animate.is-visible .members-card:nth-child(9)  { animation-delay: 520ms; }
+.members-animate.is-visible .members-card:nth-child(10) { animation-delay: 580ms; }
+.members-animate.is-visible .members-card:nth-child(11) { animation-delay: 640ms; }
+.members-animate.is-visible .members-card:nth-child(12) { animation-delay: 700ms; }
+
 .members-card:hover {
   transform: scale(1.06);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.members-card:hover .profile-pic {
+  transform: translateY(-4px);
+}
+
+.members-card:focus-within {
+  transform: scale(1.04);
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
@@ -45,19 +77,21 @@ display: flex;
   object-fit: cover;
   display: block;
   margin: 0 auto 10px auto; /* Center the image and add space below */
+  transition: transform 0.3s ease;
 }
 
 /* Name and Title Styling */
 .members-card .name {
   font-size: 1.2rem;
   font-weight: 600;
-  margin-bottom: 1px;
+  margin: 0 0 2px 0;
   text-align: center;
 }
 
 .members-card .title {
   font-size: 1rem;
   color: gray;
+  margin: 0;
   text-align: center;
 }
 
@@ -104,5 +138,32 @@ display: flex;
   .members-card .profile-pic {
     width: 90px;
     height: 90px;
+  }
+}
+
+@keyframes member-reveal {
+  0% {
+    opacity: 0;
+    transform: translateY(12px) scale(0.98);
+  }
+  70% {
+    opacity: 1;
+    transform: translateY(-2px) scale(1.01);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .members-animate .members-card {
+    animation: none;
+    opacity: 1;
+    transform: none;
+  }
+  .members-card,
+  .members-card .profile-pic {
+    transition: none;
   }
 }

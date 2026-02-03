@@ -59,7 +59,7 @@ title: Home
 
   <h5>Current Members</h5>
 
-  <div class="members-columns">
+  <div class="members-columns members-animate">
     <div class="members-card">
       <!-- <img class="profile-pic" src={{ "/assets/profile-pics/shiraz.png" | prepend: site.baseurl }} alt="Amir-Hossein Karimi"> -->
       <!-- <img class="profile-pic" src={{ "/assets/profile-pics/tmls.jpeg" | prepend: site.baseurl }} alt="Amir-Hossein Karimi"> -->
@@ -81,7 +81,7 @@ title: Home
     {% endfor %}
   </div>
 
-  <div class="members-columns">
+  <div class="members-columns members-animate current-members">
     {% for member in site.data.group.members %}
     <div class="members-card">
       <img class="profile-pic" src="{{ member.image | prepend: site.baseurl }}" alt="{{ member.name }}">
@@ -97,7 +97,7 @@ title: Home
   </div>
 
   <h5>Lab Alumni</h5>
-  <div class="members-columns">
+  <div class="members-columns members-animate">
     {% for alumni in site.data.group.alumni %}
     <div class="members-card">
       <img class="profile-pic" src="{{ alumni.image | prepend: site.baseurl }}" alt="{{ alumni.name }}">
@@ -116,7 +116,7 @@ title: Home
   </div>
 
   <h5>Past Mentees</h5>
-  <div class="members-columns">
+  <div class="members-columns members-animate">
     {% for mentee in site.data.group.mentee %}
     <div class="members-card">
       <img class="profile-pic" src="{{ mentee.image | prepend: site.baseurl }}" alt="{{ mentee.name }}">

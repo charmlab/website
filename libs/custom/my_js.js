@@ -24,6 +24,7 @@ $(document).ready(function() {
     $document.on('click', closePopover)
     $('a[href^="#"]').on('click', smoothScroll)
     buildSnippets();
+    initMemberReveal();
   }
 
   function smoothScroll(e) {
@@ -88,6 +89,34 @@ $(document).ready(function() {
     })
   }
 
+  function initMemberReveal() {
+    var $memberGroups = $('.members-animate');
+    if ($memberGroups.length === 0) {
+      return;
+    }
+
+    if (!('IntersectionObserver' in window)) {
+      $memberGroups.addClass('is-visible');
+      return;
+    }
+
+    var observer = new IntersectionObserver(function(entries) {
+      entries.forEach(function(entry) {
+        if (entry.isIntersecting) {
+          $(entry.target).addClass('is-visible');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, {
+      root: null,
+      rootMargin: '0px 0px -12% 0px',
+      threshold: 0.15
+    });
+
+    $memberGroups.each(function() {
+      observer.observe(this);
+    });
+  }
 
   init();
 
