@@ -60,7 +60,7 @@ title: Home
   <h5>Current Members</h5>
 
   <div class="members-columns members-animate">
-    <div class="members-card">
+    <div class="members-card student-card student--pi">
       <!-- <img class="profile-pic" src={{ "/assets/profile-pics/shiraz.png" | prepend: site.baseurl }} alt="Amir-Hossein Karimi"> -->
       <!-- <img class="profile-pic" src={{ "/assets/profile-pics/tmls.jpeg" | prepend: site.baseurl }} alt="Amir-Hossein Karimi"> -->
       <img class="profile-pic" src={{ "/assets/profile-pics/toronto.png" | prepend: site.baseurl }} alt="Amir-Hossein Karimi">
@@ -68,7 +68,17 @@ title: Home
       <p class="title">Principal Investigator (PI)</p>
     </div>
     {% for member in site.data.group.seniors %}
-    <div class="members-card">
+    {% assign role_class = "" %}
+    {% if member.title contains "Undergraduate" %}
+      {% assign role_class = "student--ug" %}
+    {% elsif member.title contains "Master" %}
+      {% assign role_class = "student--msc" %}
+    {% elsif member.title contains "PhD" or member.title contains "Ph.D" %}
+      {% assign role_class = "student--phd" %}
+    {% elsif member.title contains "Postdoc" or member.title contains "Postdoctoral" %}
+      {% assign role_class = "student--postdoc" %}
+    {% endif %}
+    <div class="members-card student-card {{ role_class }}">
       <img class="profile-pic" src="{{ member.image | prepend: site.baseurl }}" alt="{{ member.name }}">
       <p class="name">{{ member.name }}</p>
       <p class="title">
@@ -83,7 +93,17 @@ title: Home
 
   <div class="members-columns members-animate current-members">
     {% for member in site.data.group.members %}
-    <div class="members-card">
+    {% assign role_class = "" %}
+    {% if member.title contains "Undergraduate" %}
+      {% assign role_class = "student--ug" %}
+    {% elsif member.title contains "Master" %}
+      {% assign role_class = "student--msc" %}
+    {% elsif member.title contains "PhD" or member.title contains "Ph.D" %}
+      {% assign role_class = "student--phd" %}
+    {% elsif member.title contains "Postdoc" or member.title contains "Postdoctoral" %}
+      {% assign role_class = "student--postdoc" %}
+    {% endif %}
+    <div class="members-card student-card {{ role_class }}">
       <img class="profile-pic" src="{{ member.image | prepend: site.baseurl }}" alt="{{ member.name }}">
       <p class="name">{{ member.name }}</p>
       <p class="title">
@@ -99,7 +119,17 @@ title: Home
   <h5>Lab Alumni</h5>
   <div class="members-columns members-animate">
     {% for alumni in site.data.group.alumni %}
-    <div class="members-card">
+    {% assign role_class = "" %}
+    {% if alumni.title contains "Undergraduate" %}
+      {% assign role_class = "student--ug" %}
+    {% elsif alumni.title contains "Master" %}
+      {% assign role_class = "student--msc" %}
+    {% elsif alumni.title contains "PhD" or alumni.title contains "Ph.D" %}
+      {% assign role_class = "student--phd" %}
+    {% elsif alumni.title contains "Postdoc" or alumni.title contains "Postdoctoral" %}
+      {% assign role_class = "student--postdoc" %}
+    {% endif %}
+    <div class="members-card student-card {{ role_class }}">
       <img class="profile-pic" src="{{ alumni.image | prepend: site.baseurl }}" alt="{{ alumni.name }}">
       <p class="name">{{ alumni.name }}</p>
       <p class="title">
@@ -118,7 +148,17 @@ title: Home
   <h5>Past Mentees</h5>
   <div class="members-columns members-animate">
     {% for mentee in site.data.group.mentee %}
-    <div class="members-card">
+    {% assign role_class = "" %}
+    {% if mentee.title contains "Undergraduate" %}
+      {% assign role_class = "student--ug" %}
+    {% elsif mentee.title contains "Master" %}
+      {% assign role_class = "student--msc" %}
+    {% elsif mentee.title contains "PhD" or mentee.title contains "Ph.D" %}
+      {% assign role_class = "student--phd" %}
+    {% elsif mentee.title contains "Postdoc" or mentee.title contains "Postdoctoral" %}
+      {% assign role_class = "student--postdoc" %}
+    {% endif %}
+    <div class="members-card student-card {{ role_class }}">
       <img class="profile-pic" src="{{ mentee.image | prepend: site.baseurl }}" alt="{{ mentee.name }}">
       <p class="name">{{ mentee.name }}</p>
       <p class="title">
