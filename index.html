@@ -12,6 +12,8 @@ title: Home
     <br>
     <br>
   
+    Having immigrated five times across three continents for studies and work, from Iran to Canada, and then onward to the USA, Germany, Switzerland, and the UK, Dr. Amir-Hossein Karimi has accumulated <b>over 15 years of technical experience</b> in both research, industry, and startup roles.
+
     Prior to joining Waterloo, Dr. Karimi accumulated significant industry experience at leading tech companies such as
     <a href="https://www.blackberry.com/" target="_blank">BlackBerry</a> (2013),
     <a href="https://about.meta.com/" target="_blank">Meta (Facebook)</a> (2014-6),
@@ -19,7 +21,7 @@ title: Home
     and <a href="https://www.deepmind.com/" target="_blank">DeepMind</a> (2022),
     and provided consulting services for various startups and incubators including for <a href="https://www.nextcanada.com/next-ai/" target="_blank">NEXT AI</a>.
 
-    His contributions have earned him multiple accolades, such as the <span class="award">UofToronto Spirit of Engineering Science Award</span> (2015), the <span class="award">UWaterloo Alumni Gold Medal Award</span> (2018), the <span class="award">NSERC Canada Graduate Scholarship - Doctorate</span> (2018), the <span class="award">Google PhD Fellowship</span> (2021), the <span class="award">ETH Zurich Medal</span> (2024), the <span class="award">NSERC Discovery Grants & Supplements</span> (2024), and the <span class="award">Igor Ivkovic Teaching Excellence Award</span> (2024).
+    His contributions have earned him multiple accolades, such as the <span class="award">UofToronto Spirit of Engineering Science Award</span> (2015), the <span class="award">UWaterloo Alumni Gold Medal Award</span> (2018), the <span class="award">NSERC Canada Graduate Scholarship - Doctorate</span> (2018), the <span class="award">Google PhD Fellowship</span> (2021), the <span class="award">ETH Zurich Medal</span> (2024), the <span class="award">NSERC Discovery Grants & Supplements</span> (2024), and the <span class="award">Igor Ivkovic Teaching Excellence Award</span> (2024). Full CV in <a href={{ "/assets/cv/cv.pdf" | prepend: site.baseurl }} target="_blank">PDF</a>.
   </p>
 
 </div>
@@ -352,33 +354,6 @@ title: Home
 
 
 
-<!-- ========== RESUME ========== -->
-<div class="docs-section" id="resume">
-  <h4>Vitæ</h4>
-
-  <p>
-    Full CV in <a href={{ "/assets/cv/cv.pdf" | prepend: site.baseurl }} target="_blank">PDF</a>. Having immigrated five times across three continents for studies and work, from Iran to Canada, and then onward to the USA, Germany, Switzerland, and the UK, Dr. Amir-Hossein Karimi has accumulated <b>over 15 years of technical experience</b> in both research, industry, and startup roles. Now an Assistant Professor at the University of Waterloo and a Vector Institute Faculty Affiliate, he has held prominent research positions at Google DeepMind, Google Brain, alongside software engineering roles at BlackBerry and Meta (Facebook). His academic journey includes a Ph.D. at the Max Planck Institute & ETH Zürich, with a focus on causal inference and explainable AI.
-  </p>
-
-  <!-- The Timeline -->
-  <ul class="timeline scroll-reveal">
-    {% for exp in site.data.experience.experiences %}
-    <li class="reveal-item">
-      {% if exp.category == "work" %}
-      <div class="direction-l">
-      {% else %}
-      <div class="direction-r">
-      {% endif %}
-        <div class="flag-wrapper">
-          <span class="flag">{{ exp.place }}</span>
-          <span class="time-wrapper"><span class="time">{{ exp.time }}</span></span>
-        </div>
-        <div class="desc"><b>{{ exp.title }}</b> <br/> {{ exp.subtitle }}</div>
-      </div>
-    </li>
-    {% endfor %}
-  </ul>
-</div>
 
 <div class="docs-section" id="misc">
   <h4>Press, Funding, & Consultations</h4>
