@@ -278,74 +278,77 @@ title: Home
     To book Dr. Karimi for teaching engagements at your organization or event, <a href="mailto:amirhkarimi@gmail.com" target="_blank">reach out here</a>.
   </div>
 
-  <div class="teaching-columns">
-    <!-- For everyone... -->
-    <div class="teaching-category">
-      <div class="teaching-column-title"><u> For everyone...</u></div>
-      {% for content in site.data.teaching.public %}
-      <div class="teaching-card">
-        {% if content.banner %}
-          <div class="banner">{{content.banner}}</div>
-        {% endif %}
-        <div class="card-image">
-          <img src="{{ content.image | prepend: site.baseurl }}" alt="{{ content.alt_text }}">
-          <div class="card-overlay">
-            {{ content.title }}
+  <ul class="tab-nav teaching-tabs">
+    <li><div class="button" data-ref="#teach-public">For everyone...</div></li>
+    <li><div class="button active" data-ref="#teach-students">For students...</div></li>
+    <li><div class="button" data-ref="#teach-pros">For professionals...</div></li>
+  </ul>
+
+  <div class="tab-content">
+    <div class="tab-pane" id="teach-public">
+      <div class="teaching-columns">
+        {% for item_id in site.data.teaching.categories.public %}
+        {% assign content = site.data.teaching.items | where: "id", item_id | first %}
+        <div class="teaching-card">
+          {% if content.banner %}
+            <a class="banner" href="{{ content.links[0].url }}" target="_blank">{{content.banner}}</a>
+          {% endif %}
+          <div class="card-image">
+            <img src="{{ content.image | prepend: site.baseurl }}" alt="{{ content.alt_text }}">
+        </div>
+        <div class="teaching-title">{{ content.title }}</div>
+        <div class="card-link">
+            {% for link in content.links %}
+            <a href="{{ link.url }}" target="_blank">{{ link.label }}</a>{% unless forloop.last %} | {% endunless %}
+            {% endfor %}
           </div>
         </div>
-        <div class="card-link">
-          {% for link in content.links %}
-          <a href="{{ link.url }}" target="_blank">{{ link.label }}</a>{% unless forloop.last %} | {% endunless %}
-          {% endfor %}
-        </div>
+        {% endfor %}
       </div>
-      {% endfor %}
     </div>
 
-    <!-- For students... -->
-    <div class="teaching-category">
-      <div class="teaching-column-title"><u> For students...</u></div>
-      {% for content in site.data.teaching.students %}
-      <div class="teaching-card">
-        {% if content.banner %}
-          <div class="banner">{{content.banner}}</div>
-        {% endif %}
-        <div class="card-image">
-          <img src="{{ content.image | prepend: site.baseurl }}" alt="{{ content.alt_text }}">
-          <div class="card-overlay">
-            {{ content.title }}
+    <div class="tab-pane active" id="teach-students">
+      <div class="teaching-columns">
+        {% for item_id in site.data.teaching.categories.students %}
+        {% assign content = site.data.teaching.items | where: "id", item_id | first %}
+        <div class="teaching-card">
+          {% if content.banner %}
+            <a class="banner" href="{{ content.links[0].url }}" target="_blank">{{content.banner}}</a>
+          {% endif %}
+          <div class="card-image">
+            <img src="{{ content.image | prepend: site.baseurl }}" alt="{{ content.alt_text }}">
+        </div>
+        <div class="teaching-title">{{ content.title }}</div>
+        <div class="card-link">
+            {% for link in content.links %}
+            <a href="{{ link.url }}" target="_blank">{{ link.label }}</a>{% unless forloop.last %} | {% endunless %}
+            {% endfor %}
           </div>
         </div>
-        <div class="card-link">
-          {% for link in content.links %}
-          <a href="{{ link.url }}" target="_blank">{{ link.label }}</a>{% unless forloop.last %} | {% endunless %}
-          {% endfor %}
-        </div>
+        {% endfor %}
       </div>
-      {% endfor %}
     </div>
 
-    <!-- For professionals... -->
-    <div class="teaching-category">
-      <div class="teaching-column-title"><u> For professionals...</u></div>
-      {% for content in site.data.teaching.professionals %}
-      <div class="teaching-card">
-        {% if content.banner %}
-          <div class="banner">{{content.banner}}</div>
-        {% endif %}
-        <div class="card-image">
-          <img src="{{ content.image | prepend: site.baseurl }}" alt="{{ content.alt_text }}">
-          <div class="card-overlay">
-            {{ content.title }}
+    <div class="tab-pane" id="teach-pros">
+      <div class="teaching-columns">
+        {% for item_id in site.data.teaching.categories.professionals %}
+        {% assign content = site.data.teaching.items | where: "id", item_id | first %}
+        <div class="teaching-card">
+          {% if content.banner %}
+            <a class="banner" href="{{ content.links[0].url }}" target="_blank">{{content.banner}}</a>
+          {% endif %}
+          <div class="card-image">
+            <img src="{{ content.image | prepend: site.baseurl }}" alt="{{ content.alt_text }}">
+        </div>
+        <div class="teaching-title">{{ content.title }}</div>
+        <div class="card-link">
+            {% for link in content.links %}
+            <a href="{{ link.url }}" target="_blank">{{ link.label }}</a>{% unless forloop.last %} | {% endunless %}
+            {% endfor %}
           </div>
         </div>
-        <div class="card-link">
-          {% for link in content.links %}
-          <a href="{{ link.url }}" target="_blank">{{ link.label }}</a>{% unless forloop.last %} | {% endunless %}
-          {% endfor %}
-        </div>
+        {% endfor %}
       </div>
-      {% endfor %}
     </div>
   </div>
 
@@ -361,7 +364,7 @@ title: Home
     Dr. Karimi is grateful for the generous funding support from the <b>University of Waterloo</b>, <b>NSERC</b>, <b>CIFAR</b>, <b>Google</b>, <b>Waterloo.AI</b>, and the <b>O'Donovan Family</b>, enabling his team to push the boundaries of human-AI research.
   </p>
   <p>
-    In addition to his academic contributions, Dr. Karimi has consulted internationally for several startups, leveraging his expertise for <b>discovery</b>, <b>product-market fit</b>, and <b>scaling</b> of operations, in addition to <b>fundraising</b> and <b>grant writing</b>. He is available to discuss how his research and experience can deliver value to your organization and stakeholders. Book a time via <a href="https://courses.amirhkarimi.com/1-1-with-amir-from-foundations-to-mastery" target="_blank">this link</a>.
+    Besides academic contributions, Dr. Karimi also consults internationally for several startups, leveraging his expertise for <b>discovery</b>, <b>product-market fit</b>, and <b>scaling</b> of operations, in addition to <b>fundraising</b> and <b>grant writing</b>. He is available to discuss how his research and experience can deliver value to your organization and stakeholders. Book a time via <a href="https://courses.amirhkarimi.com/1-1-with-amir-from-foundations-to-mastery" target="_blank">this link</a>.
   </p>
   <p>
     For press inquiries, feel free to <a href="mailto:amirhkarimi@gmail.com" target="_blank">reach out</a>.

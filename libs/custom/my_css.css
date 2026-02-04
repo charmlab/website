@@ -132,13 +132,13 @@ body.dark-mode .navbar-link.active {
 }
 
 .theme-toggle.is-dark {
-  color: #f0f0f0;
-  box-shadow: 0 0 16px rgba(255, 255, 255, 0.6);
+  color: #ffd65a;
+  box-shadow: 0 0 22px rgba(255, 214, 90, 0.7), 0 0 40px rgba(255, 214, 90, 0.35);
 }
 
 .theme-toggle.is-light {
-  color: #f0b84a;
-  box-shadow: 0 0 18px rgba(240, 184, 74, 0.65);
+  color: #111111;
+  box-shadow: 0 0 14px rgba(0, 0, 0, 0.35), 0 0 26px rgba(0, 0, 0, 0.2);
 }
 
 body.dark-mode .tab-nav .button {
