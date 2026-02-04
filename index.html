@@ -62,9 +62,15 @@ title: Home
     </div>
   </div>
 
-  <h5>Current Members</h5>
+  <ul class="tab-nav group-tabs">
+    <li><div class="button active" data-ref="#group-current">Current Members</div></li>
+    <li><div class="button" data-ref="#group-alumni">Lab Alumni</div></li>
+    <li><div class="button" data-ref="#group-mentees">Past Mentees</div></li>
+  </ul>
 
-  <div class="members-columns members-animate">
+  <div class="tab-content">
+    <div class="tab-pane active" id="group-current">
+      <div class="members-columns members-animate">
     <div class="members-card student-card student--pi">
       <!-- <img class="profile-pic" src={{ "/assets/profile-pics/shiraz.png" | prepend: site.baseurl }} alt="Amir-Hossein Karimi"> -->
       <!-- <img class="profile-pic" src={{ "/assets/profile-pics/tmls.jpeg" | prepend: site.baseurl }} alt="Amir-Hossein Karimi"> -->
@@ -126,9 +132,10 @@ title: Home
     </div>
     {% endfor %}
   </div>
+    </div>
 
-  <h5>Lab Alumni</h5>
-  <div class="members-columns members-animate">
+    <div class="tab-pane" id="group-alumni">
+      <div class="members-columns members-animate">
     {% for alumni in site.data.group.alumni %}
     {% assign role_class = "" %}
     {% if alumni.title contains "Undergraduate" %}
@@ -158,9 +165,10 @@ title: Home
     </div>
     {% endfor %}
   </div>
+    </div>
 
-  <h5>Past Mentees</h5>
-  <div class="members-columns members-animate">
+    <div class="tab-pane" id="group-mentees">
+      <div class="members-columns members-animate">
     {% for mentee in site.data.group.mentee %}
     {% assign role_class = "" %}
     {% if mentee.title contains "Undergraduate" %}
@@ -189,6 +197,8 @@ title: Home
       </p>
     </div>
     {% endfor %}
+  </div>
+    </div>
   </div>
 
 </div>

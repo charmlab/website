@@ -4,18 +4,31 @@
 /*  margin-bottom: 50px;*/
 }
 
+#group .group-tabs {
+  margin: 10px 0 6px;
+}
+
+#group .tab-content {
+  margin-top: 4px;
+}
+
+#group .tab-pane {
+  padding-top: 2px;
+}
+
 .members-columns {
   display: grid;
   grid-template-columns: repeat(5, minmax(0, 1fr));
-/*  margin-top: 10px;*/
+  margin-top: 10px;
+  margin-bottom: 6px;
   grid-column-gap: 15px; /* Space between columns */
-  grid-row-gap: 4px;
+  grid-row-gap: 6px;
 }
 
 .members-card {
   position: relative;
-  margin-bottom: 8px;
-  padding-bottom: 8px;
+  margin-bottom: 6px;
+  padding-bottom: 6px;
   overflow: hidden;
   border-radius: var(--radius-card);
 /*  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);*/
