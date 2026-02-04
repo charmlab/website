@@ -23,7 +23,7 @@ papers:
     venue: EurIPS Theory of XAI Workshop
     categories: ["Selected", "Explainable AI", "Causal Inference"]
     paper_pdf: ""
-    acceptance_rate: 
+    acceptance_rate:
     tldr: Solving XAI requires us to make explicit our causal assumptions of the world
     banner: new!
 
@@ -32,7 +32,7 @@ papers:
     venue: NeurIPS Workshop on Algorithmic Collective Action
     categories: ["Selected", "Algorithmic Recourse"]
     paper_pdf: "https://arxiv.org/abs/2508.11070"
-    acceptance_rate: 
+    acceptance_rate:
     tldr: Providing recourse to any one individual affects what recourse can be provided to other individuals
     banner: new!
 
@@ -41,7 +41,7 @@ papers:
     venue: Trends in Cognitive Sciences
     categories: ["Selected", "Explainable AI", "Human-AI"]
     paper_pdf: "https://arxiv.org/abs/2411.02478"
-    acceptance_rate: 
+    impact_factor: "17.2"
     tldr: AI systems should integrate metacognitive strategies to enhance robustness, explainability, cooperation, and safety in complex real-world scenarios
     banner: new!
 
@@ -50,7 +50,7 @@ papers:
     venue: Nature Scientific Reports
     categories: ["Selected", "AI for Social Good"]
     paper_pdf: "https://arxiv.org/abs/2508.11070"
-    acceptance_rate: 
+    impact_factor: "3.9"
     tldr: TCFormer leverages CNNs, transformers, and temporal convolutions to decode EEG motor imagery, significantly outperforming existing BCI approaches
     banner: new!
 
@@ -117,7 +117,7 @@ papers:
     venue: "ACM CSUR 2022"
     categories: ["Selected", "Causal Inference", "Algorithmic Recourse"]
     paper_pdf: "https://dl.acm.org/doi/full/10.1145/3527848"
-    impact_factor: "23.8"
+    impact_factor: "24.0"
     tldr: definitions, formulations, solutions, and prospects for recourse research
 
   - title: "Algorithmic Recourse under Imperfect Causal Knowledge: a Probabilistic Approach"

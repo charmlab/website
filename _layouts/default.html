@@ -87,7 +87,7 @@
             <p class="text-gray">{{ site.data.main_info.affil2 }}</p>
             <p class="text-gray">{{ site.data.main_info.affil3 }}</p>
             <p class="text-gray">{{ site.data.main_info.email }}</p>
-            <p>
+            <div class="social-row">
               <span onclick="window.open('{{ site.data.main_info.google_scholar }}')" style="cursor: pointer">
                 <i class="ai ai-google-scholar ai-lg" aria-hidden="true"></i>
               </span>
@@ -109,14 +109,14 @@
               <span onclick="window.open('{{ site.data.main_info.medium }}')" style="cursor: pointer">
                 <i class="fa fa-medium" aria-hidden="true"></i>
               </span>
-            </p>
+            </div>
         </div>
       </div>
     </section>
 
     <div class="navbar-spacer"></div>
     <nav class="navbar">
-      <div class="container">
+      <div class="container nav-inner">
         <ul class="navbar-list">
 
           <li class="navbar-item"><a class="navbar-link" href={{ "/index.html#bio" | prepend: site.baseurl }}>bio</a></li>
@@ -126,6 +126,11 @@
           <!-- <li class="navbar-item"><a class="navbar-link" href={{ "/index.html#service" | prepend: site.baseurl }}>service</a></li> -->
           <li class="navbar-item"><a class="navbar-link" href={{ "/index.html#resume" | prepend: site.baseurl }}>vita</a></li>
           <li class="navbar-item"><a class="navbar-link" href={{ "/index.html#misc" | prepend: site.baseurl }}>Misc.</a></li>
+          <li class="navbar-item navbar-item-right">
+            <button id="theme-toggle" class="theme-toggle" type="button" aria-label="Toggle dark mode">
+              <i class="fa fa-moon-o" aria-hidden="true"></i>
+            </button>
+          </li>
 
           <!-- <li class="navbar-item"><a class="navbar-link" href={{ "/index.html#bio" | prepend: site.baseurl }}>Bio</a></li>
           <li class="navbar-item"><a class="navbar-link" href={{ "/index.html#news" | prepend: site.baseurl }}>News</a></li>

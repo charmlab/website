@@ -28,23 +28,28 @@ $(document).ready(function() {
     initPublicationsTabs();
     initScrollReveal();
     initSparkleEasterEgg();
+    initThemeToggle();
   }
 
   function smoothScroll(e) {
-    e.preventDefault();
-    $(document).off("scroll");
     var target = this.hash;
     if (!target || target.length === 0) {
       return;
     }
     if (this.pathname && this.pathname !== window.location.pathname) {
-      return;
+      var current = window.location.pathname.replace(/\/$/, '');
+      var dest = this.pathname.replace(/\/$/, '');
+      if (!((current === '' || current === '/') && dest === '/index.html')) {
+        return;
+      }
     }
-    $target = $(target);
+    var $target = $(target);
     if ($target.length === 0) {
       return;
     }
-    var navHeight = $nav.length ? $nav.outerHeight() : 0;
+    e.preventDefault();
+    $(document).off("scroll");
+    var navHeight = $('.nav-inner').length ? $('.nav-inner').outerHeight() : ($nav.length ? $nav.outerHeight() : 0);
     var extraOffset = 12;
     $('html, body').stop().animate({
         'scrollTop': $target.offset().top - navHeight - extraOffset
@@ -283,6 +288,38 @@ $(document).ready(function() {
     setTimeout(function() {
       $burst.remove();
     }, 1900);
+  }
+
+  function initThemeToggle() {
+    var $toggle = $('#theme-toggle');
+    if ($toggle.length === 0) {
+      return;
+    }
+
+    var stored = localStorage.getItem('theme');
+    if (stored === 'dark') {
+      $('body').addClass('dark-mode');
+    }
+
+    updateThemeToggle();
+
+    $toggle.on('click', function() {
+      $('body').toggleClass('dark-mode');
+      var isDark = $('body').hasClass('dark-mode');
+      localStorage.setItem('theme', isDark ? 'dark' : 'light');
+      updateThemeToggle();
+    });
+  }
+
+  function updateThemeToggle() {
+    var $toggle = $('#theme-toggle');
+    if ($toggle.length === 0) {
+      return;
+    }
+    var isDark = $('body').hasClass('dark-mode');
+    $toggle.toggleClass('is-dark', isDark);
+    $toggle.toggleClass('is-light', !isDark);
+    $toggle.html(isDark ? '<i class="fa fa-sun-o" aria-hidden="true"></i>' : '<i class="fa fa-moon-o" aria-hidden="true"></i>');
   }
 
   init();

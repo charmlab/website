@@ -6,7 +6,7 @@
 
 .members-columns {
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
+  grid-template-columns: repeat(5, minmax(0, 1fr));
 /*  margin-top: 10px;*/
   grid-column-gap: 15px; /* Space between columns */
   grid-row-gap: 16px;
@@ -15,6 +15,7 @@
 .members-card {
   position: relative;
   margin-bottom: 8px;
+  padding-bottom: 8px;
   overflow: hidden;
   border-radius: var(--radius-card);
 /*  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);*/
@@ -22,6 +23,7 @@
 /*  cursor: pointer;*/
 /*  background: #f5f5f5;*/
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  width: 100%;
 
 }
 
@@ -72,12 +74,14 @@ display: flex;
 
 /* Profile Picture Styling */
 .members-card .profile-pic {
-  width: 150px;
-  height: 150px;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 1 / 1;
+  max-width: 140px;
   border-radius: var(--radius-card);
   object-fit: cover;
   display: block;
-  margin: 0 auto 10px auto; /* Center the image and add space below */
+  margin: 0 auto 5px auto; /* Center the image and add space below */
   transition: transform 0.3s ease;
 }
 
@@ -85,7 +89,7 @@ display: flex;
 .members-card .name {
   font-size: 1.2rem;
   font-weight: 600;
-  margin: 0 0 2px 0;
+  margin: 0 0 1px 0;
   text-align: center;
 }
 
@@ -94,6 +98,7 @@ display: flex;
   color: gray;
   margin: 0;
   text-align: center;
+  line-height: 1.2;
 }
 
 /* Student role accents (image border/glow) */
@@ -170,22 +175,20 @@ display: flex;
 /* Medium screens (up to 1024px) */
 @media (max-width: 1280px) {
   .members-columns {
-    grid-template-columns: repeat(5, 1fr); /* 3 columns */
+    grid-template-columns: repeat(5, minmax(0, 1fr));
   }
   .members-card .profile-pic {
-    width: 120px;
-    height: 120px;
+    max-width: 120px;
   }
 }
 
 /* Small screens (up to 768px) */
 @media (max-width: 768px) {
   .members-columns {
-    grid-template-columns: repeat(4, 1fr); /* 2 columns */
+    grid-template-columns: repeat(4, minmax(0, 1fr));
   }
   .members-card .profile-pic {
-    width: 110px;
-    height: 110px;
+    max-width: 110px;
   }
   .members-card .name {
     font-size: 1.0rem;
@@ -197,11 +200,10 @@ display: flex;
 
 @media (max-width: 414px) {
   .members-columns {
-    grid-template-columns: repeat(3, 1fr); /* 2 columns */
+    grid-template-columns: repeat(3, minmax(0, 1fr));
   }
   .members-card .profile-pic {
-    width: 90px;
-    height: 90px;
+    max-width: 105px;
   }
 }
 
