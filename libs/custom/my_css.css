@@ -77,6 +77,24 @@ h4 {
 .image {
   text-align: center; }
 
+.sparkle-trigger {
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.sparkle-hint {
+  font-size: 0.25em;
+  color: rgba(0, 0, 0, 0.5);
+  letter-spacing: 0.02em;
+}
+
+.sparkle-trigger:hover .sparkle-hint {
+  color: rgba(0, 0, 0, 0.7);
+}
+
+
 .sparkle-burst {
   position: fixed;
   pointer-events: none;

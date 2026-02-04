@@ -238,41 +238,51 @@ $(document).ready(function() {
     });
   }
 
+  var burstGlyphs = ['✨', '✦', '✧', '⚡', '🤖', '🧠', '📈', '🧮', '∑', 'π', '∫', '∆', 'Ω', 'λ', '0', '1', '2', '3', '4', '5', '6', '7', '8', '9'];
+
   function initSparkleEasterEgg() {
     var $triggers = $('#group h4.sparkle-trigger');
     if ($triggers.length === 0) {
       return;
     }
 
-    var burstGlyphs = ['✨', '✦', '✧', '⚡', '🤖', '🧠', '📈', '🧮', '∑', 'π', '∫', '∆', 'Ω', 'λ', '0', '1', '2', '3', '4', '5', '6', '7', '8', '9'];
-
     $triggers.on('click', function(e) {
       if (window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
         return;
       }
-      var $burst = $('<span class="sparkle-burst"></span>');
-      var count = 14;
-      for (var i = 0; i < count; i++) {
-        var glyph = burstGlyphs[Math.floor(Math.random() * burstGlyphs.length)];
-        var $spark = $('<span></span>').text(glyph);
-        var x = (Math.random() - 0.5) * window.innerWidth * 0.8;
-        var y = (Math.random() - 0.5) * window.innerHeight * 0.6;
-        var x2 = (Math.random() - 0.5) * 60;
-        var y2 = (Math.random() - 0.5) * 60;
-        var size = 10 + Math.random() * 16;
-        $spark[0].style.setProperty('--sparkle-x', x + 'px');
-        $spark[0].style.setProperty('--sparkle-y', y + 'px');
-        $spark[0].style.setProperty('--sparkle-x2', x2 + 'px');
-        $spark[0].style.setProperty('--sparkle-y2', y2 + 'px');
-        $spark.css({ fontSize: size + 'px' });
-        $burst.append($spark);
-      }
-      $('body').append($burst);
-      $burst.css({ left: e.clientX + 'px', top: e.clientY + 'px' });
-      setTimeout(function() {
-        $burst.remove();
-      }, 700);
+      spawnSparkleBurst(e.clientX, e.clientY, 14, 0.8, 0.6);
     });
+
+    $triggers.on('mouseenter', function(e) {
+      if (window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+        return;
+      }
+      spawnSparkleBurst(e.clientX, e.clientY, 2, 0.2, 0.15);
+    });
+  }
+
+  function spawnSparkleBurst(x, y, count, spreadX, spreadY) {
+    var $burst = $('<span class="sparkle-burst"></span>');
+    for (var i = 0; i < count; i++) {
+      var glyph = burstGlyphs[Math.floor(Math.random() * burstGlyphs.length)];
+      var $spark = $('<span></span>').text(glyph);
+      var dx = (Math.random() - 0.5) * window.innerWidth * spreadX;
+      var dy = (Math.random() - 0.5) * window.innerHeight * spreadY;
+      var x2 = (Math.random() - 0.5) * 60;
+      var y2 = (Math.random() - 0.5) * 60;
+      var size = 10 + Math.random() * 16;
+      $spark[0].style.setProperty('--sparkle-x', dx + 'px');
+      $spark[0].style.setProperty('--sparkle-y', dy + 'px');
+      $spark[0].style.setProperty('--sparkle-x2', x2 + 'px');
+      $spark[0].style.setProperty('--sparkle-y2', y2 + 'px');
+      $spark.css({ fontSize: size + 'px' });
+      $burst.append($spark);
+    }
+    $('body').append($burst);
+    $burst.css({ left: x + 'px', top: y + 'px' });
+    setTimeout(function() {
+      $burst.remove();
+    }, 1900);
   }
 
   init();
