@@ -1,0 +1,66 @@
+/* Shared UI primitives */
+.tab-nav {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  row-gap: 2px;
+  width: 100%;
+}
+
+.tab-nav li {
+  flex: 1 1 220px;
+  text-align: center;
+}
+
+.tab-nav .button {
+  width: 100%;
+  padding: 6px 8px;
+  line-height: 1.1;
+  min-height: 36px;
+  border-radius: 8px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 220ms ease, box-shadow 220ms ease, background-color 220ms ease;
+}
+
+@media (max-width: 768px) {
+  .tab-nav .button {
+    font-size: 0.8rem;
+    letter-spacing: 0.08rem;
+  }
+}
+
+/* Shared ribbon/banner style */
+.banner {
+  position: absolute;
+  top: 8px;
+  left: -18px;
+  color: #ffffff;
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding: 5px 14px;
+  transform: rotate(-33deg);
+  z-index: 10;
+  border-radius: 8px;
+  background: linear-gradient(45deg, #E1462E, #FFB24A);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.35), 0 0 18px rgba(255, 190, 90, 0.35);
+  animation: banner-glow 1.6s ease-in-out infinite;
+}
+
+@keyframes banner-glow {
+  0% {
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.35), 0 0 8px rgba(255, 190, 90, 0.2);
+  }
+  50% {
+    box-shadow: 0 10px 18px rgba(0, 0, 0, 0.45), 0 0 24px rgba(255, 190, 90, 0.55);
+  }
+  100% {
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.35), 0 0 8px rgba(255, 190, 90, 0.2);
+  }
+}
+
+body.dark-mode .banner {
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.55), 0 0 22px rgba(255, 190, 90, 0.45);
+}

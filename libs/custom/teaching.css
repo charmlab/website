@@ -10,27 +10,12 @@
 
 .teaching-tabs {
   margin: 18px 0 14px 0;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 6px;
-  /*row-gap: 2px;*/
-}
-
-.teaching-tabs li {
-  flex: 1 1 220px;
 }
 
 .teaching-tabs .button {
-  width: 100%;
   text-transform: uppercase !important;
   letter-spacing: 0.14rem;
-  padding: 6px 8px;
-  line-height: 1.1;
-  border-radius: 8px;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  min-height: 36px;
+  white-space: nowrap;
 }
 
 @media (max-width: 768px) {
@@ -38,10 +23,6 @@
     font-size: 0.75rem;
     letter-spacing: 0.08rem;
   }
-}
-
-.teaching-tabs .button {
-  white-space: nowrap;
 }
 
 .teaching-columns {
@@ -78,39 +59,6 @@
   box-shadow: var(--shadow-card-hover);
 }
 
-.teaching-card .banner {
-  position: absolute; /* Position relative to the teaching card */
-  top: 10px; /* Moves the banner slightly above the card */
-  left: -20px; /* Moves the banner slightly to the left of the card */
-  background-color: #E1462E; /* Warm red with gold tint */
-  color: white; /* Text color */
-  font-size: 1.5rem; /* Adjust font size */
-  font-weight: bold; /* Bold text */
-  padding: 5px 10px; /* Padding around the text */
-  transform: rotate(-33deg); /* Rotates the banner */
-  z-index: 10; /* Ensures the banner is on top */
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.35), 0 0 18px rgba(255, 190, 90, 0.35);
-  border-radius: 8px;
-  background: linear-gradient(45deg, #E1462E, #FFB24A);
-  /* text-shadow: 0 0 10px rgba(255, 255, 255, 0.8);*/
-  animation: banner-glow 1.6s ease-in-out infinite;
-}
-
-@keyframes banner-glow {
-  0% {
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.35), 0 0 8px rgba(255, 190, 90, 0.2);
-  }
-  50% {
-    box-shadow: 0 10px 18px rgba(0, 0, 0, 0.45), 0 0 24px rgba(255, 190, 90, 0.55);
-  }
-  100% {
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.35), 0 0 8px rgba(255, 190, 90, 0.2);
-  }
-}
-
-body.dark-mode .teaching-card .banner {
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.55), 0 0 22px rgba(255, 190, 90, 0.45);
-}
 
 .card-image img {
   width: 100%;

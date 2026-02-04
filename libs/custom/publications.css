@@ -11,38 +11,8 @@
 /*  background-color: #F1F1F1;*/
 }
 
-.tab-nav {
-  position: relative;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 6px;
-  /*row-gap: 2px;*/
-  width: 100%;
-}
-
-.tab-nav li {
-  flex: 1 1 0;
-  text-align: center;
-}
-
 .tab-nav .button {
   position: relative;
-  width: 100%;
-  transition: transform 220ms ease, box-shadow 220ms ease, background-color 220ms ease;
-  padding: 6px 8px;
-  line-height: 1.1;
-  border-radius: 8px;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  min-height: 36px;
-}
-
-@media (max-width: 768px) {
-  .tab-nav .button {
-    font-size: 0.8rem;
-    letter-spacing: 0.08rem;
-  }
 }
 
 .tab-nav .button.active {
@@ -91,24 +61,6 @@
     transform: translateY(-2px) scale(1.02);
     box-shadow: var(--shadow-card-hover);
   }
-}
-
-.banner {
-  position: absolute; /* Position relative to the teaching card */
-  top: 5px; /* Moves the banner slightly above the card */
-  left: -15px; /* Moves the banner slightly to the left of the card */
-  background-color: #E1462E; /* Warm red with gold tint */
-  color: white; /* Text color */
-  font-size: 1.5rem; /* Adjust font size */
-  font-weight: bold; /* Bold text */
-  padding: 5px 20px; /* Padding around the text */
-  transform: rotate(-33deg); /* Rotates the banner */
-  z-index: 1; /* Ensures the banner is on top */
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.35), 0 0 18px rgba(255, 190, 90, 0.35);
-  border-radius: 8px;
-  background: linear-gradient(45deg, #E1462E, #FFB24A);
-  /* text-shadow: 0 0 10px rgba(255, 255, 255, 0.8);*/
-  animation: banner-glow 1.6s ease-in-out infinite;
 }
 
 .paper-buttons {
@@ -188,21 +140,6 @@
   }
 }
 
-@keyframes banner-glow {
-  0% {
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.35), 0 0 8px rgba(255, 190, 90, 0.2);
-  }
-  50% {
-    box-shadow: 0 10px 18px rgba(0, 0, 0, 0.45), 0 0 24px rgba(255, 190, 90, 0.55);
-  }
-  100% {
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.35), 0 0 8px rgba(255, 190, 90, 0.2);
-  }
-}
-
-body.dark-mode .banner {
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.55), 0 0 22px rgba(255, 190, 90, 0.45);
-}
 
 @media (prefers-reduced-motion: reduce) {
   .tab-pane .paper-card {
@@ -235,4 +172,11 @@ body.dark-mode .banner {
     padding: 0px 5px; /* Adjust button padding */
     font-size: 0.9rem; /* Adjust font size */
   }
+}
+.publications-section .tab-nav {
+  row-gap: 1px;
+}
+
+.publications-section .tab-nav li {
+  flex: 1 1 160px;
 }
