@@ -21,6 +21,18 @@ a {
   color: gray;
 }
 
+.award {
+  color: #b8842b;
+  background: rgba(184, 132, 43, 0.12);
+  border-radius: 4px;
+  padding: 0 4px;
+  white-space: normal;
+}
+
+body.dark-mode .award {
+  color: #e3b45b;
+  background: rgba(227, 180, 91, 0.18);
+}
 body {
   background: var(--bg-color, #ffffff);
   color: var(--text-color, #111111);

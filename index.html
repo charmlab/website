@@ -8,6 +8,9 @@ title: Home
     Dr. Amir-Hossein Karimi is an award-winning researcher and educator, and an Assistant Professor in the <a href="https://uwaterloo.ca/electrical-computer-engineering" target="_blank">Department of Electrical and Computer Engineering</a> and the <a href="https://cs.uwaterloo.ca/" target="_blank">Cheriton School of Computer Science</a> (cross-appointed) at the <a href="https://uwaterloo.ca/" target="_blank">University of Waterloo</a>, and a <a href="https://vectorinstitute.ai/" target="_blank">Vector Institute</a> Faculty Affiliate.
 
     He leads the <b>Collaborative Human-AI Reasoning Machines (✨CHARM✨) Lab</b>, dedicated to advancing safe and trustworthy human-AI collaborations.
+
+    <br>
+    <br>
   
     Prior to joining Waterloo, Dr. Karimi accumulated significant industry experience at leading tech companies such as
     <a href="https://www.blackberry.com/" target="_blank">BlackBerry</a> (2013),
@@ -16,7 +19,7 @@ title: Home
     and <a href="https://www.deepmind.com/" target="_blank">DeepMind</a> (2022),
     and provided consulting services for various startups and incubators including for <a href="https://www.nextcanada.com/next-ai/" target="_blank">NEXT AI</a>.
 
-    His contributions have earned him multiple accolades, such as the <u>UofToronto Spirit of Engineering Science Award</u> (2015), the <u>UWaterloo Alumni Gold Medal Award</u> (2018), the <u>NSERC Canada Graduate Scholarship - Doctorate</u> (2018), the <u>Google PhD Fellowship</u> (2021), the <u>ETH Zurich Medal</u> (2024), the <u>NSERC Discovery Grants & Supplements</u> (2024), and the <u>Igor Ivkovic Teaching Excellence Award</u> (2024).
+    His contributions have earned him multiple accolades, such as the <span class="award">UofToronto Spirit of Engineering Science Award</span> (2015), the <span class="award">UWaterloo Alumni Gold Medal Award</span> (2018), the <span class="award">NSERC Canada Graduate Scholarship - Doctorate</span> (2018), the <span class="award">Google PhD Fellowship</span> (2021), the <span class="award">ETH Zurich Medal</span> (2024), the <span class="award">NSERC Discovery Grants & Supplements</span> (2024), and the <span class="award">Igor Ivkovic Teaching Excellence Award</span> (2024).
   </p>
 
 </div>
@@ -86,6 +89,9 @@ title: Home
         {% if member.coadvisor %}
           <br> (w/ <a href="{{ member.coadvisor_link }}" target="_blank">{{ member.coadvisor }}</a>)
         {% endif %}
+        {% if member.awards %}
+          <br><span class="award">{{ member.awards | join: ", " }}</span>
+        {% endif %}
       </p>
     </div>
     {% endfor %}
@@ -110,6 +116,9 @@ title: Home
         {{ member.title }} 
         {% if member.coadvisor %}
           <br> (w/ <a href="{{ member.coadvisor_link }}" target="_blank">{{ member.coadvisor }}</a>)
+        {% endif %}
+        {% if member.awards %}
+          <br><span class="award">{{ member.awards | join: ", " }}</span>
         {% endif %}
       </p>
     </div>
@@ -140,6 +149,9 @@ title: Home
         {% if alumni.next %}
           <br> (next: {{ alumni.next }})
         {% endif %}
+        {% if alumni.awards %}
+          <br><span class="award">{{ alumni.awards | join: ", " }}</span>
+        {% endif %}
       </p>
     </div>
     {% endfor %}
@@ -168,6 +180,9 @@ title: Home
         {% endif %}
         {% if mentee.next %}
           <br> (next: {{ mentee.next }})
+        {% endif %}
+        {% if mentee.awards %}
+          <br><span class="award">{{ mentee.awards | join: ", " }}</span>
         {% endif %}
       </p>
     </div>
@@ -250,7 +265,7 @@ title: Home
 <div class="docs-section" id="teaching">
   <h4>Teaching</h4>
   <div class="intro-text">
-    Dr. Karimi enjoys teaching diverse audiences, covering broad topics in AI <u>for general audiences</u>, courses on ML <u>for undergrad/grad students</u>, and specialized courses <u>for practitioners</u>. In his first teaching term at the University of Waterloo, he was honored with the <b>2024 Igor Ivkovic Teaching Excellence Award</b>.
+    Dr. Karimi enjoys teaching diverse audiences, covering broad topics in AI <u>for general audiences</u>, courses on ML <u>for undergrad/grad students</u>, and specialized courses <u>for practitioners</u>. In his first teaching term at the University of Waterloo, he was honored with the <span class="award">2024 Igor Ivkovic Teaching Excellence Award</span>.
 
     Dr. Karimi has been invited to present talks, lectures, and tutorials at institutions such as MIT, Harvard, ETH Zurich, MILA, University College London, Cyber Valley Health, Institute of Mathematical Statistics, NEC Europe Labs, DeepMind, and Google Brain. He gave notable tutorials at KDD 2023 (on Causal Explainable AI) and at the Toronto ML Summit 2024 (on Algorithmic Recourse).
 

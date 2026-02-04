@@ -101,6 +101,10 @@ display: flex;
   line-height: 1.2;
 }
 
+.members-card .award {
+  font-size: 0.9em;
+}
+
 /* Student role accents (image border/glow) */
 .student-card {
   position: relative;
