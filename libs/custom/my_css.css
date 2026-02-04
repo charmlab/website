@@ -77,6 +77,47 @@ h4 {
 .image {
   text-align: center; }
 
+.sparkle-burst {
+  position: fixed;
+  pointer-events: none;
+  width: 0;
+  height: 0;
+  z-index: 2000;
+}
+
+.sparkle-burst span {
+  position: absolute;
+  font-size: 16px;
+  line-height: 1;
+  filter: drop-shadow(0 0 6px rgba(255, 215, 130, 0.7));
+  animation: sparkle-fly 1800ms ease-out forwards;
+}
+
+@keyframes sparkle-fly {
+  0% {
+    transform: translate(0, 0) scale(0.9) rotate(0deg);
+    opacity: 1;
+  }
+  60% {
+    transform: translate(calc(var(--sparkle-x) * 0.55), calc(var(--sparkle-y) * 0.55))
+      scale(0.7) rotate(20deg);
+    opacity: 1;
+  }
+  100% {
+    transform: translate(var(--sparkle-x), var(--sparkle-y))
+      translate(var(--sparkle-x2), var(--sparkle-y2))
+      scale(0.35) rotate(60deg);
+    opacity: 0;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .sparkle-burst span {
+    animation: none;
+    opacity: 0;
+  }
+}
+
 /*  ================ Project styling  ================ */
 .project-container {
   margin-bottom: 30px;
