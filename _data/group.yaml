@@ -39,8 +39,6 @@ members:
     image: "/assets/profile-pics/male.jpg"
     # next: "DRW"
 
-
-
   - name: Maryam Ghorbansabagh
     title: "Master's Student"
     coadvisor: "Prof. Grossmann"
@@ -51,8 +49,6 @@ members:
   - name: Tom Wielemaker
     title: "Undergraduate Student"
     image: "/assets/profile-pics/male.jpg"
-
-
 
 
   - name: Hosna Oyarhoseini
@@ -67,26 +63,6 @@ members:
     title: "Undergraduate Student"
     next: "OpenAI Inc."
     image: "/assets/profile-pics/male.jpg"
-
-
-  # - name: Mina Mirzadehsarcheshmeh
-  #   title: "PhD Student"
-  #   coadvisor: "Prof. Khandani"
-  #   coadvisor_link: "https://uwaterloo.ca/electrical-computer-engineering/profile/khandani"
-  #   image: "/assets/profile-pics/female.jpg"
-
-  # - name: Kimia Ghodsifar
-  #   title: "PhD Student"
-  #   coadvisor: "Prof. Khandani"
-  #   coadvisor_link: "https://uwaterloo.ca/electrical-computer-engineering/profile/khandani"
-  #   image: "/assets/profile-pics/female.jpg"
-
-  # - name: Juliette Sinnott
-  #   title: "PhD Student"
-  #   coadvisor: "Prof. Kohandel"
-  #   coadvisor_link: "https://uwaterloo.ca/applied-mathematics/profiles/mohammad-kohandel"
-  #   image: "/assets/profile-pics/female.jpg"
-
   
 
   
@@ -99,29 +75,6 @@ members:
   #   title: "Master's Student"
   #   image: "/assets/profile-pics/male.jpg"
 
-
-
-
-  # Reezan, Rishith, Aryan, Akil, Samyar, Charlotte
-  # Juliette, Mina, Kimia
-
-  # - name: Nafiseh Bafghi
-  #   title: "Master's Student"
-  #   coadvisor: "Prof. Grossmann"
-  #   coadvisor_link: "https://uwaterloo.ca/psychology/profiles/igor-grossmann"
-  #   image: "/assets/profile-pics/female.jpg"
-
-  # - name: ???? ????
-  #   title: "Master's Student"
-  #   coadvisor: "Prof. Khandani"
-  #   coadvisor_link: "https://uwaterloo.ca/electrical-computer-engineering/profile/khandani"
-  #   image: "/assets/profile-pics/male.jpg"
-  
-  # - name: Samee Arif
-  #   title: "Master's Student"
-  #   coadvisor: "Prof. Ghodsi"
-  #   coadvisor_link: "https://uwaterloo.ca/statistics-and-actuarial-science/profiles/ali-ghodsi"
-  #   image: "/assets/profile-pics/male.jpg"
 
 alumni:
   - name: Hamdi Altaheri 
@@ -150,10 +103,6 @@ alumni:
   - name: Jieming Yu
     title: "Master's Student"
     image: "/assets/profile-pics/male.jpg"
-
-  # - name: Jieming Yu
-  #   title: "Master's Student"
-  #   image: "/assets/profile-pics/male.jpg"
 
   - name: Abubakar Bello
     title: "Undergraduate Student"
