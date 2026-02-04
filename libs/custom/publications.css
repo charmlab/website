@@ -99,6 +99,42 @@
   border-left: 1.5px solid gray; /* The vertical line */
 }
 
+@media (max-width: 768px) {
+  .paper-card {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .paper-buttons {
+    flex-direction: column;
+    flex-wrap: nowrap;
+    gap: 4px;
+    margin: 0 10px 0 0;
+    padding: 0 6px 0 0;
+  }
+
+  .paper-buttons a {
+    margin: 0;
+    font-size: 0.78rem;
+    padding: 4px 8px;
+  }
+
+  .paper-details {
+    padding-left: 10px;
+    border-left: 1px solid rgba(128, 128, 128, 0.5);
+    /*font-size: 1rem;*/
+    line-height: 1.4;
+  }
+
+  .paper-details span[style*="color:red"] {
+    display: none;
+  }
+
+  .tldr-line {
+    display: none;
+  }
+}
+
 .paper-details b {
   font-weight: bold;
 /*  margin-bottom: 5px;*/

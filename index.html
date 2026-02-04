@@ -234,7 +234,7 @@ title: Home
                 <a class="button" href="{{ paper.paper_pdf}}" target="_blank">Paper</a>
               {% endif %}
               {% if paper.slides %}
-                <a class="button" href="{{ paper.slides | prepend: site.baseurl }}" target="_blank">Slide</a>
+                <a class="button" href="{{ paper.slides | prepend: site.baseurl }}" target="_blank">Slides</a>
               {% endif %}
               {% if paper.code %}
                 <a class="button" href="{{ paper.code | prepend: site.baseurl }}" target="_blank">Code</a>
@@ -245,12 +245,12 @@ title: Home
             </div>
 
             <div class="paper-details">
-              📝 <b>{{ paper.title }}</b><br>
-              ✍️ {{ paper.authors }}
-              {% if paper.venue %} <br>🏛️ <i>{{ paper.venue }}</i>{% endif %}
-              {% if paper.acceptance_rate %} <span style="color:red;">(acceptance rate: {{ paper.acceptance_rate }})</span>{% endif %}
-              {% if paper.impact_factor %} <span style="color:red;">(impact factor: {{ paper.impact_factor }})</span>{% endif %}
-              {% if paper.tldr %} <br>✨ <b class="tldr-label">TL;DR:</b> {{ paper.tldr }} {% endif %}
+              📝 <b class="paper-title">{{ paper.title }}</b>
+              {% if paper.venue %} <br><span class="venue-line">🏛️ <i>{{ paper.venue }}</i></span>{% endif %}
+              {% if paper.acceptance_rate %} <span class="venue-line" style="color:red;"> (acceptance rate: {{ paper.acceptance_rate }})</span>{% endif %}
+              {% if paper.impact_factor %} <span class="venue-line" style="color:red;"> (impact factor: {{ paper.impact_factor }})</span>{% endif %}
+              <span class="author-line"> <br>✍️ {{ paper.authors }}</span>
+              {% if paper.tldr %} <span class="tldr-line"><br>✨ <b class="tldr-label">TL;DR:</b> {{ paper.tldr }}</span> {% endif %}
             </div>
           </div>
         {% endfor %}
