@@ -306,9 +306,9 @@ title: Home
   </p>
 
   <!-- The Timeline -->
-  <ul class="timeline">
+  <ul class="timeline scroll-reveal">
     {% for exp in site.data.experience.experiences %}
-    <li>
+    <li class="reveal-item">
       {% if exp.category == "work" %}
       <div class="direction-l">
       {% else %}
