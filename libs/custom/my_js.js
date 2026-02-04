@@ -22,7 +22,7 @@ $(document).ready(function() {
     $window.on('resize', resize)
     $popoverLink.on('click', openPopover)
     $document.on('click', closePopover)
-    $('a[href^="#"]').on('click', smoothScroll)
+    $('a[href*="#"]').on('click', smoothScroll)
     buildSnippets();
     initMemberReveal();
     initPublicationsTabs();
@@ -32,12 +32,22 @@ $(document).ready(function() {
   function smoothScroll(e) {
     e.preventDefault();
     $(document).off("scroll");
-    var target = this.hash,
-        menu = target;
+    var target = this.hash;
+    if (!target || target.length === 0) {
+      return;
+    }
+    if (this.pathname && this.pathname !== window.location.pathname) {
+      return;
+    }
     $target = $(target);
+    if ($target.length === 0) {
+      return;
+    }
+    var navHeight = $nav.length ? $nav.outerHeight() : 0;
+    var extraOffset = 12;
     $('html, body').stop().animate({
-        'scrollTop': $target.offset().top-40
-    }, 0, 'swing', function () {
+        'scrollTop': $target.offset().top - navHeight - extraOffset
+    }, 420, 'swing', function () {
         window.location.hash = target;
         $(document).on("scroll", onScroll);
     });

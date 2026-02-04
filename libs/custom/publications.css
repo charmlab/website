@@ -2,8 +2,8 @@
   display: flex;
   align-items: center;
   margin-bottom: 12px;
-  border-radius: 15px;
-  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.16);
+  border-radius: var(--radius-card);
+  box-shadow: var(--shadow-card);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   padding: 10px;
   position: relative;
@@ -64,7 +64,7 @@
 @media (hover: hover) and (pointer: fine) {
   .paper-card:hover {
     transform: translateY(-2px) scale(1.02);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.18);
+    box-shadow: var(--shadow-card-hover);
   }
 }
 
@@ -96,10 +96,10 @@
 
 .paper-buttons a {
 /*  padding: 5px 10px;*/
-  background-color: #33c3f0;
+  background-color: var(--accent-primary);
   color: white;
   text-decoration: none;
-  border-radius: 5px;
+  border-radius: var(--radius-pill);
   margin-bottom: 5px; /* Space between buttons */
   transition: background-color 0.25s ease, transform 0.25s ease, box-shadow 0.25s ease;
   box-shadow: 0 4px 10px rgba(51, 195, 240, 0.25);

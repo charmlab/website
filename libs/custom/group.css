@@ -16,12 +16,12 @@
   position: relative;
   margin-bottom: 8px;
   overflow: hidden;
-  border-radius: 15px; /* Sleek rounded corners */
+  border-radius: var(--radius-card);
 /*  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);*/
 /*  transition: transform 0.3s ease;*/
 /*  cursor: pointer;*/
 /*  background: #f5f5f5;*/
-  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover transition */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 
 }
 
@@ -50,7 +50,7 @@
 
 .members-card:hover {
   transform: scale(1.06);
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  box-shadow: var(--shadow-card-hover);
 }
 
 .members-card:hover .profile-pic {
@@ -74,7 +74,7 @@ display: flex;
 .members-card .profile-pic {
   width: 150px;
   height: 150px;
-  border-radius: 15px;
+  border-radius: var(--radius-card);
   object-fit: cover;
   display: block;
   margin: 0 auto 10px auto; /* Center the image and add space below */
@@ -102,27 +102,55 @@ display: flex;
   overflow: visible;
 }
 
-.student-card .profile-pic {
+.student-card .profile-pic,
+.student-card.profile-pic {
   border: 3px solid transparent;
   box-shadow: 0 0 0 0 rgba(0,0,0,0);
   transition: transform 160ms ease, box-shadow 160ms ease, border-color 160ms ease;
+  border-radius: var(--radius-card);
 }
 
-.student--ug .profile-pic { border-color: #7FCF9B; }
-.student--msc .profile-pic { border-color: #5AA6E8; }
-.student--phd .profile-pic { border-color: #4B3D9A; }
-.student--postdoc .profile-pic { border-color: #D8A647; }
-.student--pi .profile-pic { border-color: #D8A647; }
+.profile-frame {
+  display: inline-block;
+  border-radius: var(--radius-card);
+  overflow: hidden;
+  border: 3px solid transparent;
+}
+
+.profile-frame .profile-pic {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 0;
+}
+
+.student--ug .profile-pic,
+.student--ug.profile-pic { border-color: #7FCF9B; }
+.student--msc .profile-pic,
+.student--msc.profile-pic { border-color: #5AA6E8; }
+.student--phd .profile-pic,
+.student--phd.profile-pic { border-color: #4B3D9A; }
+.student--postdoc .profile-pic,
+.student--postdoc.profile-pic { border-color: #D8A647; }
+.student--pi .profile-pic,
+.student--pi.profile-pic { border-color: #D8A647; }
+.student--pi.profile-frame { border-color: #D8A647; }
 
 @media (hover: hover) and (pointer: fine) {
-  .student-card:hover .profile-pic {
+  .student-card:hover .profile-pic,
+  .student-card.profile-pic:hover {
     transform: scale(1.03);
   }
-  .student--ug:hover .profile-pic { box-shadow: 0 0 0 4px rgba(127, 207, 155, 0.35); }
-  .student--msc:hover .profile-pic { box-shadow: 0 0 0 4px rgba(90, 166, 232, 0.35); }
-  .student--phd:hover .profile-pic { box-shadow: 0 0 0 4px rgba(75, 61, 154, 0.35); }
-  .student--postdoc:hover .profile-pic { box-shadow: 0 0 0 4px rgba(216, 166, 71, 0.35); }
-  .student--pi:hover .profile-pic { box-shadow: 0 0 0 4px rgba(216, 166, 71, 0.35); }
+  .student--ug:hover .profile-pic,
+  .student--ug.profile-pic:hover { box-shadow: 0 0 0 4px rgba(127, 207, 155, 0.35); }
+  .student--msc:hover .profile-pic,
+  .student--msc.profile-pic:hover { box-shadow: 0 0 0 4px rgba(90, 166, 232, 0.35); }
+  .student--phd:hover .profile-pic,
+  .student--phd.profile-pic:hover { box-shadow: 0 0 0 4px rgba(75, 61, 154, 0.35); }
+  .student--postdoc:hover .profile-pic,
+  .student--postdoc.profile-pic:hover { box-shadow: 0 0 0 4px rgba(216, 166, 71, 0.35); }
+  .student--pi:hover .profile-pic,
+  .student--pi.profile-pic:hover { box-shadow: 0 0 0 4px rgba(216, 166, 71, 0.35); }
 }
 
 @media (min-width: 600px) and (max-width: 900px) {

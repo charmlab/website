@@ -25,15 +25,15 @@
 .teaching-card {
   position: relative;
   margin-bottom: 20px;
-  border-radius: 15px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  border-radius: var(--radius-card);
+  box-shadow: var(--shadow-card);
   transition: transform 0.3s ease;
   overflow: visible; /* Allows the banner to extend beyond the card */
 }
 
 .teaching-card:hover {
   transform: scale(1.06);
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  box-shadow: var(--shadow-card-hover);
 }
 
 .teaching-card .banner {
