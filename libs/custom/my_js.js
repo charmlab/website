@@ -29,6 +29,7 @@ $(document).ready(function() {
     initScrollReveal();
     initSparkleEasterEgg();
     initThemeToggle();
+    initGaTracking();
   }
 
   function smoothScroll(e) {
@@ -256,6 +257,9 @@ $(document).ready(function() {
         return;
       }
       spawnSparkleBurst(e.clientX, e.clientY, 14, 0.8, 0.6);
+      trackEvent('easter_egg_click', {
+        label: 'charm_lab_header'
+      });
     });
 
     $triggers.on('mouseenter', function(e) {
@@ -263,6 +267,9 @@ $(document).ready(function() {
         return;
       }
       spawnSparkleBurst(e.clientX, e.clientY, 2, 0.2, 0.15);
+      trackEvent('easter_egg_hover', {
+        label: 'charm_lab_header'
+      });
     });
   }
 
@@ -316,6 +323,9 @@ $(document).ready(function() {
       var isDark = $('body').hasClass('dark-mode');
       localStorage.setItem('theme', isDark ? 'dark' : 'light');
       updateThemeToggle();
+      trackEvent(isDark ? 'select_theme_dark' : 'select_theme_light', {
+        theme: isDark ? 'dark' : 'light'
+      });
     });
   }
 
@@ -328,6 +338,108 @@ $(document).ready(function() {
     $toggle.toggleClass('is-dark', isDark);
     $toggle.toggleClass('is-light', !isDark);
     $toggle.html(isDark ? '<i class="fa fa-sun-o" aria-hidden="true"></i>' : '<i class="fa fa-moon-o" aria-hidden="true"></i>');
+  }
+
+  function trackEvent(name, params) {
+    if (typeof gtag !== 'function') {
+      return;
+    }
+    gtag('event', name, params || {});
+  }
+
+  function slugify(text) {
+    return String(text || '')
+      .toLowerCase()
+      .replace(/&/g, 'and')
+      .replace(/[^a-z0-9]+/g, '_')
+      .replace(/^_+|_+$/g, '');
+  }
+
+  function initGaTracking() {
+    initCtaTracking();
+    initTabTracking();
+    initSectionTracking();
+    initOutboundTracking();
+  }
+
+  function initCtaTracking() {
+    $(document).on('click', '.inline-cta, .paper-buttons a, .teaching-card a.button, .teaching-card .button', function() {
+      var $el = $(this);
+      var label = $.trim($el.text());
+      var href = $el.attr('href') || '';
+      var section = $el.closest('.docs-section').attr('id') || '';
+      var location = $el.closest('header, footer').length ? ($el.closest('footer').length ? 'footer' : 'header') : (section || 'page');
+      var eventName = 'click_cta_' + slugify(location || label || 'cta');
+      trackEvent(eventName, {
+        label: label,
+        href: href,
+        section: section,
+        location: location
+      });
+    });
+  }
+
+  function initTabTracking() {
+    $(document).on('click', '.tab-nav .button', function() {
+      var $btn = $(this);
+      var label = $.trim($btn.text());
+      var ref = $btn.data('ref') || '';
+      var section = $btn.closest('.docs-section').attr('id') || '';
+      var prefix = section === 'publications' ? 'tab_pubs_' : section === 'teaching' ? 'tab_teaching_' : section === 'group' ? 'tab_group_' : 'tab_';
+      var eventName = prefix + slugify(label);
+      trackEvent(eventName, {
+        label: label,
+        ref: ref,
+        section: section
+      });
+    });
+  }
+
+  function initSectionTracking() {
+    if (!('IntersectionObserver' in window)) {
+      return;
+    }
+    var seen = {};
+    var $sections = $('.docs-section[id]');
+    if ($sections.length === 0) {
+      return;
+    }
+    var observer = new IntersectionObserver(function(entries) {
+      entries.forEach(function(entry) {
+        if (!entry.isIntersecting) {
+          return;
+        }
+        var id = entry.target.getAttribute('id');
+        if (!id || seen[id]) {
+          return;
+        }
+        seen[id] = true;
+        trackEvent('view_section_' + slugify(id), {
+          section: id
+        });
+      });
+    }, { threshold: 0.35 });
+
+    $sections.each(function() {
+      observer.observe(this);
+    });
+  }
+
+  function initOutboundTracking() {
+    $(document).on('click', 'a[href]', function() {
+      var href = $(this).attr('href');
+      if (!href || href.indexOf('http') !== 0) {
+        return;
+      }
+      var linkHost = document.createElement('a');
+      linkHost.href = href;
+      if (linkHost.hostname && linkHost.hostname !== window.location.hostname) {
+        trackEvent('outbound_click', {
+          href: href,
+          host: linkHost.hostname
+        });
+      }
+    });
   }
 
   init();
