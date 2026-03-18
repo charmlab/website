@@ -16,6 +16,38 @@
   padding-top: 2px;
 }
 
+#group .group-intro {
+  max-width: 1100px;
+}
+
+#group .group-intro p {
+  margin-bottom: 1.2rem;
+}
+
+#group .group-intro p:last-child {
+  margin-bottom: 0.8rem;
+}
+
+#group .group-intro ul {
+  margin: 0.35rem 0 1.05rem 1.6rem;
+}
+
+#group .group-intro li {
+  margin-bottom: 0.55rem;
+}
+
+#group .prospective-students-block {
+  margin-top: 1.6rem;
+}
+
+#group .prospective-students-block h5 {
+  margin-bottom: 0.35rem;
+}
+
+#group .prospective-students-block p {
+  margin-top: 0;
+}
+
 .members-columns {
   display: grid;
   grid-template-columns: repeat(5, minmax(0, 1fr));

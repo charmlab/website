@@ -7,7 +7,7 @@ categories:
     id: "papers-recourse"
   - name: "Causal Inference"
     id: "causal-inference"
-  - name: "Human-AI"
+  - name: "Metacognition"
     id: "papers-human-ai"
   - name: "Random Projections"
     id: "papers-random-projections"
@@ -39,7 +39,7 @@ papers:
   - title: "Imagining and building wise machines: The centrality of AI metacognition"
     authors: "Johnson, <u><b>Karimi</b></u>, Bengio, Chater, Gerstenberg, Larson, Levine, Mitchell, Rahwan, Schölkopf, Grossmann"
     venue: Trends in Cognitive Sciences
-    categories: ["Selected", "Explainable AI", "Human-AI"]
+    categories: ["Selected", "Explainable AI", "Metacognition"]
     paper_pdf: "https://arxiv.org/abs/2411.02478"
     impact_factor: "17.2"
     tldr: AI systems should integrate metacognitive strategies to enhance robustness, explainability, cooperation, and safety in complex real-world scenarios
