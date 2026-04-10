@@ -1,0 +1,29 @@
+---
+layout: none
+permalink: /sitemap.xml
+---
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  {% assign site_root = site.url | append: site.baseurl %}
+  <url>
+    <loc>{{ site_root }}/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  {% for page in site.pages %}
+    {% if page.url != "/" and page.url != "/index.html" and page.name != "robots.txt" and page.name != "sitemap.xml" and page.url contains ".html" %}
+  <url>
+    <loc>{{ page.url | absolute_url }}</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+    {% endif %}
+  {% endfor %}
+  {% for project in site.projects %}
+  <url>
+    <loc>{{ project.url | absolute_url }}</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  {% endfor %}
+</urlset>

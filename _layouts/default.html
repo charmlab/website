@@ -1,18 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  {% assign page_title = page.title | default: "Home" %}
+  {% assign page_description = page.description | default: "Official website of Amir H. Karimi, Assistant Professor at the University of Waterloo and lead of the CHARM Lab, featuring research, publications, teaching, and group information." %}
+  {% assign site_root = site.url | append: site.baseurl %}
+  {% if page.url == "/" or page.url == "/index.html" %}
+    {% assign canonical_url = site_root | append: "/" %}
+  {% else %}
+    {% assign canonical_url = page.url | absolute_url %}
+  {% endif %}
+  {% assign profile_image_url = site.data.main_info.profile_pic | absolute_url %}
 
   <!-- Basic Page Needs
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <meta charset="utf-8">
-  <title>{{ site.data.main_info.name }} | {{ page.title }}</title>
-  <meta name="description" content="Amir-Hossein Karimi">
+  <title>{{ site.data.main_info.name }} | {{ page_title }}</title>
+  <meta name="description" content="{{ page_description }}">
   <meta name="author" content="Amir-Hossein Karimi">
+  <meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1">
   <meta property="og:title" content="Amir-Hossein Karimi" />
+  <meta property="og:description" content="{{ page_description }}" />
   <meta property="og:type" content="website" />
-  <meta property="og:url" content="http://www.amirhkarimi.com" />
+  <meta property="og:url" content="{{ canonical_url }}" />
   <meta property="og:site_name" content="Amir-Hossein Karimi" />
-  <link rel="canonical" href="http://www.amirhkarimi.com" />
+  <meta property="og:image" content="{{ profile_image_url }}" />
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Amir-Hossein Karimi">
+  <meta name="twitter:description" content="{{ page_description }}">
+  <meta name="twitter:image" content="{{ profile_image_url }}">
+  <link rel="canonical" href="{{ canonical_url }}" />
 
   <!-- Mobile Specific Metas
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -63,6 +79,145 @@
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <link rel="icon" type="image/png" href={{ "/libs/icon.png" | prepend: site.baseurl }}>
   <link rel="shortcut icon" type="image/png" href={{ "/libs/icon.png" | prepend: site.baseurl }}>
+
+  {% if page.url == "/" or page.url == "/index.html" %}
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebSite",
+        "@id": "{{ site_root }}/#website",
+        "url": "{{ site_root }}/",
+        "name": {{ site.data.main_info.name | jsonify }},
+        "description": {{ page_description | jsonify }}
+      },
+      {
+        "@type": "Person",
+        "@id": "{{ site_root }}/#person",
+        "name": {{ site.data.main_info.name | jsonify }},
+        "url": "{{ site_root }}/",
+        "image": {{ profile_image_url | jsonify }},
+        "jobTitle": {{ site.data.main_info.title | jsonify }},
+        "affiliation": [
+          {
+            "@type": "CollegeOrUniversity",
+            "name": "University of Waterloo",
+            "url": "https://uwaterloo.ca/"
+          },
+          {
+            "@type": "Organization",
+            "name": "Vector Institute",
+            "url": "https://vectorinstitute.ai/"
+          }
+        ],
+        "sameAs": [
+          {{ site.data.main_info.google_scholar | jsonify }},
+          {{ site.data.main_info.github | jsonify }},
+          {{ site.data.main_info.linkedin | jsonify }},
+          {{ site.data.main_info.twitter | jsonify }},
+          {{ site.data.main_info.youtube | jsonify }},
+          {{ site.data.main_info.instagram | jsonify }},
+          {{ site.data.main_info.medium | jsonify }}
+        ]
+      },
+      {
+        "@type": "ResearchOrganization",
+        "@id": "{{ site_root }}/#charm-lab",
+        "name": "Collaborative Human-AI Reasoning Machines (CHARM) Lab",
+        "alternateName": "CHARM Lab",
+        "url": "{{ site_root }}/#group",
+        "parentOrganization": {
+          "@type": "CollegeOrUniversity",
+          "name": "University of Waterloo",
+          "url": "https://uwaterloo.ca/"
+        },
+        "founder": {
+          "@id": "{{ site_root }}/#person"
+        },
+        "areaOfWork": [
+          "Trustworthy AI",
+          "Causal Inference",
+          "Explainable AI",
+          "Neuro-symbolic Learning",
+          "Human-AI Interaction"
+        ]
+      },
+      {
+        "@type": "CollectionPage",
+        "@id": "{{ site_root }}/#publications-page",
+        "url": "{{ site_root }}/#publications",
+        "name": "Publications",
+        "about": {
+          "@id": "{{ site_root }}/#person"
+        }
+      },
+      {
+        "@type": "ItemList",
+        "@id": "{{ site_root }}/#publications-list",
+        "name": "Research publications by Amir H. Karimi",
+        "url": "{{ site_root }}/#publications",
+        "numberOfItems": {{ site.data.publications.papers | size }},
+        "itemListElement": [
+          {% for paper in site.data.publications.papers %}
+          {
+            "@type": "ScholarlyArticle",
+            "position": {{ forloop.index }},
+            "headline": {{ paper.title | jsonify }},
+            "name": {{ paper.title | jsonify }},
+            {% if paper.paper_pdf and paper.paper_pdf != "" %}
+            "url": {{ paper.paper_pdf | jsonify }},
+            {% else %}
+            "url": "{{ site_root }}/#publications",
+            {% endif %}
+            "author": [
+              {% assign author_names = paper.authors | strip_html | replace: "‡", "" | split: "," %}
+              {% for author in author_names %}
+              {
+                "@type": "Person",
+                "name": {{ author | strip | jsonify }}
+              }{% unless forloop.last %},{% endunless %}
+              {% endfor %}
+            ],
+            "about": [
+              {% for category in paper.categories %}
+              {{ category | jsonify }}{% unless forloop.last %},{% endunless %}
+              {% endfor %}
+            ],
+            "isPartOf": {
+              "@type": "CreativeWork",
+              "name": {{ paper.venue | jsonify }}
+            }{% if paper.tldr and paper.tldr != "" %},
+            "description": {{ paper.tldr | jsonify }}{% endif %}
+          }{% unless forloop.last %},{% endunless %}
+          {% endfor %}
+        ]
+      },
+      {
+        "@type": "ItemList",
+        "@id": "{{ site_root }}/#teaching-list",
+        "name": "Courses, talks, and teaching materials by Amir H. Karimi",
+        "url": "{{ site_root }}/#teaching",
+        "numberOfItems": {{ site.data.teaching.items | size }},
+        "itemListElement": [
+          {% for item in site.data.teaching.items %}
+          {
+            "@type": "Course",
+            "position": {{ forloop.index }},
+            "name": {{ item.title | jsonify }},
+            "url": {{ item.links[0].url | jsonify }},
+            "description": {{ item.alt_text | default: item.title | jsonify }},
+            "provider": {
+              "@id": "{{ site_root }}/#person"
+            }
+          }{% unless forloop.last %},{% endunless %}
+          {% endfor %}
+        ]
+      }
+    ]
+  }
+  </script>
+  {% endif %}
 
 </head>
 <body>
