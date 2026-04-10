@@ -36,7 +36,9 @@
 
   <!-- FONT
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link href='https://fonts.googleapis.com/css?family=Raleway:400,300,600' rel='stylesheet' type='text/css'>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href='https://fonts.googleapis.com/css?family=Raleway:400,300,600&display=swap' rel='stylesheet' type='text/css'>
 
   <!-- CSS
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -51,7 +53,7 @@
 
   <!-- JQuery
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <script src={{ "/libs/external/jquery-3.1.1.min.js" | prepend: site.baseurl }}></script>
+  <script defer src={{ "/libs/external/jquery-3.1.1.min.js" | prepend: site.baseurl }}></script>
 
   <!-- Font-Awesome
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -64,7 +66,7 @@
   <!-- Skeleton tabs
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <link rel="stylesheet" href={{ "/libs/external/skeleton_tabs/skeleton-tabs.css" | prepend: site.baseurl }}>
-  <script src={{ "/libs/external/skeleton_tabs/skeleton-tabs.js" | prepend: site.baseurl }}></script>
+  <script defer src={{ "/libs/external/skeleton_tabs/skeleton-tabs.js" | prepend: site.baseurl }}></script>
 
   <!-- Timeline
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -73,7 +75,7 @@
   <!-- Scripts
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <!--<link rel="stylesheet" href={{ "/libs/external/github-prettify-theme.css" | prepend: site.baseurl }}>-->
-  <script src={{ "/libs/custom/my_js.js" | prepend: site.baseurl }}></script>
+  <script defer src={{ "/libs/custom/my_js.js" | prepend: site.baseurl }}></script>
 
   <!-- Favicon
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -231,7 +233,7 @@
         <div class="three columns">
           <a href="{{ site.baseurl }}/">
             <span class="profile-frame student-card student--pi">
-              <img class="u-max-full-width profile-pic" src='{{ site.baseurl }}{{ site.data.main_info.profile_pic }}' alt="{{ site.data.main_info.name }}">
+              <img class="u-max-full-width profile-pic" src='{{ site.baseurl }}{{ site.data.main_info.profile_pic }}' alt="{{ site.data.main_info.name }}" width="1036" height="1314" decoding="async" fetchpriority="high">
             </span>
           </a>
         </div>
@@ -343,13 +345,28 @@
 
   <!-- Google Analytics -->
   {% if site.data.main_info.google_analytics_tracking_id %}
-  <script async src="https://www.googletagmanager.com/gtag/js?id={{ site.data.main_info.google_analytics_tracking_id }}"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
 
-    gtag('config', '{{ site.data.main_info.google_analytics_tracking_id }}');
+    function loadAnalytics() {
+      if (window.__gaLoaded) return;
+      window.__gaLoaded = true;
+      var script = document.createElement('script');
+      script.async = true;
+      script.src = 'https://www.googletagmanager.com/gtag/js?id={{ site.data.main_info.google_analytics_tracking_id }}';
+      document.head.appendChild(script);
+      gtag('js', new Date());
+      gtag('config', '{{ site.data.main_info.google_analytics_tracking_id }}');
+    }
+
+    if ('requestIdleCallback' in window) {
+      window.addEventListener('load', function() {
+        requestIdleCallback(loadAnalytics, { timeout: 3000 });
+      }, { once: true });
+    } else {
+      window.addEventListener('load', loadAnalytics, { once: true });
+    }
   </script>
   <!-- End Google Analytics -->
   {% endif %}

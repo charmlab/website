@@ -87,7 +87,7 @@ title: Home
     <div class="members-card student-card student--pi">
       <!-- <img class="profile-pic" src={{ "/assets/profile-pics/shiraz.png" | prepend: site.baseurl }} alt="Amir-Hossein Karimi"> -->
       <!-- <img class="profile-pic" src={{ "/assets/profile-pics/tmls.jpeg" | prepend: site.baseurl }} alt="Amir-Hossein Karimi"> -->
-      <img class="profile-pic" src={{ "/assets/profile-pics/toronto.png" | prepend: site.baseurl }} alt="Amir-Hossein Karimi">
+      <img class="profile-pic" src={{ "/assets/profile-pics/toronto.png" | prepend: site.baseurl }} alt="Amir-Hossein Karimi" width="1024" height="1024" loading="lazy" decoding="async">
       <p class="name">Amir-Hossein Karimi</p>
       <p class="title">Principal Investigator (PI)</p>
     </div>
@@ -103,7 +103,7 @@ title: Home
       {% assign role_class = "student--postdoc" %}
     {% endif %}
     <div class="members-card student-card {{ role_class }}">
-      <img class="profile-pic" src="{{ member.image | prepend: site.baseurl }}" alt="{{ member.name }}">
+      <img class="profile-pic" src="{{ member.image | prepend: site.baseurl }}" alt="{{ member.name }}" width="1024" height="1024" loading="lazy" decoding="async">
       <p class="name">{{ member.name }}</p>
       <p class="title">
         {{ member.title }} 
@@ -131,7 +131,7 @@ title: Home
       {% assign role_class = "student--postdoc" %}
     {% endif %}
     <div class="members-card student-card {{ role_class }}">
-      <img class="profile-pic" src="{{ member.image | prepend: site.baseurl }}" alt="{{ member.name }}">
+      <img class="profile-pic" src="{{ member.image | prepend: site.baseurl }}" alt="{{ member.name }}" width="1024" height="1024" loading="lazy" decoding="async">
       <p class="name">{{ member.name }}</p>
       <p class="title">
         {{ member.title }} 
@@ -161,7 +161,7 @@ title: Home
       {% assign role_class = "student--postdoc" %}
     {% endif %}
     <div class="members-card student-card {{ role_class }}">
-      <img class="profile-pic" src="{{ alumni.image | prepend: site.baseurl }}" alt="{{ alumni.name }}">
+      <img class="profile-pic" src="{{ alumni.image | prepend: site.baseurl }}" alt="{{ alumni.name }}" width="1024" height="1024" loading="lazy" decoding="async">
       <p class="name">{{ alumni.name }}</p>
       <p class="title">
         {{ alumni.title }} 
@@ -194,7 +194,7 @@ title: Home
       {% assign role_class = "student--postdoc" %}
     {% endif %}
     <div class="members-card student-card {{ role_class }}">
-      <img class="profile-pic" src="{{ mentee.image | prepend: site.baseurl }}" alt="{{ mentee.name }}">
+      <img class="profile-pic" src="{{ mentee.image | prepend: site.baseurl }}" alt="{{ mentee.name }}" width="1024" height="1024" loading="lazy" decoding="async">
       <p class="name">{{ mentee.name }}</p>
       <p class="title">
         {{ mentee.title }} 
@@ -317,7 +317,7 @@ title: Home
             <a class="banner" href="{{ content.links[0].url }}" target="_blank">{{content.banner}}</a>
           {% endif %}
           <div class="card-image">
-            <img src="{{ content.image | prepend: site.baseurl }}" alt="{{ content.alt_text }}">
+            <img src="{{ content.image | prepend: site.baseurl }}" alt="{{ content.alt_text }}" loading="lazy" decoding="async">
         </div>
         <div class="teaching-title">{{ content.title }}</div>
         <div class="card-link">
@@ -339,7 +339,7 @@ title: Home
             <a class="banner" href="{{ content.links[0].url }}" target="_blank">{{content.banner}}</a>
           {% endif %}
           <div class="card-image">
-            <img src="{{ content.image | prepend: site.baseurl }}" alt="{{ content.alt_text }}">
+            <img src="{{ content.image | prepend: site.baseurl }}" alt="{{ content.alt_text }}" loading="lazy" decoding="async">
         </div>
         <div class="teaching-title">{{ content.title }}</div>
         <div class="card-link">
@@ -361,7 +361,7 @@ title: Home
             <a class="banner" href="{{ content.links[0].url }}" target="_blank">{{content.banner}}</a>
           {% endif %}
           <div class="card-image">
-            <img src="{{ content.image | prepend: site.baseurl }}" alt="{{ content.alt_text }}">
+            <img src="{{ content.image | prepend: site.baseurl }}" alt="{{ content.alt_text }}" loading="lazy" decoding="async">
         </div>
         <div class="teaching-title">{{ content.title }}</div>
         <div class="card-link">
