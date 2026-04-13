@@ -13,11 +13,11 @@ seniors:
     coadvisor_link: "https://uwaterloo.ca/psychology/profiles/igor-grossmann"
     image: "/assets/profile-pics/male.jpg"
 
-members:
-
   - name: Ahmed Abdelaal
     title: "PhD Student"
     image: "/assets/profile-pics/male.jpg"
+
+members:
 
   - name: Zahra Khotanlou
     title: "Master's Student"
@@ -32,12 +32,13 @@ members:
     title: "Master's Student"
     image: "/assets/profile-pics/male.jpg"
 
-  - name: Farzan Mirshekari
-    title: "Undergraduate Student"
-    coadvisor: "Prof. Tahvildari"
-    coadvisor_link: "https://uwaterloo.ca/electrical-computer-engineering/profile/ltahvild"
-    image: "/assets/profile-pics/male.jpg"
-    # next: "DRW"
+  - name: Hosna Oyarhoseini
+    title: "Master's Student"
+    awards:
+      - "Vector AI Scholarship 2025"
+    coadvisor: "Prof. Lin"
+    coadvisor_link: "https://cs.uwaterloo.ca/about/people/jimmylin"
+    image: "/assets/profile-pics/female.jpg"
 
   - name: Maryam Ghorbansabagh
     title: "Master's Student"
@@ -46,18 +47,16 @@ members:
     # image: "/assets/profile-pics/maryamgh.jpg"
     image: "/assets/profile-pics/female.jpg"
 
+  - name: Farzan Mirshekari
+    title: "Undergraduate Student"
+    coadvisor: "Prof. Tahvildari"
+    coadvisor_link: "https://uwaterloo.ca/electrical-computer-engineering/profile/ltahvild"
+    image: "/assets/profile-pics/male.jpg"
+    # next: "DRW"
+
   - name: Tom Wielemaker
     title: "Undergraduate Student"
     image: "/assets/profile-pics/male.jpg"
-
-
-  - name: Hosna Oyarhoseini
-    title: "Master's Student"
-    awards:
-      - "Vector AI Scholarship 2025"
-    coadvisor: "Prof. Lin"
-    coadvisor_link: "https://cs.uwaterloo.ca/about/people/jimmylin"
-    image: "/assets/profile-pics/female.jpg"
 
   - name: Hamza Mostafa
     title: "Undergraduate Student"
