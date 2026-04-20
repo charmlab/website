@@ -27,9 +27,9 @@ papers:
     tldr: Solving XAI requires us to make explicit our causal assumptions of the world
     banner: new!
 
-  - title: "From Individual to Multi-Agent Algorithmic Recourse: Minimizing the Welfare Gap via Capacitated Bipartite Matching"
+  - title: "Your Recourse, My Loss? Algorithmic Recourse under Shared Constraints"
     authors: "Khotanlou, Larson, <u><b>Karimi</b></u>"
-    venue: NeurIPS Workshop on Algorithmic Collective Action
+    venue: ACM FAccT 2026
     categories: ["Selected", "Algorithmic Recourse"]
     paper_pdf: "https://arxiv.org/abs/2508.11070"
     acceptance_rate:
