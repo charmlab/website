@@ -13,16 +13,11 @@ seniors:
     coadvisor_link: "https://uwaterloo.ca/psychology/profiles/igor-grossmann"
     image: "/assets/profile-pics/male.jpg"
 
+members:
+
   - name: Ahmed Abdelaal
     title: "PhD Student"
     image: "/assets/profile-pics/male.jpg"
-
-members:
-
-  - name: Zahra Khotanlou
-    title: "Master's Student"
-    # image: "/assets/profile-pics/zahrakh2.png"
-    image: "/assets/profile-pics/female.jpg"
 
   - name: Hashir Ahmed
     title: "Master's Student"
@@ -82,6 +77,11 @@ alumni:
     coadvisor_link: "https://uwaterloo.ca/scholar/karray"
     next: King Saud University
     image: "/assets/profile-pics/male.jpg"
+
+  - name: Zahra Khotanlou
+    title: "Master's Student"
+    # image: "/assets/profile-pics/zahrakh2.png"
+    image: "/assets/profile-pics/female.jpg"
 
   - name: Mina Kebriaee
     title: "Master's Student"
