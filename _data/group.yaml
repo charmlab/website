@@ -1,10 +1,6 @@
 seniors:
-  # - name: Farshad Khunjush
-  #   title: "Visiting Professor"
-  #   image: "/assets/profile-pics/male.jpg"
-
-  - name: Mohammad Hadi Sepanj
-    title: "Postdoctoral Fellow"
+  - name: Farshad Khunjush
+    title: "Visiting Professor"
     image: "/assets/profile-pics/male.jpg"
 
   - name: Eugene Yu
@@ -42,35 +38,40 @@ members:
     # image: "/assets/profile-pics/maryamgh.jpg"
     image: "/assets/profile-pics/female.jpg"
 
-  - name: Farzan Mirshekari
-    title: "Undergraduate Student"
-    coadvisor: "Prof. Tahvildari"
-    coadvisor_link: "https://uwaterloo.ca/electrical-computer-engineering/profile/ltahvild"
-    image: "/assets/profile-pics/male.jpg"
-    # next: "DRW"
-
-  - name: Tom Wielemaker
-    title: "Undergraduate Student"
-    image: "/assets/profile-pics/male.jpg"
-
-  - name: Hamza Mostafa
-    title: "Undergraduate Student"
-    next: "OpenAI Inc."
-    image: "/assets/profile-pics/male.jpg"
+  - name: Chidilim Ejeh
+    title: "Master's Student"
+    image: "/assets/profile-pics/female.jpg"
   
 
-  
+  # - name: Reza Abbasi
+  #   title: "PhD Student"
+  #   image: "/assets/profile-pics/male.jpg"
+  #   awards:
+  #     - "Canada Impact+ PhD Award"
 
   # - name: Rashin Rahnamoun
   #   title: "Master's Student"
   #   image: "/assets/profile-pics/male.jpg"
 
-  # - name: John Guerrerio
+  # - name: Amirhossein Abolhasani
   #   title: "Master's Student"
   #   image: "/assets/profile-pics/male.jpg"
+  #   awards:
+  #     - "Vector AI Scholarship 2026"
+
+  # - name: Hiva Abdolhadizade
+  #   title: "Master's Student"
+  #   image: "/assets/profile-pics/female.jpg"
+  #   awards:
+  #     - "Vector AI Scholarship 2026"
 
 
 alumni:
+
+  - name: Mohammad Hadi Sepanj
+    title: "Postdoctoral Fellow"
+    image: "/assets/profile-pics/male.jpg"
+
   - name: Hamdi Altaheri 
     title: "Postdoctoral Fellow"
     coadvisor: "Prof. Karray"
@@ -103,6 +104,22 @@ alumni:
     title: "Master's Student"
     image: "/assets/profile-pics/male.jpg"
 
+  - name: Farzan Mirshekari
+    title: "Undergraduate Student"
+    coadvisor: "Prof. Tahvildari"
+    coadvisor_link: "https://uwaterloo.ca/electrical-computer-engineering/profile/ltahvild"
+    image: "/assets/profile-pics/male.jpg"
+    # next: "DRW"
+
+  - name: Tom Wielemaker
+    title: "Undergraduate Student"
+    image: "/assets/profile-pics/male.jpg"
+
+  - name: Hamza Mostafa
+    title: "Undergraduate Student"
+    next: "OpenAI Inc."
+    image: "/assets/profile-pics/male.jpg"
+
   - name: Abubakar Bello
     title: "Undergraduate Student"
     next: "Microsoft Inc."
@@ -129,12 +146,6 @@ mentee:
     coadvisor: "Prof. Valera"
     coadvisor_link: "https://ivaleram.github.io/"
     image: "/assets/profile-pics/female.jpg"
-  # - name: Maryam Yalsavar
-  #   title: "Mentee"
-  #   next: "Huawei"
-  #   coadvisor: "Prof. Ghodsi"
-  #   coadvisor_link: "https://uwaterloo.ca/statistics-and-actuarial-science/profiles/ali-ghodsi"
-  #   image: "/assets/profile-pics/female.jpg"
   - name: Ricardo Dominguez-Olmedo
     title: "Master's Student"
     # next: "Intl. Max Planck Research Schools"

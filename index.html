@@ -101,6 +101,8 @@ title: Home
       {% assign role_class = "student--phd" %}
     {% elsif member.title contains "Postdoc" or member.title contains "Postdoctoral" %}
       {% assign role_class = "student--postdoc" %}
+    {% elsif member.title contains "Prof" or member.title contains "Professor" %}
+      {% assign role_class = "student--postdoc" %}
     {% endif %}
     <div class="members-card student-card {{ role_class }}">
       <img class="profile-pic" src="{{ member.image | prepend: site.baseurl }}" alt="{{ member.name }}" width="1024" height="1024" loading="lazy" decoding="async">
