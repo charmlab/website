@@ -5,7 +5,7 @@ categories:
     id: "papers-explainable-ai"
   - name: "Algorithmic Recourse"
     id: "papers-recourse"
-  - name: "Causal Inference"
+  - name: "Causal Reasoning"
     id: "causal-inference"
   - name: "Metacognition"
     id: "papers-human-ai"
@@ -21,7 +21,7 @@ papers:
   - title: "Explainable AI is Causality in Disguise"
     authors: "<u><b>Karimi</b></u>"
     venue: EurIPS Theory of XAI Workshop
-    categories: ["Selected", "Explainable AI", "Causal Inference"]
+    categories: ["Selected", "Explainable AI", "Causal Reasoning"]
     paper_pdf: ""
     acceptance_rate:
     tldr: Solving XAI requires us to make explicit our causal assumptions of the world
@@ -66,7 +66,7 @@ papers:
   - title: "Causal Adversarial Perturbations for Individual Fairness and Robustness in Heterogeneous Data Spaces"
     authors: "Ehyaei, Mohammadi, <u><b>Karimi</b></u>, Samadi, Farnadi"
     venue: "AAAI 2023"
-    categories: ["Causal Inference"]
+    categories: ["Causal Reasoning"]
     paper_pdf: "https://ojs.aaai.org/index.php/AAAI/article/view/29070"
     acceptance_rate: "23.7%"
     tldr: 
@@ -74,7 +74,7 @@ papers:
   - title: "On the Relationship Between Explanation and Prediction: A Causal View"
     authors: "<u><b>Karimi</b></u>, Muandet, Kornblith, Schölkopf, Kim"
     venue: "ICML 2023"
-    categories: ["Selected", "Explainable AI", "Causal Inference"]
+    categories: ["Selected", "Explainable AI", "Causal Reasoning"]
     paper_pdf: "https://proceedings.mlr.press/v202/karimi23a.html"
     slides: "/assets/slides/causalxai.pdf"
     acceptance_rate: "27.9%"
@@ -83,7 +83,7 @@ papers:
   - title: "On Data Manifolds Entailed by Structural Causal Models"
     authors: "Dominguez-Olmedo, <u><b>Karimi</b></u>, Arvanitidis, Schölkopf"
     venue: "ICML 2023"
-    categories: ["Causal Inference"]
+    categories: ["Causal Reasoning"]
     paper_pdf: "https://proceedings.mlr.press/v202/dominguez-olmedo23a.html"
     acceptance_rate: "27.9%"
     tldr: 
@@ -91,7 +91,7 @@ papers:
   - title: "Robustness Implies Fairness in Causal Algorithmic Recourse"
     authors: "Ehyaei, <u><b>Karimi</b></u>, Schölkopf, Maghsudi"
     venue: "ACM FAccT 2023"
-    categories: ["Causal Inference", "Algorithmic Recourse"]
+    categories: ["Causal Reasoning", "Algorithmic Recourse"]
     paper_pdf: "https://dl.acm.org/doi/abs/10.1145/3593013.3594057"
     acceptance_rate: "24.6%"
     tldr: as the title says...
@@ -99,7 +99,7 @@ papers:
   - title: "On the Robustness of Causal Algorithmic Recourse"
     authors: "Dominguez-Olmedo, <u><b>Karimi</b></u>, Schölkopf"
     venue: "ICML 2022"
-    categories: ["Causal Inference", "Algorithmic Recourse"]
+    categories: ["Causal Reasoning", "Algorithmic Recourse"]
     paper_pdf: "https://proceedings.mlr.press/v162/dominguez-olmedo22a.html"
     acceptance_rate: "21.9%"
     tldr: robustness of recourse is separate from robustness of prediction
@@ -107,7 +107,7 @@ papers:
   - title: "On the Fairness of Causal Algorithmic Recourse"
     authors: "von Kügelgen, <u><b>Karimi</b></u>, Bhatt, Valera, Weller, Schölkopf"
     venue: "AAAI 2022"
-    categories: ["Causal Inference", "Algorithmic Recourse"]
+    categories: ["Causal Reasoning", "Algorithmic Recourse"]
     paper_pdf: "https://ojs.aaai.org/index.php/AAAI/article/view/21192"
     acceptance_rate: "15.0%"
     tldr: fairness of recourse is separate from fairness of prediction
@@ -115,7 +115,7 @@ papers:
   - title: "A Survey of Algorithmic Recourse: Contrastive Explanations & Consequential Recommendations"
     authors: "<u><b>Karimi</b></u>, Barthe, Schölkopf, Valera"
     venue: "ACM Computing Surveys 2022"
-    categories: ["Selected", "Causal Inference", "Algorithmic Recourse"]
+    categories: ["Selected", "Causal Reasoning", "Algorithmic Recourse"]
     paper_pdf: "https://dl.acm.org/doi/full/10.1145/3527848"
     impact_factor: "24.0"
     tldr: definitions, formulations, solutions, and prospects for recourse research
@@ -123,7 +123,7 @@ papers:
   - title: "Algorithmic Recourse under Imperfect Causal Knowledge: a Probabilistic Approach"
     authors: "<u><b>Karimi</b></u><sup>‡</sup>, von Kügelgen<sup>‡</sup>, Schölkopf, Valera"
     venue: "NeurIPS 2020"
-    categories: ["Causal Inference", "Algorithmic Recourse"]
+    categories: ["Causal Reasoning", "Algorithmic Recourse"]
     paper_pdf: "https://proceedings.neurips.cc/paper/2020/file/02a3c7fb3f489288ae6942498498db20-Paper.pdf"
     code: "https://github.com/charmlab/recourse"
     video: "https://www.youtube.com/watch?v=NBsS_KC23bE&ab_channel=Amir-HosseinKarimi"
@@ -133,7 +133,7 @@ papers:
   - title: "Algorithmic Recourse: from Counterfactual Explanations to Interventions"
     authors: "<u><b>Karimi</b></u>, Schölkopf, Valera"
     venue: "ACM FAccT 2021"
-    categories: ["Causal Inference", "Algorithmic Recourse"]
+    categories: ["Causal Reasoning", "Algorithmic Recourse"]
     paper_pdf: "https://dl.acm.org/doi/10.1145/3442188.3445899"
     code: "https://github.com/charmlab/recourse"
     video: "https://www.youtube.com/watch?v=3ngjeesGePU&ab_channel=Amir-HosseinKarimi"
