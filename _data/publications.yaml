@@ -18,6 +18,42 @@ categories:
 
 papers:
 
+  - title: "RecourseBench: A Modular Framework for Reproducible Algorithmic Recourse Evaluation"
+    authors: "Khotanlou, Ahmed, Tan, Abdelaal, <u><b>Karimi</b></u>"
+    venue: "arXiv preprint arXiv:2606.16113"
+    categories: ["Selected", "Algorithmic Recourse"]
+    paper_pdf: "https://arxiv.org/abs/2606.16113"
+    acceptance_rate:
+    tldr: RecourseBench provides a modular, reproducible, and interactive benchmark for evaluating algorithmic recourse methods
+    banner: new!
+
+  - title: "A Unified Perturbation Framework for Analyzing Leaderboard Stability and Manipulation"
+    authors: "Oyarhoseini, Lin, <u><b>Karimi</b></u>"
+    venue: "ICML 2026 Workshop on Combining Theory and Benchmarks"
+    categories: ["Selected", "Other"]
+    paper_pdf: "https://arxiv.org/abs/2605.15761"
+    acceptance_rate:
+    tldr: A perturbation framework for auditing and stress-testing the robustness of pairwise-comparison leaderboards
+    banner: new!
+
+  - title: "Metacognition Should Be the Scientific Framework for Bounded and Effective Self-Governance in Generative AI"
+    authors: "Ji, Grossmann, <u><b>Karimi</b></u>"
+    venue: "arXiv preprint arXiv:2605.23981"
+    categories: ["Metacognition"]
+    paper_pdf: "https://arxiv.org/abs/2605.23981"
+    acceptance_rate:
+    tldr: Metacognition offers a framework for bounded and effective self-governance in generative AI systems
+    banner: new!
+
+  - title: "How well can a large language model infer the value representations expressed by another instance of the same model?"
+    authors: "Ghorbansabagh, <u><b>Karimi</b></u>, Grossmann"
+    venue: "ICLR 2026 Workshop on Representational Alignment"
+    categories: ["Other"]
+    paper_pdf: "https://scholar.google.ca/citations?view_op=view_citation&hl=en&user=umI56k0AAAAJ&sortby=pubdate&citation_for_view=umI56k0AAAAJ:xtRiw3GOFMkC"
+    acceptance_rate:
+    tldr:
+    banner: new!
+
   - title: "Explainable AI is Causality in Disguise"
     authors: "<u><b>Karimi</b></u>"
     venue: EurIPS Theory of XAI Workshop
@@ -52,7 +88,6 @@ papers:
     paper_pdf: "https://arxiv.org/abs/2508.11070"
     impact_factor: "3.9"
     tldr: TCFormer leverages CNNs, transformers, and temporal convolutions to decode EEG motor imagery, significantly outperforming existing BCI approaches
-    banner: new!
 
 
   - title: "Prospector Heads: Generalized Feature Attribution for Large Models & Data"
