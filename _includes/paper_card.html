@@ -1,0 +1,30 @@
+{% assign paper = include.paper %}
+<div class="paper-card">
+  {% if paper.banner %}
+    <div class="banner">{{ paper.banner }}</div>
+  {% endif %}
+
+  <div class="paper-buttons">
+    {% if paper.paper_pdf %}
+      <a class="button" href="{{ paper.paper_pdf }}" target="_blank">Paper</a>
+    {% endif %}
+    {% if paper.slides %}
+      <a class="button" href="{{ paper.slides | prepend: site.baseurl }}" target="_blank">Slides</a>
+    {% endif %}
+    {% if paper.code %}
+      <a class="button" href="{{ paper.code | prepend: site.baseurl }}" target="_blank">Code</a>
+    {% endif %}
+    {% if paper.video %}
+      <a class="button" href="{{ paper.video }}" target="_blank">Video</a>
+    {% endif %}
+  </div>
+
+  <div class="paper-details">
+    📝 <b class="paper-title">{{ paper.title }}</b>
+    {% if paper.venue %} <br><span class="venue-line">🏛️ <i>{{ paper.venue }}</i></span>{% endif %}
+    {% if paper.acceptance_rate %} <span class="venue-line" style="color:red;"> (acceptance rate: {{ paper.acceptance_rate }})</span>{% endif %}
+    {% if paper.impact_factor %} <span class="venue-line" style="color:red;"> (impact factor: {{ paper.impact_factor }})</span>{% endif %}
+    <span class="author-line"> <br>✍️ {{ paper.authors }}</span>
+    {% if paper.tldr %} <span class="tldr-line"><br>✨ <b class="tldr-label">TL;DR:</b> {{ paper.tldr }}</span> {% endif %}
+  </div>
+</div>

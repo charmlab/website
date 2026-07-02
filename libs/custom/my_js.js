@@ -26,6 +26,7 @@ $(document).ready(function() {
     buildSnippets();
     initMemberReveal();
     initPublicationsTabs();
+    initPublicationViewSwitch();
     initScrollReveal();
     initSparkleEasterEgg();
     initThemeToggle();
@@ -183,6 +184,58 @@ $(document).ready(function() {
       });
 
       sectionObserver.observe($section.get(0));
+    });
+  }
+
+  function initPublicationViewSwitch() {
+    var $sections = $('.publications-section');
+    if ($sections.length === 0) {
+      return;
+    }
+
+    $sections.each(function() {
+      var $root = $(this);
+      var $buttons = $root.find('[data-publication-view-button]');
+      var $views = $root.find('[data-publication-view]');
+      if ($buttons.length === 0 || $views.length === 0) {
+        return;
+      }
+
+      function showView(name) {
+        var $view = $views.filter('[data-publication-view="' + name + '"]');
+        if ($view.length === 0) {
+          return;
+        }
+
+        $buttons.removeClass('active').attr('aria-pressed', 'false');
+        $buttons.filter('[data-publication-view-button="' + name + '"]').addClass('active').attr('aria-pressed', 'true');
+        $views.removeClass('active');
+        $view.addClass('active');
+
+        var $activePane = $view.find('.tab-pane.active').first();
+        if ($activePane.length === 0) {
+          var $firstButton = $view.find('.tab-nav .button').first();
+          if ($firstButton.length) {
+            $firstButton.trigger('click');
+            return;
+          }
+        }
+        $view.find('.tab-pane').removeClass('is-visible');
+        setTimeout(function() {
+          $activePane.addClass('is-visible');
+        }, 10);
+      }
+
+      $buttons.each(function() {
+        var isActive = $(this).hasClass('active');
+        $(this).attr('aria-pressed', isActive ? 'true' : 'false');
+      });
+
+      $buttons.on('click', function() {
+        showView($(this).data('publication-view-button'));
+      });
+
+      showView($buttons.filter('.active').first().data('publication-view-button') || 'pillars');
     });
   }
 

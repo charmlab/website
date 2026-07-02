@@ -1,0 +1,29 @@
+{% assign person = include.person %}
+{% assign role_class = "" %}
+{% if person.title contains "Undergraduate" %}
+  {% assign role_class = "student--ug" %}
+{% elsif person.title contains "Master" %}
+  {% assign role_class = "student--msc" %}
+{% elsif person.title contains "PhD" or person.title contains "Ph.D" %}
+  {% assign role_class = "student--phd" %}
+{% elsif person.title contains "Postdoc" or person.title contains "Postdoctoral" %}
+  {% assign role_class = "student--postdoc" %}
+{% elsif person.title contains "Prof" or person.title contains "Professor" %}
+  {% assign role_class = "student--postdoc" %}
+{% endif %}
+<div class="members-card student-card {{ role_class }}">
+  <img class="profile-pic" src="{{ person.image | prepend: site.baseurl }}" alt="{{ person.name }}" width="1024" height="1024" loading="lazy" decoding="async">
+  <p class="name">{{ person.name }}</p>
+  <p class="title">
+    {{ person.title }}
+    {% if person.coadvisor %}
+      <br> (w/ <a href="{{ person.coadvisor_link }}" target="_blank">{{ person.coadvisor }}</a>)
+    {% endif %}
+    {% if person.next %}
+      <br> (next: {{ person.next }})
+    {% endif %}
+    {% if person.awards %}
+      <br><span class="award">{{ person.awards | join: ", " }}</span>
+    {% endif %}
+  </p>
+</div>

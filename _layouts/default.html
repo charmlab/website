@@ -182,7 +182,8 @@
               {% endfor %}
             ],
             "about": [
-              {% for category in paper.categories %}
+              {% assign paper_about = paper.topics | concat: paper.pillars | uniq %}
+              {% for category in paper_about %}
               {{ category | jsonify }}{% unless forloop.last %},{% endunless %}
               {% endfor %}
             ],
@@ -280,6 +281,7 @@
           <li class="navbar-item"><a class="navbar-link" href={{ "/index.html#bio" | prepend: site.baseurl }}>bio</a></li>
           <li class="navbar-item"><a class="navbar-link" href={{ "/index.html#group" | prepend: site.baseurl }}>✨CHARM Lab✨</a></li>
           <li class="navbar-item"><a class="navbar-link" href={{ "/index.html#publications" | prepend: site.baseurl }}>research</a></li>
+          <li class="navbar-item"><a class="navbar-link" href={{ "/index.html#people" | prepend: site.baseurl }}>people</a></li>
           <li class="navbar-item"><a class="navbar-link" href={{ "/index.html#teaching" | prepend: site.baseurl }}>teaching</a></li>
           <!-- <li class="navbar-item"><a class="navbar-link" href={{ "/index.html#service" | prepend: site.baseurl }}>service</a></li> -->
           <!-- <li class="navbar-item"><a class="navbar-link" href={{ "/index.html#resume" | prepend: site.baseurl }}>vita</a></li> -->

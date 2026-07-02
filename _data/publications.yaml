@@ -1,27 +1,39 @@
-categories:
+pillar_categories:
   - name: "Selected"
     id: "papers-selected"
+  - name: "Understand"
+    id: "papers-understand"
+  - name: "Intervene"
+    id: "papers-intervene"
+  - name: "Evolve"
+    id: "papers-Evolve"
+
+topic_categories:
   - name: "Explainable AI"
-    id: "papers-explainable-ai"
+    id: "topics-explainable-ai"
   - name: "Algorithmic Recourse"
-    id: "papers-recourse"
+    id: "topics-recourse"
   - name: "Causal Reasoning"
-    id: "causal-inference"
+    id: "topics-causal-reasoning"
   - name: "Metacognition"
-    id: "papers-human-ai"
-  - name: "Random Projections"
-    id: "papers-random-projections"
+    id: "topics-metacognition"
+  - name: "Evaluation & Benchmarks"
+    id: "topics-evaluation-benchmarks"
   - name: "AI for Social Good"
-    id: "papers-social-good"
+    id: "topics-social-good"
+  - name: "Random Projections"
+    id: "topics-random-projections"
   - name: "Other"
-    id: "papers-other"
+    id: "topics-other"
 
 papers:
 
   - title: "RecourseBench: A Modular Framework for Reproducible Algorithmic Recourse Evaluation"
     authors: "Khotanlou, Ahmed, Tan, Abdelaal, <u><b>Karimi</b></u>"
     venue: "arXiv preprint arXiv:2606.16113"
-    categories: ["Selected", "Algorithmic Recourse"]
+    pillars: ["Selected", "Intervene"]
+    topics: ["Algorithmic Recourse", "Evaluation & Benchmarks"]
+    lab_members: ["Zahra Khotanlou", "Hashir Ahmed", "Ahmed Abdelaal", "Chenghao Tan"]
     paper_pdf: "https://arxiv.org/abs/2606.16113"
     acceptance_rate:
     tldr: RecourseBench provides a modular, reproducible, and interactive benchmark for evaluating algorithmic recourse methods
@@ -30,7 +42,9 @@ papers:
   - title: "A Unified Perturbation Framework for Analyzing Leaderboard Stability and Manipulation"
     authors: "Oyarhoseini, Lin, <u><b>Karimi</b></u>"
     venue: "ICML 2026 Workshop on Combining Theory and Benchmarks"
-    categories: ["Selected", "Other"]
+    pillars: ["Selected", "Understand"]
+    topics: ["Evaluation & Benchmarks"]
+    lab_members: ["Hosna Oyarhoseini"]
     paper_pdf: "https://arxiv.org/abs/2605.15761"
     acceptance_rate:
     tldr: A perturbation framework for auditing and stress-testing the robustness of pairwise-comparison leaderboards
@@ -39,16 +53,29 @@ papers:
   - title: "Metacognition Should Be the Scientific Framework for Bounded and Effective Self-Governance in Generative AI"
     authors: "Ji, Grossmann, <u><b>Karimi</b></u>"
     venue: "arXiv preprint arXiv:2605.23981"
-    categories: ["Metacognition"]
+    pillars: ["Understand", "Evolve"]
+    topics: ["Metacognition"]
     paper_pdf: "https://arxiv.org/abs/2605.23981"
     acceptance_rate:
     tldr: Metacognition offers a framework for bounded and effective self-governance in generative AI systems
     banner: new!
 
+  - title: "Beyond Explainable AI (XAI): An Overdue Paradigm Shift and Post-XAI Research Directions"
+    authors: "Afroogh, ..., <u><b>Karimi</b></u>, ..."
+    venue: "arXiv preprint arXiv:2602.24176"
+    pillars: ["Understand"]
+    topics: ["Explainable AI"]
+    paper_pdf: "https://arxiv.org/pdf/2602.24176"
+    acceptance_rate:
+    tldr: a cross-disciplinary research agenda for moving beyond current explainable AI paradigms toward post-XAI directions
+    banner: new!
+
   - title: "How well can a large language model infer the value representations expressed by another instance of the same model?"
     authors: "Ghorbansabagh, <u><b>Karimi</b></u>, Grossmann"
     venue: "ICLR 2026 Workshop on Representational Alignment"
-    categories: ["Other"]
+    pillars: ["Understand"]
+    topics: ["Other"]
+    lab_members: ["Maryam Ghorbansabagh"]
     paper_pdf: "https://scholar.google.ca/citations?view_op=view_citation&hl=en&user=umI56k0AAAAJ&sortby=pubdate&citation_for_view=umI56k0AAAAJ:xtRiw3GOFMkC"
     acceptance_rate:
     tldr:
@@ -56,8 +83,9 @@ papers:
 
   - title: "Explainable AI is Causality in Disguise"
     authors: "<u><b>Karimi</b></u>"
-    venue: EurIPS Theory of XAI Workshop
-    categories: ["Selected", "Explainable AI", "Causal Reasoning"]
+    venue: EurIPS Theory of XAI Workshop, 2025
+    pillars: ["Selected", "Understand"]
+    topics: ["Explainable AI", "Causal Reasoning"]
     paper_pdf: ""
     acceptance_rate:
     tldr: Solving XAI requires us to make explicit our causal assumptions of the world
@@ -66,7 +94,9 @@ papers:
   - title: "Your Recourse, My Loss? Algorithmic Recourse under Shared Constraints"
     authors: "Khotanlou, Larson, <u><b>Karimi</b></u>"
     venue: ACM FAccT 2026
-    categories: ["Selected", "Algorithmic Recourse"]
+    pillars: ["Selected", "Intervene"]
+    topics: ["Algorithmic Recourse"]
+    lab_members: ["Zahra Khotanlou"]
     paper_pdf: "https://arxiv.org/abs/2508.11070"
     acceptance_rate:
     tldr: Providing recourse to any one individual affects what recourse can be provided to other individuals
@@ -75,7 +105,8 @@ papers:
   - title: "Imagining and building wise machines: The centrality of AI metacognition"
     authors: "Johnson, <u><b>Karimi</b></u>, Bengio, Chater, Gerstenberg, Larson, Levine, Mitchell, Rahwan, Schölkopf, Grossmann"
     venue: Trends in Cognitive Sciences
-    categories: ["Selected", "Explainable AI", "Metacognition"]
+    pillars: ["Selected", "Evolve"]
+    topics: ["Metacognition"]
     paper_pdf: "https://arxiv.org/abs/2411.02478"
     impact_factor: "17.2"
     tldr: AI systems should integrate metacognitive strategies to enhance robustness, explainability, cooperation, and safety in complex real-world scenarios
@@ -84,7 +115,9 @@ papers:
   - title: "Temporal Convolutional Transformer for EEG Based Motor Imagery Decoding"
     authors: "Altaheri, Karray, <u><b>Karimi</b></u>"
     venue: Nature Scientific Reports
-    categories: ["Selected", "AI for Social Good"]
+    pillars: ["Selected", "Evolve"]
+    topics: ["AI for Social Good"]
+    lab_members: ["Hamdi Altaheri"]
     paper_pdf: "https://arxiv.org/abs/2508.11070"
     impact_factor: "3.9"
     tldr: TCFormer leverages CNNs, transformers, and temporal convolutions to decode EEG motor imagery, significantly outperforming existing BCI approaches
@@ -93,7 +126,8 @@ papers:
   - title: "Prospector Heads: Generalized Feature Attribution for Large Models & Data"
     authors: "Machiraju, Derry, Desai, Guha, <u><b>Karimi</b></u>, Zou, Altman, Ré, Mallick"
     venue: "ICML 2024"
-    categories: ["Explainable AI"]
+    pillars: ["Understand"]
+    topics: ["Explainable AI"]
     paper_pdf: "https://proceedings.mlr.press/v235/machiraju24a.html"
     acceptance_rate: "27.5%"
     tldr: 
@@ -101,7 +135,8 @@ papers:
   - title: "Causal Adversarial Perturbations for Individual Fairness and Robustness in Heterogeneous Data Spaces"
     authors: "Ehyaei, Mohammadi, <u><b>Karimi</b></u>, Samadi, Farnadi"
     venue: "AAAI 2023"
-    categories: ["Causal Reasoning"]
+    pillars: ["Intervene"]
+    topics: ["Causal Reasoning"]
     paper_pdf: "https://ojs.aaai.org/index.php/AAAI/article/view/29070"
     acceptance_rate: "23.7%"
     tldr: 
@@ -109,7 +144,8 @@ papers:
   - title: "On the Relationship Between Explanation and Prediction: A Causal View"
     authors: "<u><b>Karimi</b></u>, Muandet, Kornblith, Schölkopf, Kim"
     venue: "ICML 2023"
-    categories: ["Selected", "Explainable AI", "Causal Reasoning"]
+    pillars: ["Selected", "Understand"]
+    topics: ["Explainable AI", "Causal Reasoning"]
     paper_pdf: "https://proceedings.mlr.press/v202/karimi23a.html"
     slides: "/assets/slides/causalxai.pdf"
     acceptance_rate: "27.9%"
@@ -118,7 +154,8 @@ papers:
   - title: "On Data Manifolds Entailed by Structural Causal Models"
     authors: "Dominguez-Olmedo, <u><b>Karimi</b></u>, Arvanitidis, Schölkopf"
     venue: "ICML 2023"
-    categories: ["Causal Reasoning"]
+    pillars: ["Understand"]
+    topics: ["Causal Reasoning"]
     paper_pdf: "https://proceedings.mlr.press/v202/dominguez-olmedo23a.html"
     acceptance_rate: "27.9%"
     tldr: 
@@ -126,7 +163,8 @@ papers:
   - title: "Robustness Implies Fairness in Causal Algorithmic Recourse"
     authors: "Ehyaei, <u><b>Karimi</b></u>, Schölkopf, Maghsudi"
     venue: "ACM FAccT 2023"
-    categories: ["Causal Reasoning", "Algorithmic Recourse"]
+    pillars: ["Intervene"]
+    topics: ["Causal Reasoning", "Algorithmic Recourse"]
     paper_pdf: "https://dl.acm.org/doi/abs/10.1145/3593013.3594057"
     acceptance_rate: "24.6%"
     tldr: as the title says...
@@ -134,7 +172,8 @@ papers:
   - title: "On the Robustness of Causal Algorithmic Recourse"
     authors: "Dominguez-Olmedo, <u><b>Karimi</b></u>, Schölkopf"
     venue: "ICML 2022"
-    categories: ["Causal Reasoning", "Algorithmic Recourse"]
+    pillars: ["Intervene"]
+    topics: ["Causal Reasoning", "Algorithmic Recourse"]
     paper_pdf: "https://proceedings.mlr.press/v162/dominguez-olmedo22a.html"
     acceptance_rate: "21.9%"
     tldr: robustness of recourse is separate from robustness of prediction
@@ -142,7 +181,8 @@ papers:
   - title: "On the Fairness of Causal Algorithmic Recourse"
     authors: "von Kügelgen, <u><b>Karimi</b></u>, Bhatt, Valera, Weller, Schölkopf"
     venue: "AAAI 2022"
-    categories: ["Causal Reasoning", "Algorithmic Recourse"]
+    pillars: ["Intervene"]
+    topics: ["Causal Reasoning", "Algorithmic Recourse"]
     paper_pdf: "https://ojs.aaai.org/index.php/AAAI/article/view/21192"
     acceptance_rate: "15.0%"
     tldr: fairness of recourse is separate from fairness of prediction
@@ -150,7 +190,8 @@ papers:
   - title: "A Survey of Algorithmic Recourse: Contrastive Explanations & Consequential Recommendations"
     authors: "<u><b>Karimi</b></u>, Barthe, Schölkopf, Valera"
     venue: "ACM Computing Surveys 2022"
-    categories: ["Selected", "Causal Reasoning", "Algorithmic Recourse"]
+    pillars: ["Selected", "Intervene"]
+    topics: ["Causal Reasoning", "Algorithmic Recourse"]
     paper_pdf: "https://dl.acm.org/doi/full/10.1145/3527848"
     impact_factor: "24.0"
     tldr: definitions, formulations, solutions, and prospects for recourse research
@@ -158,7 +199,8 @@ papers:
   - title: "Algorithmic Recourse under Imperfect Causal Knowledge: a Probabilistic Approach"
     authors: "<u><b>Karimi</b></u><sup>‡</sup>, von Kügelgen<sup>‡</sup>, Schölkopf, Valera"
     venue: "NeurIPS 2020"
-    categories: ["Causal Reasoning", "Algorithmic Recourse"]
+    pillars: ["Intervene"]
+    topics: ["Causal Reasoning", "Algorithmic Recourse"]
     paper_pdf: "https://proceedings.neurips.cc/paper/2020/file/02a3c7fb3f489288ae6942498498db20-Paper.pdf"
     code: "https://github.com/charmlab/recourse"
     video: "https://www.youtube.com/watch?v=NBsS_KC23bE&ab_channel=Amir-HosseinKarimi"
@@ -168,7 +210,8 @@ papers:
   - title: "Algorithmic Recourse: from Counterfactual Explanations to Interventions"
     authors: "<u><b>Karimi</b></u>, Schölkopf, Valera"
     venue: "ACM FAccT 2021"
-    categories: ["Causal Reasoning", "Algorithmic Recourse"]
+    pillars: ["Intervene"]
+    topics: ["Causal Reasoning", "Algorithmic Recourse"]
     paper_pdf: "https://dl.acm.org/doi/10.1145/3442188.3445899"
     code: "https://github.com/charmlab/recourse"
     video: "https://www.youtube.com/watch?v=3ngjeesGePU&ab_channel=Amir-HosseinKarimi"
@@ -178,7 +221,8 @@ papers:
   - title: "Scaling Guarantees for Nearest Counterfactual Explanations"
     authors: "Mohammadi, <u><b>Karimi</b></u>, Barthe, Valera"
     venue: "ACM AIES 2021"
-    categories: ["Explainable AI", "Algorithmic Recourse"]
+    pillars: ["Intervene"]
+    topics: ["Explainable AI", "Algorithmic Recourse"]
     paper_pdf: "https://dl.acm.org/doi/10.1145/3461702.3462514"
     acceptance_rate: "38.0%"
     tldr: generate optimal counterfactual explanations using mixed-integer linear programs
@@ -186,7 +230,8 @@ papers:
   - title: "Model-Agnostic Counterfactual Explanations for Consequential Decisions"
     authors: "<u><b>Karimi</b></u>, Barthe, Valera"
     venue: "AISTATS 2019"
-    categories: ["Explainable AI", "Algorithmic Recourse"]
+    pillars: ["Intervene"]
+    topics: ["Explainable AI", "Algorithmic Recourse"]
     paper_pdf: "https://proceedings.mlr.press/v108/karimi20a.html"
     code: "https://github.com/charmlab/mace"
     video: "https://www.youtube.com/watch?v=g7OeXoW4OeU&ab_channel=Amir-HosseinKarimi"
@@ -196,7 +241,8 @@ papers:
   - title: "Distance Correlation Autoencoder"
     authors: "Wang, <u><b>Karimi</b></u>, Ghodsi"
     venue: "IJCNN 2018"
-    categories: ["Other"]
+    pillars: ["Understand"]
+    topics: ["Other"]
     paper_pdf: "https://ieeexplore.ieee.org/document/8489291"
     acceptance_rate: "22.7%"
     tldr: 
@@ -204,7 +250,8 @@ papers:
   - title: "FEELS: a Full-Spectrum Enhanced Emotion Learning System for Assisting People with Autism Spectrum Disorder"
     authors: "<u><b>Karimi</b></u>, Boroomand, Pfisterer, Wong"
     venue: "CVIS 2018"
-    categories: ["AI for Social Good"]
+    pillars: ["Evolve"]
+    topics: ["AI for Social Good"]
     paper_pdf: "https://openjournals.uwaterloo.ca/index.php/vsl/article/view/335"
     acceptance_rate: "40.0%"
     tldr: 
@@ -212,14 +259,16 @@ papers:
   - title: "SRP: Efficient class-aware embedding learning for large-scale data via supervised random projections"
     authors: "<u><b>Karimi</b></u>, Wong, Ghodsi"
     venue: "arXiv"
-    categories: ["Random Projections"]
+    pillars: ["Understand"]
+    topics: ["Random Projections"]
     paper_pdf: "https://arxiv.org/pdf/1811.03166"
     tldr: 
 
   - title: "Ensembles of Random Projections for Nonlinear Dimensionality Reduction"
     authors: "<u><b>Karimi</b></u>, Shafiee, Ghodsi, Wong"
     venue: "CVIS 2017"
-    categories: ["Random Projections"]
+    pillars: ["Understand"]
+    topics: ["Random Projections"]
     paper_pdf: "https://openjournals.uwaterloo.ca/index.php/vsl/article/view/172"
     acceptance_rate: "40.0%"
     tldr: 
@@ -227,7 +276,8 @@ papers:
   - title: "Synthesizing Deep Neural Network Architectures using Biological Synaptic Strength Distributions"
     authors: "<u><b>Karimi</b></u>, Shafiee, Ghodsi, Wong"
     venue: "CCN 2017"
-    categories: ["Random Projections"]
+    pillars: ["Evolve"]
+    topics: ["Random Projections"]
     paper_pdf: "https://arxiv.org/abs/1707.00081"
     acceptance_rate: "40.0%"
     tldr: 
@@ -235,7 +285,8 @@ papers:
   - title: "Discovery Radiomics via a Mixture Sequencers for Multi-Parameter MRI"
     authors: "<u><b>Karimi</b></u>, Chung, Shafiee, Khalvati, Haider, Ghodsi, Wong"
     venue: "ICIAR 2017"
-    categories: ["AI for Social Good"]
+    pillars: ["Evolve"]
+    topics: ["AI for Social Good"]
     paper_pdf: "https://link.springer.com/chapter/10.1007/978-3-319-59876-5_6"
     acceptance_rate: "40.0%"
     tldr: 
@@ -243,7 +294,8 @@ papers:
   - title: "Key-Value Memory Networks for Directly Reading Documents"
     authors: "Miller, Fisch, Dodge, <u><b>Karimi</b></u>, Bordes, Weston"
     venue: "EMNLP 2016"
-    categories: ["Selected", "Other"]
+    pillars: ["Selected", "Understand"]
+    topics: ["Other"]
     paper_pdf: "https://aclanthology.org/D16-1147/"
     acceptance_rate: "24.3%"
     tldr: use key-value pairs to efficiently retrieve and store information for improved document comprehension
@@ -251,7 +303,8 @@ papers:
   - title: "Spatio-temporal Saliency Detection using Abstracted Fully-Connected Graphical Models"
     authors: "<u><b>Karimi</b></u>, Shafiee, Scharfenberger, BenDaya, Haider, Talukdar, Clausi, Wong"
     venue: "ICIP 2016"
-    categories: ["Other"]
+    pillars: ["Understand"]
+    topics: ["Other"]
     paper_pdf: "https://ieeexplore.ieee.org/document/7532446"
     acceptance_rate: "40.0%"
     tldr: 
@@ -259,7 +312,8 @@ papers:
   - title: "Automated detection and cell density assessment of keratocytes in the human corneal stroma from ultrahigh resolution optical coherence tomograms"
     authors: "<u><b>Karimi</b></u>, Wong, Bizheva"
     venue: "Biomedical Optics Express"
-    categories: ["AI for Social Good"]
+    pillars: ["Evolve"]
+    topics: ["AI for Social Good"]
     paper_pdf: "https://opg.optica.org/boe/fulltext.cfm?uri=boe-2-10-2905"
     impact_factor: "2.9"
     tldr: 
