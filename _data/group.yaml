@@ -41,17 +41,31 @@ members:
   - name: Chidilim Ejeh
     title: "Master's Student"
     image: "/assets/profile-pics/female.jpg"
-  
 
+
+  # - name: Kunwar Nir
+  #   title: "Undergraduate Student"
+  #   image: "/assets/profile-pics/male.jpg"
+
+  - name: Tom Wielemaker
+    title: "Undergraduate Student"
+    image: "/assets/profile-pics/male.jpg"
+
+  - name: Parsa Ghiasian
+    title: "Undergraduate Student"
+    image: "/assets/profile-pics/male.jpg"
+
+  - name: Xianda Du
+    title: "Undergraduate Student"
+    image: "/assets/profile-pics/male.jpg"
+
+  
+  
   # - name: Reza Abbasi
   #   title: "PhD Student"
   #   image: "/assets/profile-pics/male.jpg"
   #   awards:
   #     - "Canada Impact+ PhD Award"
-
-  # - name: Rashin Rahnamoun
-  #   title: "Master's Student"
-  #   image: "/assets/profile-pics/male.jpg"
 
   # - name: Amirhossein Abolhasani
   #   title: "Master's Student"
@@ -64,6 +78,15 @@ members:
   #   image: "/assets/profile-pics/female.jpg"
   #   awards:
   #     - "Vector AI Scholarship 2026"
+
+  # - name: Rashin Rahnamoun
+  #   title: "Master's Student"
+  #   image: "/assets/profile-pics/male.jpg"
+
+  # - name: Jabess Omane
+  #   title: "Master's Student"
+  #   image: "/assets/profile-pics/male.jpg"
+
 
 
 alumni:
@@ -110,10 +133,6 @@ alumni:
     coadvisor_link: "https://uwaterloo.ca/electrical-computer-engineering/profile/ltahvild"
     image: "/assets/profile-pics/male.jpg"
     # next: "DRW"
-
-  - name: Tom Wielemaker
-    title: "Undergraduate Student"
-    image: "/assets/profile-pics/male.jpg"
 
   - name: Hamza Mostafa
     title: "Undergraduate Student"
