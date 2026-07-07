@@ -53,7 +53,7 @@ papers:
   - title: "Metacognition Should Be the Scientific Framework for Bounded and Effective Self-Governance in Generative AI"
     authors: "Ji, Grossmann, <u><b>Karimi</b></u>"
     venue: "arXiv preprint arXiv:2605.23981"
-    pillars: ["Understand", "Evolve"]
+    pillars: ["Evolve"]
     topics: ["Metacognition"]
     paper_pdf: "https://arxiv.org/abs/2605.23981"
     acceptance_rate:
