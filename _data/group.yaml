@@ -1,14 +1,4 @@
-seniors:
-  - name: Farshad Khunjush
-    title: "Visiting Professor"
-    image: "/assets/profile-pics/male.jpg"
-
-  - name: Eugene Yu
-    title: "Postdoctoral Fellow"
-    coadvisor: "Prof. Grossmann"
-    coadvisor_link: "https://uwaterloo.ca/psychology/profiles/igor-grossmann"
-    image: "/assets/profile-pics/male.jpg"
-
+seniors: []
 members:
 
   - name: Ahmed Abdelaal
@@ -23,16 +13,40 @@ members:
     title: "Master's Student"
     image: "/assets/profile-pics/male.jpg"
 
-  - name: Parsa Ghiasian
+  - name: Boyu Jiang
+    title: "Master's Student"
+    image: "/assets/profile-pics/male.jpg"
+
+  - name: Samyar Goodarzi
+    title: "Master's Student"
+    image: "/assets/profile-pics/male.jpg"
+
+  - name: Anna Li
+    title: "Undergraduate Student"
+    image: "/assets/profile-pics/female.jpg"
+
+  - name: Tom Wielemaker
     title: "Undergraduate Student"
     image: "/assets/profile-pics/male.jpg"
 
-  - name: Xianda Du
+  - name: Farzan Mirshekari
+    title: "Undergraduate Student"
+    coadvisor: "Prof. Tahvildari"
+    coadvisor_link: "https://uwaterloo.ca/electrical-computer-engineering/profile/ltahvild"
+    image: "/assets/profile-pics/male.jpg"
+    # next: "DRW"
+
+  - name: Hamza Mostafa
+    title: "Undergraduate Student"
+    next: "OpenAI Inc."
+    image: "/assets/profile-pics/male.jpg"
+
+
+  - name: Ali Al Hamadani
     title: "Undergraduate Student"
     image: "/assets/profile-pics/male.jpg"
 
-  
-  
+
   # - name: Reza Abbasi
   #   title: "PhD Student"
   #   image: "/assets/profile-pics/male.jpg"
@@ -62,6 +76,16 @@ members:
 
 
 alumni:
+
+  - name: Farshad Khunjush
+    title: "Visiting Professor"
+    image: "/assets/profile-pics/male.jpg"
+
+  - name: Eugene Yu
+    title: "Postdoctoral Fellow"
+    coadvisor: "Prof. Grossmann"
+    coadvisor_link: "https://uwaterloo.ca/psychology/profiles/igor-grossmann"
+    image: "/assets/profile-pics/male.jpg"
 
   - name: Mohammad Hadi Sepanj
     title: "Postdoctoral Fellow"
@@ -118,20 +142,12 @@ alumni:
     title: "Master's Student"
     image: "/assets/profile-pics/female.jpg"
 
-  - name: Farzan Mirshekari
-    title: "Undergraduate Student"
-    coadvisor: "Prof. Tahvildari"
-    coadvisor_link: "https://uwaterloo.ca/electrical-computer-engineering/profile/ltahvild"
-    image: "/assets/profile-pics/male.jpg"
-    # next: "DRW"
-
-  - name: Tom Wielemaker
+  - name: Parsa Ghiasian
     title: "Undergraduate Student"
     image: "/assets/profile-pics/male.jpg"
 
-  - name: Hamza Mostafa
+  - name: Xianda Du
     title: "Undergraduate Student"
-    next: "OpenAI Inc."
     image: "/assets/profile-pics/male.jpg"
 
   - name: Abubakar Bello
