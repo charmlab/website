@@ -5,6 +5,12 @@ members:
     title: "PhD Student"
     image: "/assets/profile-pics/male.jpg"
 
+  - name: Juliette Sinnott
+    title: "PhD Student"
+    main_advisor: "Prof. Kohandel"
+    main_advisor_link: "https://uwaterloo.ca/applied-mathematics/profiles/mohammad-kohandel"
+    image: "/assets/profile-pics/female.jpg"
+
   - name: Hashir Ahmed
     title: "Master's Student"
     image: "/assets/profile-pics/male.jpg"
@@ -19,6 +25,8 @@ members:
 
   - name: Samyar Goodarzi
     title: "Master's Student"
+    main_advisor: "Prof. Lashkarian"
+    main_advisor_link: "https://scholar.google.com/citations?user=ZdoDSzwAAAAJ&hl=en"
     image: "/assets/profile-pics/male.jpg"
 
   - name: Anna Li

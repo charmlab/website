@@ -166,7 +166,7 @@ display: flex;
 
 .student-card .profile-pic,
 .student-card.profile-pic {
-  border: 3px solid transparent;
+  border: 4px solid transparent;
   box-shadow: 0 0 0 0 rgba(0,0,0,0);
   transition: transform 160ms ease, box-shadow 160ms ease, border-color 160ms ease;
   border-radius: var(--radius-card);
@@ -176,7 +176,7 @@ display: flex;
   display: inline-block;
   border-radius: var(--radius-card);
   overflow: hidden;
-  border: 3px solid transparent;
+  border: 4px solid transparent;
 }
 
 .profile-frame .profile-pic {
@@ -187,16 +187,16 @@ display: flex;
 }
 
 .student--ug .profile-pic,
-.student--ug.profile-pic { border-color: #7FCF9B; }
+.student--ug.profile-pic { border-color: #409C65; }
 .student--msc .profile-pic,
-.student--msc.profile-pic { border-color: #5AA6E8; }
+.student--msc.profile-pic { border-color: #368ACB; }
 .student--phd .profile-pic,
-.student--phd.profile-pic { border-color: #4B3D9A; }
+.student--phd.profile-pic { border-color: #CC4B4B; }
 .student--postdoc .profile-pic,
-.student--postdoc.profile-pic { border-color: #D8A647; }
+.student--postdoc.profile-pic { border-color: #BE9135; }
 .student--pi .profile-pic,
-.student--pi.profile-pic { border-color: #D8A647; }
-.student--pi.profile-frame { border-color: #D8A647; }
+.student--pi.profile-pic { border-color: #BE9135; }
+.student--pi.profile-frame { border-color: #BE9135; }
 
 @media (hover: hover) and (pointer: fine) {
   .student-card:hover .profile-pic,
@@ -204,15 +204,15 @@ display: flex;
     transform: scale(1.03);
   }
   .student--ug:hover .profile-pic,
-  .student--ug.profile-pic:hover { box-shadow: 0 0 0 4px rgba(127, 207, 155, 0.35); }
+  .student--ug.profile-pic:hover { box-shadow: 0 0 0 4px rgba(64, 156, 101, 0.35); }
   .student--msc:hover .profile-pic,
-  .student--msc.profile-pic:hover { box-shadow: 0 0 0 4px rgba(90, 166, 232, 0.35); }
+  .student--msc.profile-pic:hover { box-shadow: 0 0 0 4px rgba(54, 138, 203, 0.35); }
   .student--phd:hover .profile-pic,
-  .student--phd.profile-pic:hover { box-shadow: 0 0 0 4px rgba(75, 61, 154, 0.35); }
+  .student--phd.profile-pic:hover { box-shadow: 0 0 0 4px rgba(204, 75, 75, 0.35); }
   .student--postdoc:hover .profile-pic,
-  .student--postdoc.profile-pic:hover { box-shadow: 0 0 0 4px rgba(216, 166, 71, 0.35); }
+  .student--postdoc.profile-pic:hover { box-shadow: 0 0 0 4px rgba(190, 145, 53, 0.35); }
   .student--pi:hover .profile-pic,
-  .student--pi.profile-pic:hover { box-shadow: 0 0 0 4px rgba(216, 166, 71, 0.35); }
+  .student--pi.profile-pic:hover { box-shadow: 0 0 0 4px rgba(190, 145, 53, 0.35); }
 }
 
 @media (min-width: 600px) and (max-width: 900px) {

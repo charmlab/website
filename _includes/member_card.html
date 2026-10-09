@@ -16,6 +16,9 @@
   <p class="name">{{ person.name }}</p>
   <p class="title">
     {{ person.title }}
+    {% if person.main_advisor %}
+      <br> (main advisor: <a href="{{ person.main_advisor_link }}" target="_blank">{{ person.main_advisor }}</a>)
+    {% endif %}
     {% if person.coadvisor %}
       <br> (w/ <a href="{{ person.coadvisor_link }}" target="_blank">{{ person.coadvisor }}</a>)
     {% endif %}
