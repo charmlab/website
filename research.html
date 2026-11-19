@@ -1,0 +1,172 @@
+---
+layout: default
+title: CHARM Lab and Research
+permalink: /research/
+nav: research
+description: "The Collaborative Human-AI Reasoning Machines (CHARM) Lab at the University of Waterloo, led by Amir H. Karimi: vision, publications, people, and how to join."
+---
+<!-- ========== GROUP ========== -->
+<div class="docs-section" id="group">
+  <h4 class="sparkle-trigger"><span class="sparkle-title">✨About the lab✨</span> <span class="sparkle-hint">👈🏼 click me</span></h4>
+  <div class="group-intro">
+    <p>
+      As AI systems become increasingly embedded in high-stakes domains such as healthcare, education, finance, and transportation, ensuring their reliability, transparency, and adaptability is critical.
+    </p>
+    <p>
+      The <em>vision</em> of the <b>Collaborative Human-AI Reasoning Machines (✨CHARM✨) Lab</b> is to enable trustworthy human-AI ecosystems, where AI systems can be understood, influenced, and improved over time.
+    </p>
+    <p>
+      Our <em>mission</em> is to develop principled methods for trustworthy human-AI systems with three core capabilities:
+    </p>
+    <ul>
+      <li><b>Understand</b> — Reveal how AI systems represent, reason, and make decisions.</li>
+      <li><b>Intervene</b> — Enable people to question, contest, correct, and redirect AI decisions.</li>
+      <li><b>Evolve</b> — Build human-AI ecosystems that learn from feedback, adapt over time, and improve collective outcomes.</li>
+    </ul>
+    <p>
+      Our work draws on tools from <u>causal reasoning</u>, <u>explainable AI</u>, <u>neuro-symbolic learning</u>, and <u>human-AI interaction</u>, and spans disciplines including <u>cognitive science</u>, <u>social sciences</u>, and <u>multi-agent systems</u>.
+    </p>
+  </div>
+
+  
+
+</div>
+
+
+
+<!-- ========== PUBLICATIONS ========== -->
+<div class="docs-section publications-section" id="publications">
+  <h4>Publications</h4>
+  <p>
+    Dr. Karimi's scholarly contributions have been showcased almost exclusively at top-tier AI and ML venues including <b>NeurIPS, ICML, AAAI, AISTATS, ACM FAccT,</b> and <b>ACM AIES</b>. He has authored influential publications such as a comprehensive survey paper in the prestigious <b>ACM Computing Surveys</b> and <b>Trends in Cognitive Sciences</b>, holds a patent, and is a contributing author of a book chapter.
+
+    Dr. Karimi’s work on algorithmic recourse has notably elevated its prominence in responsible AI research, with its presence growing from almost none to hundreds on Google Scholar in just five years; algorithmic recourse is now a mandatory criterion in key sectors, including <a href="https://www.tbs-sct.canada.ca/pol/doc-eng.aspx?id=32592" target="_blank">Canada’s Treasury Board Directive on Automated Decision-Making</a>.
+
+    Several of Dr. Karimi's papers have received over 100 citations each. Dedicated to knowledge mobilization and reproducibility, his <a href="https://github.com/charmlab" target="_blank">open-source code</a> has garnered over 100 GitHub stars.
+
+    To learn more about algorithmic recourse, <a href="https://algorithmicrecourse.com/" target="_blank">visit this website</a>.
+  </p>
+  <div class="publication-meta-row">
+    <p>Most recent publications are available on <a href="https://scholar.google.com/citations?user=umI56k0AAAAJ&hl=en" target="_blank">Google Scholar</a>.<br/>
+      <sup>‡</sup> indicates equal contribution.
+    </p>
+    <div class="publication-view-switch" role="group" aria-label="Publication grouping">
+      <button class="publication-view-button active" type="button" data-publication-view-button="pillars">By pillar</button>
+      <button class="publication-view-button" type="button" data-publication-view-button="topics">By topic</button>
+    </div>
+  </div>
+
+  <!-- TODO: add transition to hover, add oral/spotlight, add images to card, grid for buttons, add tl;dr -->
+
+  <div class="publication-browser" data-publication-browser>
+    <div class="publication-view active" data-publication-view="pillars">
+      <ul class="tab-nav">
+        {% for category in site.data.publications.pillar_categories %}
+          <li><div class="button {% if forloop.first %}active{% endif %}" data-ref="#{{ category.id }}">{{ category.name }}</div></li>
+        {% endfor %}
+      </ul>
+
+      <div class="tab-content">
+        {% for category in site.data.publications.pillar_categories %}
+          <div class="tab-pane {% if forloop.first %}active{% endif %}" id="{{ category.id }}">
+            {% assign filtered_papers = site.data.publications.papers | where_exp: "paper", "paper.pillars contains category.name" %}
+            {% for paper in filtered_papers %}
+              {% include paper_card.html paper=paper %}
+            {% endfor %}
+          </div>
+        {% endfor %}
+      </div>
+    </div>
+
+    <div class="publication-view" data-publication-view="topics">
+      <ul class="tab-nav">
+        {% for category in site.data.publications.topic_categories %}
+          <li><div class="button {% if forloop.first %}active{% endif %}" data-ref="#{{ category.id }}">{{ category.name }}</div></li>
+        {% endfor %}
+      </ul>
+
+      <div class="tab-content">
+        {% for category in site.data.publications.topic_categories %}
+          <div class="tab-pane {% if forloop.first %}active{% endif %}" id="{{ category.id }}">
+            {% assign filtered_papers = site.data.publications.papers | where_exp: "paper", "paper.topics contains category.name" %}
+            {% for paper in filtered_papers %}
+              {% include paper_card.html paper=paper %}
+            {% endfor %}
+          </div>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ========== PEOPLE ========== -->
+<div class="docs-section" id="people">
+  <h4>People</h4>
+
+  <ul class="tab-nav group-tabs">
+    <li><div class="button active" data-ref="#group-current">Current Members</div></li>
+    <li><div class="button" data-ref="#group-alumni">✨CHARM Lab✨ Alumni</div></li>
+    <li><div class="button" data-ref="#group-mentees">Past Mentees</div></li>
+  </ul>
+
+  <div class="tab-content">
+    <div class="tab-pane active" id="group-current">
+      <div class="members-columns members-animate current-members">
+        <div class="members-card student-card student--pi">
+          <!-- <img class="profile-pic" src={{ "/assets/profile-pics/shiraz.png" | prepend: site.baseurl }} alt="Amir-Hossein Karimi"> -->
+          <!-- <img class="profile-pic" src={{ "/assets/profile-pics/tmls.jpeg" | prepend: site.baseurl }} alt="Amir-Hossein Karimi"> -->
+          <img class="profile-pic" src={{ "/assets/profile-pics/toronto.png" | prepend: site.baseurl }} alt="Amir-Hossein Karimi" width="1024" height="1024" loading="lazy" decoding="async">
+          <p class="name">Amir-Hossein Karimi</p>
+          <p class="title">Principal Investigator (PI)</p>
+        </div>
+        {% for member in site.data.group.seniors %}
+          {% include member_card.html person=member %}
+        {% endfor %}
+        {% for member in site.data.group.members %}
+          {% include member_card.html person=member %}
+        {% endfor %}
+      </div>
+    </div>
+
+    <div class="tab-pane" id="group-alumni">
+      <div class="members-columns members-animate">
+        {% for alumni in site.data.group.alumni %}
+          {% include member_card.html person=alumni %}
+        {% endfor %}
+      </div>
+    </div>
+
+    <div class="tab-pane" id="group-mentees">
+      <div class="members-columns members-animate">
+        {% for mentee in site.data.group.mentee %}
+          {% include member_card.html person=mentee %}
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- ========== JOIN ========== -->
+<div class="docs-section" id="join">
+  <h4>Join us</h4>
+  <div class="row prospective-students-block">
+    <div class="twelve columns">
+      <h5>Prospective Students</h5>
+      <p>
+        The lab is always on the lookout for
+        <span class="award">exceptional</span> and
+        <span class="award">highly motivated</span>
+        students/visitors <em>across all levels</em> (bachelor's, master's, doctoral, postdoctoral).
+
+        Our research sits at the intersection of <b>theory and practice</b>, focusing on foundational questions motivated by real-world impact.
+        <!-- —particularly in <u>explainable AI</u>, <u>algorithmic recourse</u>, <u>neuro-symbolic systems</u>, and <u>machine metacognition</u>. -->
+
+        If this direction resonates with your interests and background in
+        <u>machine learning</u>, <u>computer science</u>, or <u>related fields</u>,
+        please fill out
+        <a class="inline-cta" href="https://forms.gle/yqLBPJb6Gok4J1jv8" target="_blank" rel="noopener noreferrer">fill out this form</a>.
+      </p>
+    </div>
+  </div>
+</div>

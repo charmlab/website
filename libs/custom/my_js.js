@@ -356,7 +356,7 @@ $(document).ready(function() {
       return;
     }
 
-    var stored = localStorage.getItem('theme');
+    var stored = readTheme();
     var media = window.matchMedia ? window.matchMedia('(prefers-color-scheme: dark)') : null;
     var prefersDark = media ? media.matches : false;
     var useDark = (stored === 'dark') || (stored !== 'light' && prefersDark);
@@ -374,12 +374,28 @@ $(document).ready(function() {
     $toggle.on('click', function() {
       $('body').toggleClass('dark-mode');
       var isDark = $('body').hasClass('dark-mode');
-      localStorage.setItem('theme', isDark ? 'dark' : 'light');
+      writeTheme(isDark ? 'dark' : 'light');
       updateThemeToggle();
       trackEvent(isDark ? 'select_theme_dark' : 'select_theme_light', {
         theme: isDark ? 'dark' : 'light'
       });
     });
+  }
+
+  // Theme choice is shared across amirhkarimi.com, research.amirhkarimi.com and
+  // teaching.amirhkarimi.com through a cookie on the parent domain; localStorage
+  // is kept as a fallback (it is per-subdomain, so it can't be shared alone).
+  function readTheme() {
+    var m = document.cookie.match(/(?:^|; )theme=(dark|light)/);
+    if (m) return m[1];
+    try { return localStorage.getItem('theme'); } catch (e) { return null; }
+  }
+
+  function writeTheme(value) {
+    var host = window.location.hostname;
+    var domain = /(^|\.)amirhkarimi\.com$/.test(host) ? '; domain=.amirhkarimi.com' : '';
+    document.cookie = 'theme=' + value + domain + '; path=/; max-age=31536000; SameSite=Lax';
+    try { localStorage.setItem('theme', value); } catch (e) {}
   }
 
   function updateThemeToggle() {
@@ -413,6 +429,19 @@ $(document).ready(function() {
     initTabTracking();
     initSectionTracking();
     initOutboundTracking();
+    initNavTracking();
+  }
+
+  // Nav clicks, including the jump to /research/ and teaching.amirhkarimi.com
+  function initNavTracking() {
+    $(document).on('click', '.navbar-link', function() {
+      var label = $.trim($(this).text());
+      trackEvent('click_nav', {
+        label: label,
+        href: $(this).attr('href') || '',
+        page: window.location.pathname
+      });
+    });
   }
 
   function initCtaTracking() {
@@ -438,7 +467,7 @@ $(document).ready(function() {
       var label = $.trim($btn.text());
       var ref = $btn.data('ref') || '';
       var section = $btn.closest('.docs-section').attr('id') || '';
-      var prefix = section === 'publications' ? 'tab_pubs_' : section === 'teaching' ? 'tab_teaching_' : section === 'group' ? 'tab_group_' : 'tab_';
+      var prefix = section === 'publications' ? 'tab_pubs_' : section === 'teaching' ? 'tab_teaching_' : section === 'group' ? 'tab_group_' : section === 'people' ? 'tab_people_' : 'tab_';
       var eventName = prefix + slugify(label);
       trackEvent(eventName, {
         label: label,
