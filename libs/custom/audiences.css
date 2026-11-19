@@ -39,3 +39,6 @@
 .social-link{color:inherit;text-decoration:none}
 .social-link:hover,.social-link:focus-visible{opacity:.7}
 .footer .social-link{color:var(--muted-color,rgba(0,0,0,.4));margin:0 2px}
+.bio-toggle{display:none}
+@media (max-width:550px){.bio-more{display:none}.bio-more.open{display:block}.bio-toggle{display:inline-block;margin:0 0 1rem}}
+.bio-toggle[hidden]{display:none!important}
