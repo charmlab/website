@@ -1,0 +1,32 @@
+<figure class="aud-map" id="audience-map">
+  <div class="aud-plot">
+  <svg class="aud-svg" viewBox="0 0 420 360" role="img" aria-labelledby="aud-title aud-desc">
+    <title id="aud-title">Audiences of Dr. Karimi's research and teaching</title>
+    <desc id="aud-desc">Four audiences placed by technical rigor and lifetime audience size: Public (use AI) about 10,000; Students (build AI) about 1,000; Leaders (lead with AI) about 100; Scholars (advance AI) about 10. Research flows down into teaching, and teaching flows back into research.</desc>
+    <defs>
+      <marker id="aud-arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M2 1L8 5L2 9" fill="none" stroke="context-stroke" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></marker>
+    </defs>
+    <line class="aud-axis" x1="70" y1="20" x2="70" y2="250"/>
+    <line class="aud-axis" x1="70" y1="250" x2="410" y2="250"/>
+    <g class="aud-grid">
+      <line x1="70" y1="40" x2="410" y2="40"/><line x1="70" y1="95" x2="410" y2="95"/><line x1="70" y1="150" x2="410" y2="150"/><line x1="70" y1="205" x2="410" y2="205"/>
+      <line x1="115" y1="20" x2="115" y2="250"/><line x1="200" y1="20" x2="200" y2="250"/><line x1="285" y1="20" x2="285" y2="250"/><line x1="365" y1="20" x2="365" y2="250"/>
+    </g>
+    <g class="aud-ticks"><line x1="64" y1="40" x2="70" y2="40"/><line x1="64" y1="95" x2="70" y2="95"/><line x1="64" y1="150" x2="70" y2="150"/><line x1="64" y1="205" x2="70" y2="205"/></g>
+    <g class="aud-tick" text-anchor="end">
+      <text x="60" y="44">~10,000</text><text x="60" y="99">~1,000</text><text x="60" y="154">~100</text><text x="60" y="209">~10</text>
+    </g>
+    <text class="aud-tick" transform="rotate(-90 14 135)" x="14" y="135" text-anchor="middle">lifetime audience &rarr;</text>
+    <g class="aud-tick" text-anchor="middle">
+      <text x="115" y="268">basic</text><text x="200" y="268">strategic</text><text x="285" y="268">technical</text><text x="365" y="268">frontier</text>
+      <text x="240" y="286">technical rigor &rarr;</text>
+    </g>
+    <text class="aud-flow" x="240" y="308" text-anchor="middle">research deepens what can be taught</text>
+    <line x1="110" y1="316" x2="370" y2="316" stroke="#378ADD" stroke-width="1.2" marker-end="url(#aud-arrow)"/>
+    <text class="aud-flow" x="240" y="338" text-anchor="middle">teaching sharpens what is understood</text>
+    <line x1="370" y1="346" x2="110" y2="346" stroke="#E07A1F" stroke-width="1.2" marker-end="url(#aud-arrow)"/>
+    <g id="aud-bubbles"></g>
+  </svg>
+  </div>
+  <aside class="aud-panel" id="aud-pop" aria-live="polite"></aside>
+</figure>

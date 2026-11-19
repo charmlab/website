@@ -10,6 +10,11 @@ permalink: /sitemap.xml
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
+  <url>
+    <loc>{{ site_root }}/research/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
   {% for page in site.pages %}
     {% if page.url != "/" and page.url != "/index.html" and page.name != "robots.txt" and page.name != "sitemap.xml" and page.url contains ".html" %}
   <url>
