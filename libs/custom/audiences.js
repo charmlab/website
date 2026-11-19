@@ -132,7 +132,7 @@
   var hoverT = null;
   root.querySelectorAll('.aud-band, .aud-lb, .aud-tg').forEach(function (el) {
     var d = L.filter(function (x) { return x.k === el.getAttribute('data-k'); })[0];
-    el.addEventListener('mouseenter', function () { clearTimeout(hoverT); hoverT = setTimeout(function () { show(d, 'hover'); }, 150); });
+    el.addEventListener('mouseenter', function () { clearTimeout(hoverT); hoverT = setTimeout(function () { show(d, 'hover'); }, 60); });
     el.addEventListener('mouseleave', function () { clearTimeout(hoverT); });
     el.addEventListener('click', function () { show(d, 'click'); });
     el.addEventListener('keydown', function (e) { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); show(d, 'keyboard'); } });
