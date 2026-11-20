@@ -1,0 +1,14 @@
+# Amir-Hossein Karimi
+
+> Amir-Hossein Karimi is an Assistant Professor in Electrical and Computer Engineering (cross-appointed to the Cheriton School of Computer Science) at the University of Waterloo, a Vector Institute Faculty Affiliate, and holder of the O'Donovan Chair in Trustworthy AI. He leads the CHARM Lab (Collaborative Human-AI Reasoning Machines), which works on safe and trustworthy human-AI collaboration.
+
+His research is best known for algorithmic recourse and counterfactual explanations in explainable and responsible AI, published at venues including NeurIPS, ICML, COLM, AAAI, AISTATS, ACM FAccT, and ACM AIES, and in ACM Computing Surveys. He has testified on meaningful recourse before Canada's House of Commons. Before Waterloo he worked at BlackBerry, Meta, Google Brain, and Google DeepMind; he received his PhD from ETH Zurich and the Max Planck Institute for Intelligent Systems.
+
+He teaches four audiences: the public, students, leaders, and scholars. He received the 2024 Igor Ivkovic Teaching Excellence Award.
+
+## Pages
+
+- [Home and bio](https://amirhkarimi.com/)
+- [Research](https://amirhkarimi.com/research/)
+- [Teaching: The AI Learning Map](https://teaching.amirhkarimi.com/) (free interactive ML lessons with lecture videos)
+- [CHARM Lab](https://charmlab.ca)
