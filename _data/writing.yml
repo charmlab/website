@@ -1,0 +1,14 @@
+# Latest essays shown in the "Writing" section of the homepage (newest first; the first 3 are shown).
+# To add a post: put its cover in assets/covers/ and add an entry at the top.
+- title: "Drugs, AI, and What Remains of Us"
+  url: https://amirhkarimi.medium.com/drugs-ai-and-what-remains-of-us-2efa1494ecf5
+  img: writing-drugs-ai.jpg
+  date: Nov 2026
+- title: "Parliamentary Opening Statement"
+  url: https://amirhkarimi.medium.com/parliamentary-opening-statement-0fbfe614d531
+  img: writing-parliament.jpg
+  date: Nov 2026
+- title: "Learning to Think for Yourself in the Age of AI"
+  url: https://amirhkarimi.medium.com/learning-to-think-for-yourself-in-the-age-of-ai-f783962c1c8b
+  img: writing-think-for-yourself.jpg
+  date: Nov 2026

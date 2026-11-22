@@ -111,6 +111,20 @@ title: Home
   {% include audience_map.html %}
 </div>
 
+<div class="docs-section" id="writing" role="region" aria-labelledby="writing-title">
+  <h4 id="writing-title">Writing</h4>
+  <p>Essays and reflections on AI, learning, and society.</p>
+  <div class="aud writing-cards">
+    {% for w in site.data.writing limit:3 %}
+    <a class="aud-cd" href="{{ w.url }}" target="_blank" rel="noopener" data-writing="{{ w.title | escape }}" aria-label="{{ w.title | escape }} (Medium essay, {{ w.date }}; opens in a new tab)">
+      <div class="aud-vis aud-img"><img src="{{ '/assets/covers/' | append: w.img | prepend: site.baseurl }}" alt="" loading="lazy" decoding="async"></div>
+      <div class="wt"><div class="tt">{{ w.title }}</div><div class="mt">{{ w.date }} &middot; Medium</div></div>
+    </a>
+    {% endfor %}
+  </div>
+  <p class="writing-more"><a href="https://amirhkarimi.medium.com/" target="_blank" rel="noopener" aria-label="More essays on Medium (opens in a new tab)">More on Medium &rarr;</a></p>
+</div>
+
 <div class="docs-section" id="misc">
   <h4>Press, Funding, & Consultations</h4>
   <p>

@@ -97,3 +97,14 @@ body.dark-mode .aud-lb:not(.on){opacity:.72}
 .bio-toggle{display:none}
 @media (max-width:550px){.bio-more{display:none}.bio-more.open{display:block}.bio-toggle{display:inline-block;margin:0 0 1rem}}
 .bio-toggle[hidden]{display:none!important}
+
+/* ===== Writing: latest essays, same card style as the media cards ===== */
+.writing-cards{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;margin-top:.8rem}
+.writing-cards .aud-cd .tt{font-size:14px}
+.writing-more{margin-top:.8rem;font-size:14px}
+.writing-cards .wt{display:flex;flex-direction:column;gap:5px}
+@media (max-width:640px){
+  .writing-cards{grid-template-columns:1fr;gap:10px}
+  .writing-cards .aud-cd{flex-direction:row;align-items:center;gap:12px}
+  .writing-cards .aud-vis{flex:0 0 112px}
+}

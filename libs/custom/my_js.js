@@ -430,6 +430,14 @@ $(document).ready(function() {
     initSectionTracking();
     initOutboundTracking();
     initNavTracking();
+    initWritingTracking();
+  }
+
+  // Clicks on the homepage "Writing" cards
+  function initWritingTracking() {
+    $(document).on('click', '[data-writing]', function() {
+      trackEvent('click_writing', { title: $(this).attr('data-writing') || '', href: $(this).attr('href') || '' });
+    });
   }
 
   // Nav clicks, including the jump to /research/ and teaching.amirhkarimi.com
