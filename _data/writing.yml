@@ -1,5 +1,9 @@
-# Latest essays shown in the "Writing" section of the homepage (newest first; the first 3 are shown).
+# Latest essays shown in the "Writing" section of the homepage (newest first; the first 6 are shown, 3 per row).
 # To add a post: put its cover in assets/covers/ and add an entry at the top.
+- title: "Rip, Don’t Peel: Rethinking Education for an Exponential World"
+  url: https://amirhkarimi.medium.com/rip-dont-peel-rethinking-education-for-an-exponential-world-48ca545faa74
+  img: writing-rip-dont-peel.jpg
+  date: Nov 2026
 - title: "Drugs, AI, and What Remains of Us"
   url: https://amirhkarimi.medium.com/drugs-ai-and-what-remains-of-us-2efa1494ecf5
   img: writing-drugs-ai.jpg
@@ -12,3 +16,7 @@
   url: https://amirhkarimi.medium.com/learning-to-think-for-yourself-in-the-age-of-ai-f783962c1c8b
   img: writing-think-for-yourself.jpg
   date: Nov 2026
+- title: "Researchfluencers"
+  url: https://amirhkarimi.medium.com/researchfluencers-7b1a5491e2f2
+  img: writing-researchfluencers.jpg
+  date: Jun 2021
